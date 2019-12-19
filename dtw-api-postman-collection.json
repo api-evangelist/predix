@@ -1,0 +1,44 @@
+{
+    "id": "f8cd611b5b63af26286cabcbe2920972",
+    "name": "DTW API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "98fda6089ba2f85c1f1271e66de9d331",
+            "name": "Warp subject and reference arrays",
+            "url": "https\/v1\/warp",
+            "description": "Warp subject and reference arrays.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Subject and Reference arrays to be processed",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f8cd611b5b63af26286cabcbe2920972",
+            "rawModeData": ""
+        }
+    ]
+}

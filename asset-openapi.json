@@ -1,0 +1,424 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Asset",
+        "description": "Predix Asset API",
+        "termsOfService": ""
+    },
+    "servers": [
+        "https\/"
+    ],
+    "paths": {
+        "\/v1\/": {
+            "get": {
+                "summary": "Get a listing of user-defined domain object collections",
+                "description": "Returns the names of all user-defined domain object collections with counts of domain objects contained.",
+                "operationId": "GetV1",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/v1\/{collection}": {
+            "get": {
+                "summary": "Gets all user-defined domain objects.",
+                "description": "This is a user-defined domain object collection.\n\nYou can create your own custom domain objects, add properties to them, define relationships, and so on.\n\n",
+                "operationId": "GetV1Collection",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "collection",
+                        "in": "path",
+                        "description": "Name of the user-defined domain object collection"
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "GEL query filter"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Fields to be returned from each entity (comma separated)"
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "Limits the number of entities returned"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create one or more user-defined domain objects",
+                "description": "This is a user-defined domain object collection.\n\nYou can create your own custom domain objects, add properties to them, define relationships, and so on.\n\nThe following characters are not allowed in any attribute names: $ < > : | ( ) , = ! ? &\n\n",
+                "operationId": "PostV1Collection",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "collection",
+                        "in": "path",
+                        "description": "Name of the user-defined domain object collection"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Array of entities to create"
+                    }
+                ]
+            }
+        },
+        "\/v1\/{collection}\/{id}": {
+            "get": {
+                "summary": "Get entity based on  uri",
+                "description": "This is a user-defined domain object collection.\n\nYou can create your own custom domain objects, add properties to them, define relationships, and so on.\n\n",
+                "operationId": "GetV1Collection",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "collection",
+                        "in": "path",
+                        "description": "Name of the user-defined domain object collection"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the domain object to retrieve"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Fields to be returned from each entity (comma separated)"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update a user-defined domain object",
+                "description": "This is a user-defined domain object collection.\n\nYou can create your own custom domain objects, add properties to them, define relationships, and so on.\n\nThe following characters are not allowed in any attribute names: $ < > : | ( ) , = ! ? &\n\n",
+                "operationId": "PutV1Collection",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "collection",
+                        "in": "path",
+                        "description": "Name of the user-defined domain object collection"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the domain object to retrieve"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Array of entities to create"
+                    }
+                ]
+            },
+            "patch": {
+                "summary": "Patch a user-defined domain object",
+                "description": "This is a user-defined domain object collection.\n\nYou can create your own custom domain objects, add properties to them, define relationships, and so on.\n\nUpdate specific model using http PATCH requests. Request format should follow JSON PATCH format. Supported operations on each attribute are add, remove, replace, move, copy, test. Refer RFC link for more details on request format. https:\/\/tools.ietf.org\/html\/rfc6902",
+                "operationId": "PatchV1Collection",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "collection",
+                        "in": "path",
+                        "description": "Name of the user-defined domain object collection"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the domain object to retrieve"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Array of entities to create"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete a user-defined domain object",
+                "description": "This is a user-defined domain object collection.\n\nYou can create your own custom domain objects, add properties to them, define relationships, and so on.\n\n",
+                "operationId": "DeleteV1Collection",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "collection",
+                        "in": "path",
+                        "description": "Name of the user-defined domain object collection"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the domain object to retrieve"
+                    }
+                ]
+            }
+        },
+        "\/v1\/system\/audit": {
+            "get": {
+                "summary": "Get domain object audit records.",
+                "description": "For detailed documentation of all available query options please refer to Predix Asset Documentation. ",
+                "operationId": "GetV1SystemAudit",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Fields to be returned from each entity (comma separated)"
+                    }
+                ]
+            }
+        },
+        "\/v1\/system\/audit\/changes": {
+            "get": {
+                "summary": "Get property-level audit records.",
+                "description": "For detailed documentation of all available query options please refer to Predix Asset Documentation. ",
+                "operationId": "GetV1SystemAuditChanges",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Fields to be returned from each entity (comma separated)"
+                    }
+                ]
+            }
+        },
+        "\/v1\/system\/audit\/snapshots": {
+            "get": {
+                "summary": "Get a snapshot of an entity at or before a specified datetime (ISO-8601).",
+                "description": "For detailed documentation of all available query options please refer to Predix Asset Documentation.",
+                "operationId": "GetV1SystemAuditSnapshots",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "GEL query filter"
+                    }
+                ]
+            }
+        },
+        "\/v1\/system\/configs": {
+            "get": {
+                "summary": "Get tenant-specific configuration settings",
+                "description": "This can be used to verify whether the audit feature is enabled.",
+                "operationId": "GetV1SystemConfigs",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Update tenant-specific configuration settings",
+                "description": "This can be used to enable or disable the audit feature.",
+                "operationId": "PostV1SystemConfigs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Array of entities to create"
+                    }
+                ]
+            }
+        },
+        "\/v1\/system\/schema\/entities\/{type}": {
+            "get": {
+                "summary": "Get the JSON Schema of the specified entity type",
+                "description": "Get the json schema of the specified entity type.",
+                "operationId": "GetV1SystemSchemaEntitiesType",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "path",
+                        "description": "Entity type (e.g. \"assets\")"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Create or update the JSON Schema of the specified entity type",
+                "description": "Create or update the json schema of the specified entity type.",
+                "operationId": "PutV1SystemSchemaEntitiesType",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "path",
+                        "description": "Entity type (e.g. \"assets\")"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Array of entities to create"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete the JSON Schema of the specified entity type",
+                "description": "Delete the json schema of the specified entity type.",
+                "operationId": "DeleteV1SystemSchemaEntitiesType",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "path",
+                        "description": "Entity type (e.g. \"assets\")"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "AuditRecord": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "versionId": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "timestamp": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "action": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "identifier": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "oldValue": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "newValue": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "AuditPropertyRecord": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "versionId": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "timestamp": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "action": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "identifier": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "elementAction": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "elementUri": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "elementOldValue": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "elementNewValue": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "DomainObject": {
+                "type": "object",
+                "properties": {
+                    "uri": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "DomainObjectCount": {
+                "type": "object",
+                "properties": {
+                    "collection": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "count": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "EntityJsonSchema": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "properties": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "required": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "PatchDocument": {
+                "type": "object",
+                "properties": {
+                    "op": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "path": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "from": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "TenantConfig": {
+                "type": "object",
+                "properties": {
+                    "uri": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "enableAudit": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,848 @@
+{
+    "id": "20f022a477678b4601ce5d0bc4012dec",
+    "name": "Fingerprint of Things Object Tagging Service",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "342973a3bea3126d57accc39ff9ef898",
+            "name": "Create Group",
+            "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/group\/createGroup",
+            "description": "Create group.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "OAuth2 token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Zone ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "Request body",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "rawModeData": ""
+        },
+        {
+            "id": "2f94ed8465a194a196c9b9297e762b35",
+            "name": "Delete Group",
+            "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/group\/deleteGroup",
+            "description": "Delete group.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "OAuth2 token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Zone ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "Request body",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "rawModeData": ""
+        },
+        {
+            "id": "dd0e6d700af1971e9fe879719552dc4c",
+            "name": "Object Pre-Register",
+            "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/preregisterObject",
+            "description": "Pre-register object with image.<br> Individual ID must be designated by user.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "OAuth2 token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Zone ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "individualId",
+                    "description": "Individual ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "registImage",
+                    "description": "Image data(Max file size: 5MByte)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "applyFlag",
+                    "description": "* DO NOT USE. This parameter will be deleted. <br>Apply flag(0:Do not apply 1:Apply)<br> *Default value is '1:Apply'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "rawModeData": ""
+        },
+        {
+            "id": "92cb56c115ba7e72ce8f0127af0a481a",
+            "name": "Object Pre-Register without ID",
+            "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/preregisterObjectWithoutID",
+            "description": "Pre-register object with image.<br> Individual ID will be issued from system.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "OAuth2 token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Zone ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "registImage",
+                    "description": "Image data(Max file size: 5MByte)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "applyFlag",
+                    "description": "* DO NOT USE. This parameter will be deleted. <br>Apply flag(0:Do not apply 1:Apply)<br> *Default value is '1:Apply'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "rawModeData": ""
+        },
+        {
+            "id": "5761f6b9acf7a4c4c9cb5744fe0e7e69",
+            "name": "Delete Registered Object",
+            "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/deleteRegisteredObject",
+            "description": "Delete registered object.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "OAuth2 token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Zone ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "Request body",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "rawModeData": ""
+        },
+        {
+            "id": "6f6e0edfa0b3c72ab4694b70212442cd",
+            "name": "Delete Pre-Registered Object",
+            "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/deletePreregisteredObject",
+            "description": "Delete pre-registered object.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "OAuth2 token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Zone ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "Request body",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "rawModeData": ""
+        },
+        {
+            "id": "719c781c57daf63699f822455d1ed77c",
+            "name": "Switch Apply Flag",
+            "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/setObjectDoNotRegisterFlag",
+            "description": "* DO NOT USE. This API will be deleted.<br>Switch the Apply flag on or off.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "OAuth2 token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Zone ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "Request body",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "rawModeData": ""
+        },
+        {
+            "id": "a2720d6a725dc8da28442497d6eb0bbb",
+            "name": "Switch Apply Flag per Group",
+            "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/setGroupDoNotRegisterFlag",
+            "description": "* DO NOT USE. This API will be deleted.<br>Switch the Apply flag per group",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "OAuth2 token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Zone ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "Request body",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "rawModeData": ""
+        },
+        {
+            "id": "d8c6e503d1d6571aeb50467e5d2ea310",
+            "name": "Put Object in Group",
+            "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/group\/putInGroup",
+            "description": "Put Object in Group.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "OAuth2 token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Zone ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "Request body",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "rawModeData": ""
+        },
+        {
+            "id": "5169b556e00cfda5fbfd6438084b63e8",
+            "name": "Remove Object from Group",
+            "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/group\/removeFromGroup",
+            "description": "Remove Object from Group.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "OAuth2 token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Zone ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "Request body",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "rawModeData": ""
+        },
+        {
+            "id": "836e9fff5743fc7073785be1c8af12a8",
+            "name": "Register Object",
+            "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/registerObject",
+            "description": "Register Object. A registered object can be queried from Query APIs.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "OAuth2 token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Zone ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "Request body",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "rawModeData": ""
+        },
+        {
+            "id": "92dcb678556a9d99b1b6df5c2a9ff38e",
+            "name": "Register Object per Group",
+            "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/registerGroup",
+            "description": "Register Object per Group. A registered object can be queried from Query APIs.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "OAuth2 token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Zone ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "Request body",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "rawModeData": ""
+        },
+        {
+            "id": "0f7d84baa083c18eb1ac377b94c73d25",
+            "name": "List Registered Objects",
+            "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/listObjects",
+            "description": "List registered Objects.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "OAuth2 token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Zone ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "Request body",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "rawModeData": ""
+        },
+        {
+            "id": "3d195252203d5278717760f58f8a10ff",
+            "name": "List Groups",
+            "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/group\/listGroups",
+            "description": "List groups",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "OAuth2 token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Zone ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "Request body",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "rawModeData": ""
+        },
+        {
+            "id": "1a8fa1beabc815155bfba7b532323b48",
+            "name": "Check Pre-Registered Object",
+            "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/checkPreregisteredObject",
+            "description": "Check a score of Pre-Registered Object.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "OAuth2 token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Zone ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "registImage",
+                    "description": "Image data(Max file size: 5MByte)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "individualId",
+                    "description": "Individual ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "rawModeData": ""
+        },
+        {
+            "id": "a2b96e7eee6703f0f769b9cfee0404e3",
+            "name": "Query by Object",
+            "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/query\/queryByObject",
+            "description": "Query image by object.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "OAuth2 token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Zone ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "idSpecificationFlag",
+                    "description": "ID specification flag<br> (0: Query with all registered objects , 1: Query with specified object by individual ID)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "individualId",
+                    "description": "Individual ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "queryImage",
+                    "description": "Query image data(Max file size: 5MByte)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "checkResultDisplayNumber",
+                    "description": "Result display number:<br> Specify number of verification result to retrieve.<br> If not set, use system default value (Default value: 1,500).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "rawModeData": ""
+        },
+        {
+            "id": "30c03b3b6e6de1e92e17994f37cd64e7",
+            "name": "Query by Group",
+            "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/query\/queryByGroup",
+            "description": "Query image per group.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "OAuth2 token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Zone ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "idSpecificationFlag",
+                    "description": "ID specification flag<br> (0: Query with all registered objects , 1: Query with specified object by individual ID)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groupId",
+                    "description": "Group ID:<br> Use CSV form when specifying multiple IDs.<br> *Required when ID specification flag is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "queryImage",
+                    "description": "Query image data(Max file size: 5MByte)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "checkResultDisplayNumber",
+                    "description": "Result display number:<br> Specify number of verification result to retrieve.<br> If not set, use system default value (Default value: 1,500).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "rawModeData": ""
+        }
+    ]
+}

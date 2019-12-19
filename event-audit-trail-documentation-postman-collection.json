@@ -1,0 +1,807 @@
+{
+    "id": "c63e9464c1077fc9249b30163385a2ea",
+    "name": "Event Audit Trail Documentation",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "0922929345d4b8dab03769ad2193bf9a",
+            "name": "Get Plugins Archive Tenants Archives",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/plugins\/archive\/tenants\/{tenant_uuid}\/archives",
+            "description": "Get plugins archive tenants archives.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "73c084d0236d790988f9da34f7e7ddf0",
+            "name": "Get Plugins Archive Tenants Archives",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/plugins\/archive\/tenants\/{tenant_uuid}\/archives\/{uuid}",
+            "description": "Get plugins archive tenants archives.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "5431ed9ae3f7fe79e0ff73e966295e9b",
+            "name": "Delete Plugins Archive Tenants Archives",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/plugins\/archive\/tenants\/{tenant_uuid}\/archives\/{uuid}",
+            "description": "Delete plugins archive tenants archives.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "58444bbb0a0304fd1802e050bc5c0ae4",
+            "name": "Get Plugins Archive Tenants Configuration",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/plugins\/archive\/tenants\/{tenant_uuid}\/configuration",
+            "description": "Get plugins archive tenants configuration.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "1d408b789f775c18ad3ff9487ea282b1",
+            "name": "Post Plugins Archive Tenants Configuration",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/plugins\/archive\/tenants\/{tenant_uuid}\/configuration",
+            "description": "Post plugins archive tenants configuration.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "archivePluginConfiguration",
+                    "description": "archivePluginConfiguration",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "6cb442c3c8355ae28453f1e6d460e57f",
+            "name": "Get Plugins Archive Tenants Staged Events",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/plugins\/archive\/tenants\/{tenant_uuid}\/staged-events",
+            "description": "Get plugins archive tenants staged events.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "be3a44ce93eeaade9b61c0b136425030",
+            "name": "Get Tenants",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}",
+            "description": "Get tenants.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "3a77720bf0ce704f1abdd1afe9ba52b0",
+            "name": "Get Tenants Event Search",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/event-search",
+            "description": "Get tenants event search.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "query",
+                    "description": "query",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "3b000caedad6fc44e37842724ae27eea",
+            "name": "Get Tenants Events",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/events",
+            "description": "Get tenants events.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "context",
+                    "description": "context",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tag",
+                    "description": "tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "classification",
+                    "description": "classification",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "start_date",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "end_date",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "c02eb31299710f0fcfa09293b6e701ad",
+            "name": "Post Tenants Events",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/events",
+            "description": "Post tenants events.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "events",
+                    "description": "events",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "475087467e5148330d791fdda22918a5",
+            "name": "Get Tenants Events",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/events\/{uuid}",
+            "description": "Get tenants events.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "9058faea49214383ca9a24ba6b59bac1",
+            "name": "Put Tenants Events",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/events\/{uuid}",
+            "description": "Put tenants events.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "event",
+                    "description": "event",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "6681c30751a0564d8b6115bf0fc58017",
+            "name": "Delete Tenants Events",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/events\/{uuid}",
+            "description": "Delete tenants events.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "c6bd1e73746282f817c820778e1deaea",
+            "name": "Get Catalog",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v2\/catalog",
+            "description": "Get catalog.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "a2a2189a077559a21122e5a90e90006f",
+            "name": "Put Service Instances",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v2\/service_instances\/{instanceId}",
+            "description": "Put service instances.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "request",
+                    "description": "request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "accepts_incomplete",
+                    "description": "accepts_incomplete",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "0daa87ef900941899a59cc1335215f4a",
+            "name": "Delete Service Instances",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v2\/service_instances\/{instanceId}",
+            "description": "Delete service instances.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "service_id",
+                    "description": "service_id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "plan_id",
+                    "description": "plan_id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "accepts_incomplete",
+                    "description": "accepts_incomplete",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "795099f57f82436c049a0f385e459e3d",
+            "name": "Patch Service Instances",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v2\/service_instances\/{instanceId}",
+            "description": "Patch service instances.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "request",
+                    "description": "request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "accepts_incomplete",
+                    "description": "accepts_incomplete",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "3e20927335858af9f3fe525aa6bf8ff1",
+            "name": "Get Service Instances Last Operation",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v2\/service_instances\/{instanceId}\/last_operation",
+            "description": "Get service instances last operation.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "737da1e491046af8f1c2745f0bb94edf",
+            "name": "Put Service Instances Service Bindings Bindingid",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v2\/service_instances\/{instanceId}\/service_bindings\/{bindingId}",
+            "description": "Put service instances service bindings bindingid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bindingId",
+                    "description": "bindingId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "request",
+                    "description": "request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        },
+        {
+            "id": "feae81469d560f2bb0b52ca3f4855e2d",
+            "name": "Delete Service Instances Service Bindings Bindingid",
+            "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v2\/service_instances\/{instanceId}\/service_bindings\/{bindingId}",
+            "description": "Delete service instances service bindings bindingid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bindingId",
+                    "description": "bindingId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "service_id",
+                    "description": "service_id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "plan_id",
+                    "description": "plan_id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "rawModeData": ""
+        }
+    ]
+}

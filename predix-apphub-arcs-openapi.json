@@ -1,0 +1,750 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Predix AppHub ARCS",
+        "description": "<b>Application registry and configuration<\/b>",
+        "termsOfService": "Terms of service"
+    },
+    "servers": [
+        "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api"
+    ],
+    "paths": {
+        "\/apps": {
+            "get": {
+                "summary": "Get all the registered microapps",
+                "description": "Get the registered microapps for the given tenant",
+                "operationId": "GetAllRegisteredAppsUsingGET",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Register the microapp",
+                "description": "Register the microapps",
+                "operationId": "RegisterAppUsingPOST",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "request",
+                        "in": "body",
+                        "description": "request"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update the microapp",
+                "description": "Update the microapps",
+                "operationId": "UpdateAppUsingPUT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "request",
+                        "in": "body",
+                        "description": "request"
+                    }
+                ]
+            }
+        },
+        "\/apps\/{uuid}": {
+            "get": {
+                "summary": "Get the registered microapp",
+                "description": "Get the registered microapp for the given uri",
+                "operationId": "GetRegisterAppUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "description": "uuid"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Unregister the microapp",
+                "description": "Unregister the microapp",
+                "operationId": "UnRegisterAppUsingDELETE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "description": "uuid"
+                    }
+                ]
+            }
+        },
+        "\/globalconfig": {
+            "get": {
+                "summary": "Get global config information",
+                "description": "Get global config information",
+                "operationId": "GetGlobalConfigUsingGET",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Save global config information",
+                "description": "Save global config information",
+                "operationId": "SaveGlobalConfigUsingPOST",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "config",
+                        "in": "body",
+                        "description": "config"
+                    }
+                ]
+            }
+        },
+        "\/globalconfig\/{uuid}": {
+            "put": {
+                "summary": "Update global config information",
+                "description": "Update global config information",
+                "operationId": "UpdateGlobalConfigUsingPUT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "description": "uuid"
+                    },
+                    {
+                        "name": "config",
+                        "in": "body",
+                        "description": "config"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete global config information",
+                "description": "Delete global config information",
+                "operationId": "DeleteGlobalConfigUsingDELETE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "description": "uuid"
+                    }
+                ]
+            }
+        },
+        "\/preferences": {
+            "get": {
+                "summary": "Get the preferences information",
+                "description": "Get the preferences information",
+                "operationId": "GetPreferenceUsingGET",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Save the preferences information",
+                "description": "save the preferences information",
+                "operationId": "SavePreferenceUsingPOST",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "request",
+                        "in": "body",
+                        "description": "request"
+                    }
+                ]
+            }
+        },
+        "\/preferences\/{uuid}": {
+            "put": {
+                "summary": "Update the preferences information",
+                "description": "Update the preferences information",
+                "operationId": "UpdatePreferenceUsingPUT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "description": "uuid"
+                    },
+                    {
+                        "name": "request",
+                        "in": "body",
+                        "description": "request"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete the preferences information",
+                "description": "Delete the preferences information",
+                "operationId": "DeletePreferenceUsingDELETE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "description": "uuid"
+                    }
+                ]
+            }
+        },
+        "\/privileges": {
+            "get": {
+                "summary": "Get the privileges information",
+                "description": "Get the privileges information",
+                "operationId": "GetPrivilegeUsingGET",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Save the privileges information",
+                "description": "Save the privileges information",
+                "operationId": "SavePrivilegeUsingPOST",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "request",
+                        "in": "body",
+                        "description": "request"
+                    }
+                ]
+            }
+        },
+        "\/privileges\/{uuid}": {
+            "put": {
+                "summary": "Update the privileges information",
+                "description": "Update the privileges information",
+                "operationId": "UpdatePrivilegeUsingPUT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "description": "uuid"
+                    },
+                    {
+                        "name": "request",
+                        "in": "body",
+                        "description": "request"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete the privileges information",
+                "description": "Delete the privileges information",
+                "operationId": "DeletePrivilegeUsingDELETE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "description": "uuid"
+                    }
+                ]
+            }
+        },
+        "\/provision": {
+            "post": {
+                "summary": "postTenantConfig",
+                "description": "",
+                "operationId": "PostTenantConfigUsingPOST",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantConfigReq",
+                        "in": "body",
+                        "description": "tenantConfigReq"
+                    }
+                ]
+            }
+        },
+        "\/provision\/{tenantId}": {
+            "delete": {
+                "summary": "deleteTenantConfig",
+                "description": "",
+                "operationId": "DeleteTenantConfigUsingDELETE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantId",
+                        "in": "path",
+                        "description": "tenantId"
+                    }
+                ]
+            }
+        },
+        "\/themes": {
+            "get": {
+                "summary": "Get theme information for a tenant",
+                "description": "Get theme information",
+                "operationId": "GetThemeUsingGET",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Save theme config information",
+                "description": "Save theme config information",
+                "operationId": "SaveThemeUsingPOST",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "theme",
+                        "in": "body",
+                        "description": "theme"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update theme",
+                "description": "Update theme",
+                "operationId": "UpdateThemeUsingPUT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "theme",
+                        "in": "body",
+                        "description": "theme"
+                    }
+                ]
+            }
+        },
+        "\/themes\/{uuid}": {
+            "get": {
+                "summary": "Get the registered theme by uri",
+                "description": "Get the registered theme infromation for the given uri",
+                "operationId": "GetThemeInfoByIdUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "description": "uuid"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete theme",
+                "description": "Delete theme",
+                "operationId": "DeleteThemeUsingDELETE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "description": "uuid"
+                    }
+                ]
+            }
+        },
+        "\/user": {
+            "get": {
+                "summary": "Get the current user information",
+                "description": "Get the current user information",
+                "operationId": "GetUserUsingGET",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Save the current user information",
+                "description": "Save the current user information",
+                "operationId": "SaveUserUsingPOST",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "request",
+                        "in": "body",
+                        "description": "request"
+                    }
+                ]
+            }
+        },
+        "\/user\/{uuid}": {
+            "put": {
+                "summary": "Update the current user information",
+                "description": "Update the current user information",
+                "operationId": "UpdateUserUsingPUT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "description": "uuid"
+                    },
+                    {
+                        "name": "request",
+                        "in": "body",
+                        "description": "request"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete the current user information",
+                "description": "Delete the current user information",
+                "operationId": "DeleteUserUsingDELETE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "description": "uuid"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "GlobalConfigRequest": {
+                "type": "object",
+                "properties": {
+                    "uri": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "logo": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "logoUri": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "theme": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "applicationChrome": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "globalScripts": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "PreferenceRequest": {
+                "type": "object",
+                "properties": {
+                    "uri": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "preferredLocale": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "preferenceUri": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "TenantConfigRequest": {
+                "type": "object",
+                "properties": {
+                    "instanceId": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "hostName": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "context": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "shared": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "appConfigUrl": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "apphubUrl": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "applicationChrome": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "customHeader": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "serviceId": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "planId": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "orgId": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "spaceId": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "appHubKey": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "productId": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "ThemeRequest": {
+                "type": "object",
+                "properties": {
+                    "uri": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "baseUri": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "main": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "error": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "errorChromeless": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "options": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "demoLink": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "Throwable": {
+                "type": "object",
+                "properties": {
+                    "localizedMessage": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "stackTrace": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "suppressed": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "StackTraceElement": {
+                "type": "object",
+                "properties": {
+                    "className": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "fileName": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "lineNumber": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "methodName": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "nativeMethod": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "UAAMetadata": {
+                "type": "object",
+                "properties": {
+                    "uri": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "clientId": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "clientSecret": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "MicroAppRequest": {
+                "type": "object",
+                "properties": {
+                    "default": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "host": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "path": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "template": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "location": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "isDefault": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "navService": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "order": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "label": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "icon": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "capabilities": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "Items": {
+                "type": "object",
+                "properties": {
+                    "label": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "icon": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "path": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "target": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "badge": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "PrivilegeRequest": {
+                "type": "object",
+                "properties": {
+                    "uri": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "privilegeUri": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "UserRequest": {
+                "type": "object",
+                "properties": {
+                    "uri": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "userUri": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "RESTErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "error": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "error_description": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "localizedMessage": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "stackTrace": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "suppressed": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            }
+        }
+    }
+}

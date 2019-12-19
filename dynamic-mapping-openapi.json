@@ -1,0 +1,217 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Dynamic Mapping",
+        "description": "Dynamic Mapping services for geospatial data management and viewing",
+        "termsOfService": ""
+    },
+    "servers": [
+        "https\/"
+    ],
+    "paths": {
+        "\/v1\/collections": {
+            "get": {
+                "summary": "List all asset collections for a customer",
+                "description": "Returns an array containing the names of all asset collections for the\nspecified customer.\n",
+                "operationId": "ReturnsAnArrayContainingTheNamesOfAllAssetCollectionsForThespecifiedCustomer",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/v1\/collections\/{collectionName}": {
+            "get": {
+                "summary": "Return all asset ids for a collection",
+                "description": "Returns the collection name and a list of ids of the assets that belong to\nthe collection.\n",
+                "operationId": "ReturnsTheCollectionNameAndAListOfIdsOfTheAssetsThatBelongTotheCollection",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "delete": {
+                "summary": "Delete a collection",
+                "description": "Delete the asset collection specified by the collection name. Any associated asset and asset location data\nare also deleted\n",
+                "operationId": "DeleteTheAssetCollectionSpecifiedByTheCollectionNameAnyAssociatedAssetAndAssetLocation",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/v1\/collections\/{collectionName}\/spatial-query\/bbox-interacts": {
+            "get": {
+                "summary": "Returns collection assets in specified bounding box",
+                "description": "Returns all assets in the specified collection whose latest location exist within the specified bounding box.\nThe bounding box is defined by two coordinates in the EPSG:4326 (WGS84) (for further details see\nhttp:\/\/epsg.io\/4326):\n* left (longitude), bottom (latitude)\n* right (longitude), top (latitude)\nThe results can be filtered by including key and value pairs to match in location meta data.\n",
+                "operationId": "ReturnsAllAssetsInTheSpecifiedCollectionWhoseLatestLocationExistWithinTheSpecifiedBoun",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/v1\/collections\/{collectionName}\/cluster": {
+            "get": {
+                "summary": "Returns clustered assets in a specified bounding box",
+                "description": "Returns clusters of assets in the specified collection whose latest location exists within the specified\nbounding box. The clusters can also optionally be filtered by a single key-value pair.\n",
+                "operationId": "ReturnsClustersOfAssetsInTheSpecifiedCollectionWhoseLatestLocationExistsWithinTheSpeci",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/v1\/collections\/{collectionName}\/assets\/{assetId}": {
+            "put": {
+                "summary": "Add an asset location into a collection.",
+                "description": "Insert a location entry into the named collection for the given asset identifier and timestamp. In addition to\nadding the new asset location, the request also controls the retention of the location history that is\nstored for the given asset in the given collection.\n\n  - If the mandatory property retain_history is set to false then all existing location history for the\n  given asset is removed before the new location is added.\n\n  - If the retain_history property is set to true and the optional pr",
+                "operationId": "InsertALocationEntryIntoTheNamedCollectionForTheGivenAssetIdentifierAndTimestampInAd",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "An object containing the location of the asset at a given timestamp, together with additional properties to control\nthe retention of any existing asset location history.\n"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete an asset and its location data",
+                "description": "Delete the asset specified by the collection name. Any location data associated with the asset are also deleted.\n",
+                "operationId": "DeleteTheAssetSpecifiedByTheCollectionNameAnyLocationDataAssociatedWithTheAssetAreAl",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Return the latest location data for an asset",
+                "description": "Returns the latest location entry for the given asset. The timestamp and location data for the\ngiven entry is included in the response.\n",
+                "operationId": "ReturnsTheLatestLocationEntryForTheGivenAssetTheTimestampAndLocationDataForThegivenE",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/v1\/collections\/{collectionName}\/assets\/{assetId}\/query": {
+            "post": {
+                "summary": "Return locations for an asset by query condition for given customer id and collection name.",
+                "description": "Returns the locations for an asset by three types of query for a given customer id and collection name.\nThe returned locations are in descending order of time.\nThree types of query:\n1. type=latest: The latest n locations will be returned.\n2. type=timeperiod: Locations within a time period will be returned.\n3. type=bbox: Locations within a time period and a spatial bounding box will be returned.\n",
+                "operationId": "ReturnsTheLocationsForAnAssetByThreeTypesOfQueryForAGivenCustomerIdAndCollectionNa",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "An object containing the location of the asset at a given timestamp, together with additional properties to control\nthe retention of any existing asset location history.\n"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "BoundingBox": {
+                "type": "object",
+                "properties": {
+                    "left": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "right": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "top": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "bottom": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "LocationObject": {
+                "type": "object"
+            },
+            "Clusters": {
+                "type": "object",
+                "properties": {
+                    "max_assets": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "clusters": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ClusterObject": {
+                "type": "object",
+                "properties": {
+                    "assets": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "asset_id": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "CollectionObject": {
+                "type": "object",
+                "properties": {
+                    "collection": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "assets": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "CollectionNames": {
+                "type": "object",
+                "properties": {
+                    "collections": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "QueryObject": {
+                "type": "object",
+                "properties": {
+                    "limit": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "addAssetLocationBody": {
+                "type": "object",
+                "properties": {
+                    "retain_history": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "LocationDataWithAssetId": {
+                "type": "object",
+                "properties": {
+                    "asset_id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "meta_data": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "LocationCollection": {
+                "type": "object",
+                "properties": {
+                    "locations": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,409 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "ThetaRay Predix Service API",
+        "description": "ThetaRay Anomaly Detection Service for Predix",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsthetaray-anomaly-service.run.aws-usw02-pr.ice.predix.io\/"
+    ],
+    "paths": {
+        "\/v1\/proxy\/analyses": {
+            "get": {
+                "summary": "Analyses List",
+                "description": "Get list of Analyses",
+                "operationId": "RetrieveNewUsingGET",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/v1\/proxy\/anomalies\/report": {
+            "get": {
+                "summary": "Anomalies Report",
+                "description": "Retrieves Anomalies Report",
+                "operationId": "RetrieveReportUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "analysisId",
+                        "in": "query",
+                        "description": "Analysis Id"
+                    },
+                    {
+                        "name": "dataSourceName",
+                        "in": "query",
+                        "description": "Data Source name"
+                    },
+                    {
+                        "name": "numOfTopFeatures",
+                        "in": "query",
+                        "description": "Number of top features to fetch"
+                    },
+                    {
+                        "name": "fromAnomaly",
+                        "in": "query",
+                        "description": "Fetch from Anomaly in Analysis"
+                    },
+                    {
+                        "name": "toAnomaly",
+                        "in": "query",
+                        "description": "Fetch up to Anomaly in Analysis"
+                    }
+                ]
+            }
+        },
+        "\/v1\/proxy\/clusters\/report": {
+            "get": {
+                "summary": "Clusters Report",
+                "description": "Get Clusters report",
+                "operationId": "GetClustersReportUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "analysisId",
+                        "in": "query",
+                        "description": "Analysis Id"
+                    },
+                    {
+                        "name": "dataSourceName",
+                        "in": "query",
+                        "description": "Data Source name"
+                    },
+                    {
+                        "name": "withMinClusterSize",
+                        "in": "query",
+                        "description": "Get only Clusters with minimum size"
+                    },
+                    {
+                        "name": "fromAnomaly",
+                        "in": "query",
+                        "description": "Fetch from Anomaly in Analysis"
+                    },
+                    {
+                        "name": "toAnomaly",
+                        "in": "query",
+                        "description": "Fetch up to Anomaly in Analysis"
+                    },
+                    {
+                        "name": "filterOnlyUsedToCluster",
+                        "in": "query",
+                        "description": "Filter Anomalies used to set create Clusters"
+                    }
+                ]
+            }
+        },
+        "\/v1\/proxy\/datasources\/datasources": {
+            "get": {
+                "summary": "Data Sources List",
+                "description": "Get list of all Data Sources",
+                "operationId": "GetDataSourcesUsingGET",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/v1\/proxy\/datasources\/process": {
+            "post": {
+                "summary": "Upload a file",
+                "description": "Upload a data file",
+                "operationId": "ProcessUsingPOST",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "dataSourceName",
+                        "in": "query",
+                        "description": "Data Source name"
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": "The file"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "AnomaliesReportResponse": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DataSourcesResponse": {
+                "type": "object",
+                "properties": {
+                    "dataSources": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "FeatureRating": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "rating": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AnalysesListResponse": {
+                "type": "object",
+                "properties": {
+                    "analyses": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ClustersReport": {
+                "type": "object",
+                "properties": {
+                    "analysisId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "clusters": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "minClusterSizeFilter": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "reportDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "singleAnomalyClusters": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "totalAnomaliesNumber": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "totalClustersNumber": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "totalSingleAnomaliesNumber": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Cluster": {
+                "type": "object",
+                "properties": {
+                    "anomaliesCount": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "anomaliesInCluster": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "clusterId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "keyFeaturesRatings": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "score": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AnomaliesReport": {
+                "type": "object",
+                "properties": {
+                    "analysisDescription": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "anomalies": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "anomaliesCount": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "topFeaturesFilter": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SingleAnomalyCluster": {
+                "type": "object",
+                "properties": {
+                    "anomalyId": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ClustersResponse": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DataSource": {
+                "type": "object",
+                "properties": {
+                    "dataSourceName": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "LoadFileResponse": {
+                "type": "object",
+                "properties": {
+                    "dataSourceName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "fileName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Analysis": {
+                "type": "object",
+                "properties": {
+                    "anomaliesClusteredCount": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "anomaliesQueuedForClusteringCount": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "clustersCount": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "dataSourceName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "executionMode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ClusteredAnomaly": {
+                "type": "object",
+                "properties": {
+                    "anomalyId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "anomalyTypeInCluster": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "isOrigin": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Anomaly": {
+                "type": "object",
+                "properties": {
+                    "fl2RowId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "row": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "score": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "topFeatures": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}

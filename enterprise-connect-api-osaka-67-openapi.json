@@ -1,0 +1,281 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Enterprise Connect API (osaka.67)",
+        "description": "Enterprise Connect Service  API",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1"
+    ],
+    "paths": {
+        "\/api\/settings": {
+            "get": {
+                "summary": "Get EC Gateway settings",
+                "description": "Get your EC Gateway settings details\n",
+                "operationId": "GetYourEcGatewaySettingsDetails",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Bearer *your_token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/api\/token\/validate": {
+            "post": {
+                "summary": "Validate the oauth2 token",
+                "description": "Validate the oauth2 token for the gateway usage\n",
+                "operationId": "ValidateTheOauth2TokenForTheGatewayUsage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Bearer *your_token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/health\/check": {
+            "get": {
+                "summary": "Validate the EC service status",
+                "description": "Validate the EC API status\n",
+                "operationId": "ValidateTheEcApiStatus",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/health\/memory": {
+            "get": {
+                "summary": "Validate the EC service memory usage",
+                "description": "Validate the EC gateway memory usage\n",
+                "operationId": "ValidateTheEcGatewayMemoryUsage",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/reports\/usage": {
+            "post": {
+                "summary": "Report usage",
+                "description": "Report usage by zoneid",
+                "operationId": "ReportUsageByZoneid",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Bearer *your_token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "content",
+                        "in": "body",
+                        "description": "The content for reporting the usage."
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get last usage",
+                "description": "get last usage by zoneid",
+                "operationId": "GetLastUsageByZoneid",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Bearer *your_token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/certs": {
+            "post": {
+                "summary": "Request a digital certificate",
+                "description": "Submit a CSR for a certificate for the EC usage",
+                "operationId": "SubmitACsrForACertificateForTheEcUsage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Bearer *your_token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "content",
+                        "in": "body",
+                        "description": "The content for reporting the usage."
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Retrieve current certificate",
+                "description": "Retrieve the current certificate issued by the GE Digital CA.",
+                "operationId": "RetrieveTheCurrentCertificateIssuedByTheGeDigitalCa",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Bearer *your_token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/admin\/accounts\/{predix-zone-id}": {
+            "post": {
+                "summary": "Create an EC system account",
+                "description": "Create a EC system account with the CF details\n",
+                "operationId": "CreateAEcSystemAccountWithTheCfDetails",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Bearer *your_token"
+                    },
+                    {
+                        "name": "predix",
+                        "in": "path",
+                        "description": "Cloud Foundry service instance details."
+                    },
+                    {
+                        "name": "settings",
+                        "in": "body",
+                        "description": "Cloud Foundry setting details."
+                    }
+                ]
+            },
+            "get": {
+                "summary": " Get the EC system account",
+                "description": "Get an existing EC system account by predix zone id\n",
+                "operationId": "GetAnExistingEcSystemAccountByPredixZoneId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Bearer *your_token"
+                    },
+                    {
+                        "name": "predix",
+                        "in": "path",
+                        "description": "Cloud Foundry service instance details."
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete the EC system account",
+                "description": "Delete an existing EC system account by predix zone id\n",
+                "operationId": "DeleteAnExistingEcSystemAccountByPredixZoneId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Bearer *your_token"
+                    },
+                    {
+                        "name": "predix",
+                        "in": "path",
+                        "description": "Cloud Foundry service instance details."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update the EC gateway setting in the account",
+                "description": "Update the EC gateway setting in the account with the CF details\n",
+                "operationId": "UpdateTheEcGatewaySettingInTheAccountWithTheCfDetails",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Bearer *your_token"
+                    },
+                    {
+                        "name": "predix",
+                        "in": "path",
+                        "description": "Cloud Foundry service instance details."
+                    },
+                    {
+                        "name": "settings",
+                        "in": "body",
+                        "description": "Cloud Foundry setting details."
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "cf_cs_settings": {
+                "type": "object",
+                "properties": {
+                    "trustedIssuerIds": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "settings": {
+                "type": "object",
+                "properties": {
+                    "client": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "server": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "accounts": {
+                "type": "object",
+                "properties": {
+                    "clientId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "serverId": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            }
+        }
+    }
+}

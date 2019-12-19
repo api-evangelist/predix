@@ -1,0 +1,308 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Predix BlockChain API",
+        "description": "Predix BlockChain RESTful API",
+        "termsOfService": ""
+    },
+    "servers": [
+        "https\/"
+    ],
+    "paths": {
+        "\/v1\/chaincodes\/{chaincodeName}": {
+            "put": {
+                "summary": "Put Chaincodes",
+                "description": "Deploy chaincode (smart contract) to Blockchain",
+                "operationId": "DeployChaincodeSmartContractToBlockchain",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "access token"
+                    },
+                    {
+                        "name": "predix",
+                        "in": "header",
+                        "description": "tenantId"
+                    },
+                    {
+                        "name": "chaincodeName",
+                        "in": "path",
+                        "description": "name of chain code"
+                    },
+                    {
+                        "name": "chaincode",
+                        "in": "formData",
+                        "description": "upload compressed file (tar.gz)"
+                    },
+                    {
+                        "name": "args",
+                        "in": "formData",
+                        "description": "args for uploaded script, e.g. ['ab', '12']"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Chaincodes",
+                "description": "Get a single chaincode",
+                "operationId": "GetASingleChaincode",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "access token"
+                    },
+                    {
+                        "name": "predix",
+                        "in": "header",
+                        "description": "tenantId"
+                    },
+                    {
+                        "name": "chaincodeName",
+                        "in": "path",
+                        "description": "name of chain code"
+                    }
+                ]
+            }
+        },
+        "\/v1\/chaincodes": {
+            "get": {
+                "summary": "Get Chaincodes",
+                "description": "Get all chaincodes",
+                "operationId": "GetAllChaincodes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "access token"
+                    },
+                    {
+                        "name": "predix",
+                        "in": "header",
+                        "description": "tenantId"
+                    }
+                ]
+            }
+        },
+        "\/v1\/chaincodes\/{chaincodeName}\/query": {
+            "post": {
+                "summary": "Post Chaincodes Query",
+                "description": "Performs query operation on the chaincode and returns the result",
+                "operationId": "PerformsQueryOperationOnTheChaincodeAndReturnsTheResult",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "access token"
+                    },
+                    {
+                        "name": "predix",
+                        "in": "header",
+                        "description": "tenantId"
+                    },
+                    {
+                        "name": "chaincodeName",
+                        "in": "path",
+                        "description": "name of chain code"
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": "payload of function and args"
+                    }
+                ]
+            }
+        },
+        "\/v1\/users\/{userId}\/enroll": {
+            "post": {
+                "summary": "Post Users Userid Enroll",
+                "description": "Enrolls the blockchain user by downloading its certificates and storing it in Vault. It also maps the oauth user with the blockchain user. This is the very first operation that must be performed.",
+                "operationId": "EnrollsTheBlockchainUserByDownloadingItsCertificatesAndStoringItInVaultItAlsoMapsThe",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "access token"
+                    },
+                    {
+                        "name": "predix",
+                        "in": "header",
+                        "description": "tenantId"
+                    },
+                    {
+                        "name": "userId",
+                        "in": "path",
+                        "description": "user id"
+                    },
+                    {
+                        "name": "secret",
+                        "in": "body",
+                        "description": "one time password"
+                    }
+                ]
+            }
+        },
+        "\/v1\/users\/{userId}": {
+            "put": {
+                "summary": "Put User",
+                "description": "Registers a new user with blockchain. It sets the attribute 'zone' for the user to 'tenantId' as specified in predix-zone-id header",
+                "operationId": "RegistersANewUserWithBlockchainItSetsTheAttributeZoneForTheUserToTenantidAsSpecifie",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "access token"
+                    },
+                    {
+                        "name": "predix",
+                        "in": "header",
+                        "description": "tenantId"
+                    },
+                    {
+                        "name": "userId",
+                        "in": "path",
+                        "description": "user id"
+                    },
+                    {
+                        "name": "attributes",
+                        "in": "body",
+                        "description": "Attributes for this user"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete Users",
+                "description": "Deletes the user and the user mapping with oauth user. User can be deleted only after user has been enrolled.",
+                "operationId": "DeletesTheUserAndTheUserMappingWithOauthUserUserCanBeDeletedOnlyAfterUserHasBeenE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "access token"
+                    },
+                    {
+                        "name": "predix",
+                        "in": "header",
+                        "description": "tenantId"
+                    },
+                    {
+                        "name": "userId",
+                        "in": "path",
+                        "description": "user id"
+                    }
+                ]
+            }
+        },
+        "\/v1\/chaincodes\/{chaincodeName}\/invoke": {
+            "post": {
+                "summary": "Post Chaincodes Invoke",
+                "description": "Performs the invoke or state change operation on chaincode. It invokes the function as specified in the body with given arguments. It returns the transaction id to the user.",
+                "operationId": "PerformsTheInvokeOrStateChangeOperationOnChaincodeItInvokesTheFunctionAsSpecifiedInT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "access token"
+                    },
+                    {
+                        "name": "predix",
+                        "in": "header",
+                        "description": "tenantId"
+                    },
+                    {
+                        "name": "chaincodeName",
+                        "in": "path",
+                        "description": "name of chain code"
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": "payload of function and args"
+                    }
+                ]
+            }
+        },
+        "\/v1\/blocks": {
+            "get": {
+                "summary": "Get Blocks",
+                "description": "Get current blockchain root info",
+                "operationId": "GetCurrentBlockchainRootInfo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "access token"
+                    },
+                    {
+                        "name": "predix",
+                        "in": "header",
+                        "description": "tenantId"
+                    }
+                ]
+            }
+        },
+        "\/v1\/blocks\/{blockNumber}": {
+            "get": {
+                "summary": "Get Blocks Blocknumber",
+                "description": "Get a single blockchain info",
+                "operationId": "GetASingleBlockchainInfo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "access token"
+                    },
+                    {
+                        "name": "predix",
+                        "in": "header",
+                        "description": "tenantId"
+                    },
+                    {
+                        "name": "blockNumber",
+                        "in": "path",
+                        "description": "block node number"
+                    }
+                ]
+            }
+        },
+        "\/v1\/transactions\/{transactionId}": {
+            "get": {
+                "summary": "Get Transactions",
+                "description": "Get a transaction info",
+                "operationId": "GetATransactionInfo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "access token"
+                    },
+                    {
+                        "name": "predix",
+                        "in": "header",
+                        "description": "tenantId"
+                    },
+                    {
+                        "name": "transactionId",
+                        "in": "path",
+                        "description": "transaction Id"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}

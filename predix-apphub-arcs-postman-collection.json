@@ -1,0 +1,861 @@
+{
+    "id": "b296a63ce39e256d1d995c4efef9909e",
+    "name": "Predix AppHub ARCS",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "594060980c719d19b4be0b815ca22c79",
+            "name": "Get all the registered microapps",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/apps",
+            "description": "Get the registered microapps for the given tenant",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "f94c885330a8ed7f09a884eda0b76f82",
+            "name": "Register the microapp",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/apps",
+            "description": "Register the microapps",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "request",
+                    "description": "request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "530bc57142c28a639fa034a5c23093cc",
+            "name": "Update the microapp",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/apps",
+            "description": "Update the microapps",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "request",
+                    "description": "request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "9d5f2a77c3885367ad2581e8f8577b51",
+            "name": "Get the registered microapp",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/apps\/{uuid}",
+            "description": "Get the registered microapp for the given uri",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "154828e07ec706cd33ee5de48942274b",
+            "name": "Unregister the microapp",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/apps\/{uuid}",
+            "description": "Unregister the microapp",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "ec82f2e40f16dcdcc9774311c66105e8",
+            "name": "Get global config information",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/globalconfig",
+            "description": "Get global config information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "6e91d3242beca1fa2e470d867cebc765",
+            "name": "Save global config information",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/globalconfig",
+            "description": "Save global config information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "config",
+                    "description": "config",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "cd5679cbfdf748320399c1aa529b1d00",
+            "name": "Update global config information",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/globalconfig\/{uuid}",
+            "description": "Update global config information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "config",
+                    "description": "config",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "2de6a645d85d802700e316843d9e99c3",
+            "name": "Delete global config information",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/globalconfig\/{uuid}",
+            "description": "Delete global config information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "2d6f5d2a9f0c72efba0508e3ab548301",
+            "name": "Get the preferences information",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/preferences",
+            "description": "Get the preferences information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "f4f199e128951d8c5637034f143256f1",
+            "name": "Save the preferences information",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/preferences",
+            "description": "save the preferences information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "request",
+                    "description": "request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "1555ee30f1bc076ae5483c7d346201be",
+            "name": "Update the preferences information",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/preferences\/{uuid}",
+            "description": "Update the preferences information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "request",
+                    "description": "request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "a95c07a376bff8819bf3a83a4ab7b90f",
+            "name": "Delete the preferences information",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/preferences\/{uuid}",
+            "description": "Delete the preferences information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "ac5f4c59eba55cadb27ca4334efe35a4",
+            "name": "Get the privileges information",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/privileges",
+            "description": "Get the privileges information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "0658a496bb5d5b1192f9a9192a16b868",
+            "name": "Save the privileges information",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/privileges",
+            "description": "Save the privileges information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "request",
+                    "description": "request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "d0970f13bb3046ea177ce27bf1e80f95",
+            "name": "Update the privileges information",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/privileges\/{uuid}",
+            "description": "Update the privileges information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "request",
+                    "description": "request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "87384c9e9a349a3489a9e3448173d003",
+            "name": "Delete the privileges information",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/privileges\/{uuid}",
+            "description": "Delete the privileges information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "63b7be5f555a8f5ef9d024e0f5a7cd4d",
+            "name": "postTenantConfig",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/provision",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantConfigReq",
+                    "description": "tenantConfigReq",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "685f2803209252008b132a5d4b2873da",
+            "name": "deleteTenantConfig",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/provision\/{tenantId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantId",
+                    "description": "tenantId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "dcc6aa7923faaad76dee78ea96ecb04d",
+            "name": "Get theme information for a tenant",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/themes",
+            "description": "Get theme information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "70e2c7739bc9955195c0c0bae41d5897",
+            "name": "Save theme config information",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/themes",
+            "description": "Save theme config information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "theme",
+                    "description": "theme",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "6ea0ff4e40ad7971cde5c0b4d7cbddaa",
+            "name": "Update theme",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/themes",
+            "description": "Update theme",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "theme",
+                    "description": "theme",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "accc2f8d8c01859890e0d861ad29ac76",
+            "name": "Get the registered theme by uri",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/themes\/{uuid}",
+            "description": "Get the registered theme infromation for the given uri",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "b949719b6a128ce24e6d5549085cbb9c",
+            "name": "Delete theme",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/themes\/{uuid}",
+            "description": "Delete theme",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "c69a801e58cd51a9f65f7b1a3e15028f",
+            "name": "Get the current user information",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/user",
+            "description": "Get the current user information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "5b9ecfb3e885a2424aa85b4cdff8badb",
+            "name": "Save the current user information",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/user",
+            "description": "Save the current user information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "request",
+                    "description": "request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "dbdcd50e884e22f43d7faab871d7ed5b",
+            "name": "Update the current user information",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/user\/{uuid}",
+            "description": "Update the current user information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "request",
+                    "description": "request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        },
+        {
+            "id": "c49e55aa32caab14d140de3bfe36e2d0",
+            "name": "Delete the current user information",
+            "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/user\/{uuid}",
+            "description": "Delete the current user information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "rawModeData": ""
+        }
+    ]
+}

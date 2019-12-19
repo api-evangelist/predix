@@ -1,0 +1,202 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Data Services",
+        "description": "",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpstime-series-service-doc.grc-apps.svc.ice.ge.com\/"
+    ],
+    "paths": {
+        "\/v1\/aggregations": {
+            "get": {
+                "summary": "Get all available aggregations",
+                "description": "Return all supported aggregations.Response JSON (Status 200){\n  \"results\": [\n    {\n      \"name\": \"max\",\n      \"type\": \"Maximum\",\n      \"description\": \"Returns the maximum value data point for the time range\"\n    },\n    {\n      \"name\": \"trendmode\",\n      \"type\": \"Trend Mode\",\n      \"description\": \"Returns the maximum and minimum value data point for the time range\"\n    },\n    {\n      \"name\": \"count\",\n      \"type\": \"Count\",\n      \"description\": \"Returns the number of data points\"\n    },\n    {\n    ",
+                "operationId": "GetAggregationNames",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v1\/datapoints": {
+            "get": {
+                "summary": "Query Datapoints",
+                "description": "Both the GET and POST methods can be used to query time series data. Use the query API with the GET HTTP method by passing the query JSON as a URL query parameter. The advantage of using the GET method is that requests and responses can be cached in proxy servers and browsers.  In cases where the query JSON is very long and exceeds query parameter length (for some browsers), use POST as a convenience method to query the time series API. POST requests have no restrictions on data length, however,",
+                "operationId": "Query",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Valid JSON string"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Query Datapoints",
+                "description": "Both the GET and POST methods can be used to query time series data. Use the query API with the GET HTTP method by passing the query JSON as a URL query parameter. The advantage of using the GET method is that requests and responses can be cached in proxy servers and browsers.  In cases where the query JSON is very long and exceeds query parameter length (for some browsers), use POST as a convenience method to query the time series API. POST requests have no restrictions on data length, however,",
+                "operationId": "Get",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Query Request JSON",
+                        "in": "body",
+                        "description": "Query Request (JSON)"
+                    }
+                ]
+            }
+        },
+        "\/v1\/datapoints\/latest": {
+            "get": {
+                "summary": "Query for Current Value",
+                "description": "This API helps to query time series data for the latest values.Response JSON (Status 200){\n\t\"tags\": [{\n\t\t\"name\": \"tagName1\",\n\t\t\"results\": [{\n\t\t\t\"values\": [\n\t\t\t\t[1449709895000, 7, 3]\n\t\t\t]\n\t\t}],\n\t\t\"stats\": {\n\t\t\t\"rawCount\": 1\n\t\t}\n\t}, {\n\t\t\"name\": \"tagName2\",\n\t\t\"results\": [{\n\t\t\t\"values\": [\n\t\t\t\t[1449709896000, 8, 3]\n\t\t\t]\n\t\t}],\n\t\t\"stats\": {\n\t\t\t\"rawCount\": 1\n\t\t}\n\t}]\n}",
+                "operationId": "QueryCurrent",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "description": "List of tags Eg: tag1,tag2"
+                    },
+                    {
+                        "name": "suppressGroupByType",
+                        "in": "query",
+                        "description": "Flag to suppress the grouping of results by type"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Query for Current Value",
+                "description": "This API helps to query for timeseries for the latest values for the given tags. The POST API also provides a way to specify a time window or filter options and retrieves the latest value that satisfies it.Request JSON{\n\t\"tags\": [{\n\t\t\"name\": \"ALT_SENSOR\",\n\t\t\"suppressGroupByType\": true|false,\n\t\t\"filters\": {\n\t\t\t\"attributes\": {\n\t\t\t\t\"host\": [\n\t\t\t\t\t\"test\"\n\t\t\t\t]\n\t\t\t},\n\t\t\t\"measurements\": {\n\t\t\t\t\"condition\": \"le\",\n\t\t\t\t\"values\": [\n\t\t\t\t\t\"36\"\n\t\t\t\t]\n\t\t\t},\n\t\t\t\"qualities\": {\n\t\t\t\t\"values\": [\n\t\t\t\t\t\"3\"\n\t\t\t\t]\n\t\t\t}",
+                "operationId": "QueryCurrentPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Query Request JSON",
+                        "in": "body",
+                        "description": "Query Request (JSON)"
+                    }
+                ]
+            }
+        },
+        "\/v1\/tags": {
+            "get": {
+                "summary": "Get all tags",
+                "description": "Return all the ingested tag names.Response JSON (Status 200){\n\t\"results\": [\n\t\t\"ALT_SENSOR\",\n\t\t\"tagName1\",\n\t\t\"tagName2\"\n\t]\n}",
+                "operationId": "GetMetricNames",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "ErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "errors": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "correlationID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}

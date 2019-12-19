@@ -1,0 +1,160 @@
+{
+    "id": "a8d9d845d03845c3aa3d614dd9064c3d",
+    "name": "SAS ESP Predix Service API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "97f97df39fb3e7f2b846b730449c15b8",
+            "name": "Load\/Create Project",
+            "url": "httpssas-proxy.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/projects\/{id}",
+            "description": "API to Load\/Create project in ESP server.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "reqBody",
+                    "description": "reqBody",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8d9d845d03845c3aa3d614dd9064c3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "9b73bdc80b10ab7df20526681430892b",
+            "name": "Delete project.",
+            "url": "httpssas-proxy.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/projects\/{id}",
+            "description": "API to delete project from ESP server.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "reqBody",
+                    "description": "reqBody",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8d9d845d03845c3aa3d614dd9064c3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "68af5da64981c40d89e1764048a9d717",
+            "name": "Update project status",
+            "url": "httpssas-proxy.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/projects\/{id}\/state",
+            "description": "API to update project status etc. started, running, stopped",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "reqBody",
+                    "description": "reqBody",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8d9d845d03845c3aa3d614dd9064c3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "a85eb6b204376e6d7693e42d005ed894",
+            "name": "retrieve service instance",
+            "url": "httpssas-proxy.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/resource",
+            "description": "API to retrieve service instance",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8d9d845d03845c3aa3d614dd9064c3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "1e35163a5fb2803271c5be79a4428e81",
+            "name": "ESP server health check",
+            "url": "httpssas-proxy.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/server",
+            "description": "API to to check health of ESP server.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "head",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "reqBody",
+                    "description": "reqBody",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a8d9d845d03845c3aa3d614dd9064c3d",
+            "rawModeData": ""
+        }
+    ]
+}

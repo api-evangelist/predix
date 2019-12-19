@@ -1,0 +1,658 @@
+{
+    "id": "35ecf40bc0ddd28575d2719f85a450fc",
+    "name": "Intelligent Mapping",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "3e61d0756f767bf06dc6f380a8a581eb",
+            "name": "List all data collections for a customer",
+            "url": "https\/\/v1\/collections",
+            "description": "Returns an array containing the names of all data collections for the\nspecified customer.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "92c8e5002a6cc4ab72408f91c50c348e",
+            "name": "Return all data for a collection",
+            "url": "https\/\/v1\/collections\/{collectionName}",
+            "description": "Returns the full GeoJSON FeatureCollection uploaded for this collection.\nAll GeoJSON Features will be as originally uploaded with the addition of\na featureId attribute that uniquely identifies the feature across all\nyour collections.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "86e74b33f9373598a7bbae8666c99053",
+            "name": "Add a new collection",
+            "url": "https\/\/v1\/collections\/{collectionName}",
+            "description": "Add a new collection of data in the form of a GeoJSON FeatureCollection.\nAll coordinates must be in EPSG:4326 (WGS84) (for further details see\nhttp:\/\/epsg.io\/4326). Any feature that is not compliant with the GeoJSON\nspecification will not be stored. If the specified collection already\nexists, the geospatial data will be appended to the existing data.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Geospatial data for the collection.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "3a965e1174420992af1bbe8d66909b0e",
+            "name": "Add a new collection",
+            "url": "https\/\/v1\/collections\/{collectionName}",
+            "description": "Add a new collection of data in the form of a GeoJSON FeatureCollection.\nAll coordinates must be in EPSG:4326 (WGS84) (for further details see\nhttp:\/\/epsg.io\/4326). Any feature that is not compliant with the GeoJSON\nspecification will not be stored. Any feature that doesn't contain an id\nwill not be stored. If the specified collection already exists, the\ngeospatial data will be appended to the existing data. Features with matching\nid's are overwritten.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Geospatial data for the collection.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "f353f87010e11d5de482e2cfc0e3106e",
+            "name": "Delete a collection",
+            "url": "https\/\/v1\/collections\/{collectionName}",
+            "description": "Delete the collection of data specified by the collection name.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "e2f5842e2e3b692d3e74ef8200a80b6a",
+            "name": "Return collection features in specified bounding box",
+            "url": "https\/\/v1\/collections\/{collectionName}\/spatial-query\/bbox-interacts",
+            "description": "Returns all features in the specified collection that exist fully or\npartially within the specified bounding box. The bounding box is defined\nby two coordinates in the EPSG:4326 (WGS84) (for further details see\nhttp:\/\/epsg.io\/4326):\n\n* left (longitude), bottom (latitude)\n\n* right (longitude), top (latitude)\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "3ed39d17f6d9fefbaf7e7898169c8824",
+            "name": "Return feature",
+            "url": "https\/\/v1\/collections\/{collectionName}\/features",
+            "description": "Returns GeoJSON of type FeatureCollection containing all GeoJSON features\nfrom the named collection with a matching GeoJSON id.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "eb974aa2154ea9cf4154883ad7a92dcd",
+            "name": "Delete from the named collection all features with a matching GeoJSON id.",
+            "url": "https\/\/v1\/collections\/{collectionName}\/features",
+            "description": "Delete from the named collection all features with a matching GeoJSON id. This could be 0, 1 or many features.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "0cc2113d0a5fd0d3750a740166058402",
+            "name": "Insert an individual feature into a collection.",
+            "url": "https\/\/v1\/collections\/{collectionName}\/features",
+            "description": "Insert a new feature into the the named collection. The GeoJSON id is used to identify the feature.\nThe GeoJSON id included in the url must match the top level id member of the feature provided.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "a52b3df27993412720b39ff476fb0197",
+            "name": "Update all features in a collection with a matching GeoJSON id.",
+            "url": "https\/\/v1\/collections\/{collectionName}\/features",
+            "description": "Updates the attributes and geometry of matching features in the named collection.  This could be 0, 1 or many features.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "3090132ff8946fbb932d716ac4235103",
+            "name": "Return the size of a collection.",
+            "url": "https\/\/v1\/collections\/{collectionName}\/collectionSize",
+            "description": "Returns the size of the specified collection to decide whether to use the whole collection for spatial query\nor not.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "e15217c1978551ce00073daf86a3861e",
+            "name": "For 'within' operator - find all points within an area.\nFor 'nearest' operator - return the nearest point to the one specified.\nFor 'lineIntersectsLine' - find all points of intersection between two linestrings.\n",
+            "url": "https\/\/v1\/collections\/{collectionName}\/spatial-query",
+            "description": "'Within' returns GeoGJSON of type FeatureCollection containing all GeoJSON features within the provided polygon.\n'Nearest' returns a FeatureCollection with the longitude and latitude of the nearest point.\n'LineIntersectsLine' returns a FeatureCollection containing all points of intersection as GeoJSON features.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "operator",
+                    "description": "The type of spatial query. Can be 'within', 'nearest' or 'lineIntersectsLine'\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "Geospatial data for the collection.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "4f5664cc957452f3c75843d8fe9636ba",
+            "name": "Free text search of a feature collection",
+            "url": "https\/\/v1\/collections\/{collectionName}\/text",
+            "description": "Returns GeoJSON of type FeatureCollection containing all GeoJSON features from the named collection that match\nthe supplied search string.\n\nThe search text consists of one or more strings that can be space or comma separated. A match with a given\nfeature occurs only if an exact match can be found for each of the strings in the search text amongst a\nconcatenation of the values of child members of the top level 'properties' member of the feature,\ntogether with the value of its GeoJSON id. The matc",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "The search text. Consists of a list of one or more strings.  The strings in the list can be space or comma\n separated.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "2c885ff5f8c752eee720c5da6bb12358",
+            "name": "Returns clustering data for collection features in specified bounding box",
+            "url": "https\/\/v1\/collections\/{collectionName}\/cluster",
+            "description": "Returns Clustering data for the specified collection that exist fully\n or partially within the specified bounding box. The bounding box is\n defined by two coordinates in the EPSG:4326 (WGS84)\n (for further details see http:\/\/epsg.io\/4326):\n * left (longitude), bottom (latitude)\n * right (longitude), top (latitude)\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "85be0fb5e58ae505a102ce0d7b74f798",
+            "name": "List all maps for a customer",
+            "url": "https\/\/v1\/maps",
+            "description": "Returns an array of maps for the specified customer. The array contains\nthe name and identifier for each map.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "6e7403eb063659dbe5f206253eb52f9b",
+            "name": "Create a map",
+            "url": "https\/\/v1\/maps",
+            "description": "Creates a map with the specified name.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "98177e866ebdc761b8201e9b70571d52",
+            "name": "Return map details",
+            "url": "https\/\/v1\/maps\/{mapId}",
+            "description": "For the specified map identifier, returns the map properties and an\narray of the associated layers. For each layer, the identifier, name and\nUniform Resource Identifier (URI) are returned.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "00a62ebecc2c064f547fbb1952bb2445",
+            "name": "Delete a map",
+            "url": "https\/\/v1\/maps\/{mapId}",
+            "description": "Deletes the map with the specified identifier. Any layers associated\nwith the map are also deleted.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "5214e9d59347ec51fdd3964ff33c9347",
+            "name": "Rename a map",
+            "url": "https\/\/v1\/maps\/{mapId}",
+            "description": "Updates the name of the map that has the specified identifier.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "68df0287803197942fb7dcf97dad237b",
+            "name": "Update order of layers",
+            "url": "https\/\/v1\/maps\/{mapId}\/orderlayers",
+            "description": "Updates the order of layers for a given map.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "3c7647ab05ab3bae8d92cc0f5637bf68",
+            "name": "Create a new layer",
+            "url": "https\/\/v1\/maps\/{mapId}\/layers",
+            "description": "Creates a new layer and associates it with the specified map.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "4f4634ea1057ddb48ed332a36718408b",
+            "name": "Return layer details",
+            "url": "https\/\/v1\/maps\/{mapId}\/layers\/{layerId}",
+            "description": "For the layer identified by the map and layer identifiers, returns the\nlayer details (identifier, name, Uniform Resource Identifier (URI), and\nvisibility).\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "dda7b1bb50dfc4334d08916283f5cfbc",
+            "name": "Update the layer properties",
+            "url": "https\/\/v1\/maps\/{mapId}\/layers\/{layerId}",
+            "description": "For the layer identified by the specified map and layer identifiers,\nupdates the layer properties.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "5a7fb07bea0ed451bf181b374d63b5ea",
+            "name": "Delete a layer",
+            "url": "https\/\/v1\/maps\/{mapId}\/layers\/{layerId}",
+            "description": "Deletes the layer identified by the specified map and layer identifiers.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "fa7c107146dc51a6a04bbb8925b5cddc",
+            "name": "Retrieves style data for a layer",
+            "url": "https\/\/v1\/maps\/{mapId}\/layers\/{layerId}\/style",
+            "description": "Retrieve style data for the layer identified by the specified map and\nlayer identifiers.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        },
+        {
+            "id": "58151582c19f40cff69697499d9e197c",
+            "name": "Update the style data for a layer",
+            "url": "https\/\/v1\/maps\/{mapId}\/layers\/{layerId}\/style",
+            "description": "Update the style data for the layer identified by the specified map and\nlayer identifiers.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Geospatial data for the collection.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35ecf40bc0ddd28575d2719f85a450fc",
+            "rawModeData": ""
+        }
+    ]
+}

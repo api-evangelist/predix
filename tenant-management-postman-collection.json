@@ -1,0 +1,939 @@
+{
+    "id": "393609d7217a36ad30afc91c7061f97c",
+    "name": "Tenant Management",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "81d99aceed1cf1329b2e05115eda72fb",
+            "name": "Get tenant credentials ",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/client-credentials",
+            "description": "Get tenant credentials .",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "TMS",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "78feb3603766dd5e34b8fcdfb0df0868",
+            "name": "Create tenant credentials ",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/client-credentials",
+            "description": "Create tenant credentials .",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantCredentialsRequests",
+                    "description": "tenantCredentialsRequests",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "TMS",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "a77a6c163411b31587a4e3b27a92bd80",
+            "name": "Create tenant credentials ",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/client-credentials",
+            "description": "Create tenant credentials .",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantCredentialsRequest",
+                    "description": "tenantCredentialsRequest",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "TMS",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "c688acfb835559570cd61c2ec018b10e",
+            "name": "Delete tenant credentials ",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/client-credentials\/client-ids\/{clientId}",
+            "description": "Delete tenant credentials .",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "clientId",
+                    "description": "clientId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "TMS",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "6b377fed5f7ffe07e937e1def686910e",
+            "name": "Delete tenant credentials ",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/client-credentials\/client-ids\/{clientId}\/authorized-clients\/{authorizedClientId}",
+            "description": "Delete tenant credentials .",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "clientId",
+                    "description": "clientId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "authorizedClientId",
+                    "description": "authorizedClientId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "TMS",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "5e8296c525b2cae7af0992b9bd6e6d95",
+            "name": "Retrieve all the tenants in the given zone",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant",
+            "description": "Retrieve all the tenants in the given zone.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "a5300caffdda09c55a85e49cb71f6996",
+            "name": "create a tenant",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant",
+            "description": "Create a tenant.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantProvisioningRequest",
+                    "description": "tenantProvisioningRequest",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "feb100bebd2a0607f548d20aac9050dc",
+            "name": "update a tenant",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant",
+            "description": "Update a tenant.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantProvisioningRequest",
+                    "description": "tenantProvisioningRequest",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "2689436b83869ca868258cb5b0d69fcc",
+            "name": "Lookup Tenant by Subdomain",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/profile",
+            "description": "Lookup tenant by subdomain.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "TMS",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "79f111bc1ba7caabed4999bd88e252c9",
+            "name": "Lookup Tenant service by Subdomain",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/profile\/service\/{serviceName}",
+            "description": "Lookup tenant service by subdomain.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "serviceName",
+                    "description": "serviceName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "TMS",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "c1510f520f1167ac8bc293f6e4e435fe",
+            "name": "Retrieve a tenant and its list of services",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/{tenantName}",
+            "description": "Retrieve a tenant and its list of services.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantName",
+                    "description": "tenantName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "5eacc35c5c204d6e680d0c27ca86cd65",
+            "name": "Delete a tenant",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/{tenantName}",
+            "description": "Delete a tenant.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantName",
+                    "description": "tenantName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "06e60e97f56465fe09866fbddeaecf6b",
+            "name": "update a PROVISIONED service instance",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/{tenantName}\/service\/{instanceName}",
+            "description": "Update a provisioned service instance.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "serviceRequest",
+                    "description": "serviceRequest",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tenantName",
+                    "description": "tenantName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "instanceName",
+                    "description": "instanceName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "2008d180ad894120ce2996ed69dfe5d9",
+            "name": "Retrieve service details",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/{tenantName}\/service\/{serviceName}",
+            "description": "Retrieve service details.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantName",
+                    "description": "tenantName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "serviceName",
+                    "description": "serviceName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "2100722b66fbbf5c8d16af736fb76b94",
+            "name": "Delete service instance",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/{tenantName}\/service\/{serviceName}",
+            "description": "Delete service instance.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantName",
+                    "description": "tenantName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "serviceName",
+                    "description": "serviceName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "instanceName",
+                    "description": "instanceName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "8bf066530da47bf80affb2ac5841c388",
+            "name": "Retrieve service credentials",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/{tenantName}\/service\/{serviceName}\/credentials",
+            "description": "Retrieve service credentials.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantName",
+                    "description": "tenantName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "serviceName",
+                    "description": "serviceName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "15a852214b4bc98d5a0d5af0533225f1",
+            "name": "Retrieve a tenant's status",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/{tenantName}\/status",
+            "description": "Retrieve a tenant's status.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantName",
+                    "description": "tenantName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "ba8234654f2cecbfd4a64fbace55d816",
+            "name": "Lookup Tenant by Subdomain",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v2\/tenants\/{tenantSubdomain}",
+            "description": "Lookup tenant by subdomain.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantSubdomain",
+                    "description": "tenantSubdomain",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "38614590b2dd937c19ce627b9788c135",
+            "name": "Create or Update Tenant by Subdomain",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v2\/tenants\/{tenantSubdomain}",
+            "description": "Create or update tenant by subdomain.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantSubdomain",
+                    "description": "tenantSubdomain",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tenantProfile",
+                    "description": "tenantProfile",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "6daf380ae424ed741ab365ca841dd2db",
+            "name": "Delete Tenant by Subdomain",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v2\/tenants\/{tenantSubdomain}",
+            "description": "Delete tenant by subdomain.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantSubdomain",
+                    "description": "tenantSubdomain",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "18b53bcf894f24269c3eb9c974366a28",
+            "name": "Lookup Tenant Service by Subdomain",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v2\/tenants\/{tenantSubdomain}\/service-instances\/{serviceInstanceName}",
+            "description": "Lookup tenant service by subdomain.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantSubdomain",
+                    "description": "tenantSubdomain",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "serviceInstanceName",
+                    "description": "serviceInstanceName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "d63de62c4b92d1623da9a6453ead06ff",
+            "name": "Update Tenant Service by Subdomain",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v2\/tenants\/{tenantSubdomain}\/service-instances\/{serviceInstanceName}",
+            "description": "Update tenant service by subdomain.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantSubdomain",
+                    "description": "tenantSubdomain",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "serviceInstanceName",
+                    "description": "serviceInstanceName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "serviceRequest",
+                    "description": "serviceRequest",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "fde254f1eddb7436c13c6a0b247aabe5",
+            "name": "Delete Tenant Service by Subdomain",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v2\/tenants\/{tenantSubdomain}\/service-instances\/{serviceInstanceName}",
+            "description": "Delete tenant service by subdomain.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantSubdomain",
+                    "description": "tenantSubdomain",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "serviceInstanceName",
+                    "description": "serviceInstanceName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        },
+        {
+            "id": "8a025f2e4022375a06fe976a05762e21",
+            "name": "Lookup Tenant status by Subdomain",
+            "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v2\/tenants\/{tenantSubdomain}\/status",
+            "description": "Lookup tenant status by subdomain.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenantSubdomain",
+                    "description": "tenantSubdomain",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "rawModeData": ""
+        }
+    ]
+}

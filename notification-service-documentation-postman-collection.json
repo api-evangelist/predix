@@ -1,0 +1,421 @@
+{
+    "id": "978e36647291353f0e95b213972c86e0",
+    "name": "Notification Service Documentation",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "0376cef0137abeba90729fab7a2ef1fb",
+            "name": "Get Tenants",
+            "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}",
+            "description": "Get tenants.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "rawModeData": ""
+        },
+        {
+            "id": "77391cfc9a26dcc680601bd0f8834621",
+            "name": "Put Tenants",
+            "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}",
+            "description": "Put tenants.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tenant",
+                    "description": "tenant",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "rawModeData": ""
+        },
+        {
+            "id": "419d8fe74832ff90c848e3eb128ae71f",
+            "name": "Get Tenants Configurations",
+            "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/configurations",
+            "description": "Get tenants configurations.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "configurationUuid",
+                    "description": "configurationUuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "rawModeData": ""
+        },
+        {
+            "id": "c81469656acd4ac40f4b5e3552b43679",
+            "name": "Post Tenants Configurations",
+            "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/configurations",
+            "description": "Post tenants configurations.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "configurations",
+                    "description": "configurations",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "rawModeData": ""
+        },
+        {
+            "id": "28b28605c8fa4ee1642c785be6984acb",
+            "name": "Get Tenants Configurations",
+            "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/configurations\/{uuid}",
+            "description": "Get tenants configurations.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "rawModeData": ""
+        },
+        {
+            "id": "6005b9690476f44bbc3f73fdcd59547f",
+            "name": "Put Tenants Configurations",
+            "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/configurations\/{uuid}",
+            "description": "Put tenants configurations.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "configuration",
+                    "description": "configuration",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "rawModeData": ""
+        },
+        {
+            "id": "6cd7acb4eae83bda5abdf0bc18bcdd02",
+            "name": "Delete Tenants Configurations",
+            "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/configurations\/{uuid}",
+            "description": "Delete tenants configurations.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "uuid",
+                    "description": "uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "rawModeData": ""
+        },
+        {
+            "id": "14a051ad339c58a4fac488c6596461e4",
+            "name": "Post Tenants Email",
+            "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/email",
+            "description": "Post tenants email.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "applicationMessage",
+                    "description": "applicationMessage",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "configuration",
+                    "description": "configuration",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "rawModeData": ""
+        },
+        {
+            "id": "daec6ec1fd083e45f869999689c38ea9",
+            "name": "Get Tenants Events",
+            "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/events",
+            "description": "Get tenants events.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tag",
+                    "description": "tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "start_date",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "end_date",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "rawModeData": ""
+        },
+        {
+            "id": "a8c6eccc823987dd6b18fd80fd0d0c93",
+            "name": "Get Tenants Usage",
+            "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/usage",
+            "description": "Get tenants usage.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tenant_uuid",
+                    "description": "tenant_uuid",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "start_date",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "end_date",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "rawModeData": ""
+        }
+    ]
+}

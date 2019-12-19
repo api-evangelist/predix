@@ -1,0 +1,553 @@
+{
+    "id": "08f18381bf84aa08c3bc1617333fe811",
+    "name": "Nurego API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "fc7029729381813e92226cecaafc8e84",
+            "name": "Post Registrations",
+            "url": "httpsapi.nurego.com\/\/v1\/registrations",
+            "description": "The following parameters can be used to validate the user's request.\nThe parameters are optional, but the sample code includes email as part of the requestParams.post method.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Body Parameters",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "5ed7aa52ce92109475df1f8a1d6a1129",
+            "name": "Get Registrations",
+            "url": "httpsapi.nurego.com\/\/v1\/registrations\/{registration_id}",
+            "description": "You can use a registration_id to retrieve the respective registration object.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "registration_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "d10467889fba64e2a91a6c592c2bb618",
+            "name": "Parameters Accounts",
+            "url": "httpsapi.nurego.com\/\/v1\/accounts\/{account_id}",
+            "description": "Parameters accounts.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "979c67d39ed13d0fbe4580bfa19dd5b3",
+            "name": "Get Accounts",
+            "url": "httpsapi.nurego.com\/\/v1\/accounts\/{account_id}",
+            "description": "You can retrieve a specific account by using the account number.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "ee235fb49e1eaef25a516ab0a7dad0fb",
+            "name": "Put Accounts",
+            "url": "httpsapi.nurego.com\/\/v1\/accounts\/{account_id}",
+            "description": "You can update an account using the following parameters.\nUse this method to set the accounts payment method, credit card token (when applicable), bill to contact and custom fields.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Body Parameters",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "b65c4647f2fda0086490cba2207b0b3a",
+            "name": "Parameters Organizations",
+            "url": "httpsapi.nurego.com\/\/v1\/organizations\/{organization_id}",
+            "description": "Parameters organizations.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "ac20ae28daec0942e47dfc839cde9b44",
+            "name": "Get Organizations",
+            "url": "httpsapi.nurego.com\/\/v1\/organizations\/{organization_id}",
+            "description": "You can retrieve an organization by GUID using the following parameters.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "eaaeacb880453feaee2966295c4daba0",
+            "name": "Post Organizations",
+            "url": "httpsapi.nurego.com\/\/v1\/organizations\/{organization_id}",
+            "description": "You can update an organization using the following parameters.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Body Parameters",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "1dc4887afd3f8e9695b064f38530b627",
+            "name": "Parameters Subscriptions",
+            "url": "httpsapi.nurego.com\/\/v1\/subscriptions\/{subscription_id}",
+            "description": "Parameters subscriptions.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "8cb74a154b31ce0d2b076d2544bc41fd",
+            "name": "Get Subscriptions",
+            "url": "httpsapi.nurego.com\/\/v1\/subscriptions\/{subscription_id}",
+            "description": "You can retrieve a specific subscription by using it's id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "feb27e7299f410915667af65427a5189",
+            "name": "Parameters Organizations Subscriptions",
+            "url": "httpsapi.nurego.com\/\/v1\/organizations\/{organization_id}\/subscriptions",
+            "description": "Parameters organizations subscriptions.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "5c41e86c3f93b8bf894d38058a1302b3",
+            "name": "Post Organizations Subscriptions",
+            "url": "httpsapi.nurego.com\/\/v1\/organizations\/{organization_id}\/subscriptions",
+            "description": "Create a new subscription to a plan.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Body Parameters",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "dc140eb06b4c277c50237a240bb3ad1e",
+            "name": "Parameters Organizations Subscriptions",
+            "url": "httpsapi.nurego.com\/\/v1\/organizations\/{organization_id}\/subscriptions\/{subscription_id}",
+            "description": "Parameters organizations subscriptions.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "49554badd64fd49d8186d20cc366d37c",
+            "name": "Put Organizations Subscriptions",
+            "url": "httpsapi.nurego.com\/\/v1\/organizations\/{organization_id}\/subscriptions\/{subscription_id}",
+            "description": "You can update a subscription's plan, using the following parameters.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Body Parameters",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "7df79ae3389eb8d14210898bd98110dc",
+            "name": "Delete Organizations Subscriptions",
+            "url": "httpsapi.nurego.com\/\/v1\/organizations\/{organization_id}\/subscriptions\/{subscription_id}",
+            "description": "You can cancel a plan subscription using the following parameters. When the last subscription is canceled, the customer will become canceled.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "ea4dc01d07a777f50cca0ce1f67261f5",
+            "name": "Parameters Subscriptions Entitlements",
+            "url": "httpsapi.nurego.com\/\/v1\/subscriptions\/{subscription_id}\/entitlements",
+            "description": "Parameters subscriptions entitlements.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "865d56bdfedf5d9d7f95ff65fde13802",
+            "name": "Post Subscriptions Entitlements",
+            "url": "httpsapi.nurego.com\/\/v1\/subscriptions\/{subscription_id}\/entitlements",
+            "description": "You can use this method to retrieve the Entitlements associated with a specific Subscription. It returns a list of entitlement objects.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Body Parameters",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "8407cc1fc67d78c940298ffb6377d5f1",
+            "name": "Post Usages",
+            "url": "httpsapi.nurego.com\/\/v1\/usages",
+            "description": "You can use this method to report usage events for multiple subscriptions and multiple features with a single API call.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Body Parameters",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "8c6f125fa428cbb7b12945f38ea43185",
+            "name": "Get Catalog",
+            "url": "httpsapi.nurego.com\/\/v1\/catalog",
+            "description": "You can retrieve the service catalog for specific distribution channels, segments or customers.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Body Parameters",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        },
+        {
+            "id": "490a77d7fcf2284a982d0768755793e7",
+            "name": "Get Offerings",
+            "url": "httpsapi.nurego.com\/\/v1\/offerings",
+            "description": "You can retrieve the available Offerings for a specific Segment and\/or Distribution channel, by using the following attributes in your method call.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Body Parameters",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "08f18381bf84aa08c3bc1617333fe811",
+            "rawModeData": ""
+        }
+    ]
+}

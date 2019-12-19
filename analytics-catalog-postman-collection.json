@@ -1,0 +1,1007 @@
+{
+    "id": "b594fda5caefe72cee1660b1043f2bfb",
+    "name": "Analytics Catalog",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "09187cdae139c0458ca33e21316d4ec6",
+            "name": "Execute the analytic synchronously.",
+            "url": "https\/\/api\/v1\/analytic\/execution",
+            "description": "Execute the analytic synchronously with the given execution payload.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "046b527192c3b9ba715f6e05fd49519a",
+            "name": "Execute the analytic asynchronously using input data.",
+            "url": "https\/\/api\/v1\/analytic\/execution\/async",
+            "description": "Execute the analytic asynchronously with the given input data payload.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "faa8dc60444e5f41e969b21933ac75ac",
+            "name": "Cleanup analytic execution result by request id.",
+            "url": "https\/\/api\/v1\/analytic\/execution\/async\/{requestId}",
+            "description": "Removes the analytic execution result from the cache. It is highly recommended to clean your old result data to have room for future result data.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "requestId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "90061f21b25f5b2f4c9b0c2acb321b78",
+            "name": "Get the analytic execution result by request id.",
+            "url": "https\/\/api\/v1\/analytic\/execution\/async\/{requestId}\/result",
+            "description": "Returns the analytic execution result.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "requestId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "0d4c433e3e0239660ff34d2d0fc4177a",
+            "name": "Get the analytic execution status by request id.",
+            "url": "https\/\/api\/v1\/analytic\/execution\/async\/{requestId}\/status",
+            "description": "Returns the analytic execution status (one of QUEUED, PROCESSING, COMPLETED, or FAILED).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "requestId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "fb3017f5c67b5c5622db76764b93a534",
+            "name": "Get all analytic catalog entries.",
+            "url": "https\/\/api\/v1\/catalog\/analytics",
+            "description": "Returns all analytic catalog entries as specified by page and sort criteria.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "page index : zero-based page index",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "page size : between 1 and 1000 inclusive",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortOrder",
+                    "description": "sort order : asc | desc",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortableFields",
+                    "description": "sortable fields : name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "taxonomyPath",
+                    "description": "taxonomy path : taxonomyPath",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "819478f0c41ad5cae174690fe5129678",
+            "name": "Create an analytic catalog entry.",
+            "url": "https\/\/api\/v1\/catalog\/analytics",
+            "description": "Creates the analytic catalog entry with a generated id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "e89d670688a830abd9bf7685ef84837c",
+            "name": "Get all versions of the analytic catalog entry with the given name.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/versions",
+            "description": "Returns all versions of the analytic catalog entry with the given name.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "analytic name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "e9babad74f2f828b59dfa57e97991ea6",
+            "name": "Get an analytic catalog entry by id.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}",
+            "description": "Returns the analytic catalog entry with the given id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "32650961eb906aa1421c85df7713c170",
+            "name": "Update an analytic catalog entry by id.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}",
+            "description": "The analytic catalog entry with the given id will be updated.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "8d055be2094f2dff4b5325e93df6ed14",
+            "name": "Delete an analytic catalog entry by id.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}",
+            "description": "Deletes the analytic catalog entry with the given id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "0598410f70bffb27c40e0e738d8ef731",
+            "name": "Get the descriptive information of the artifacts corresponding to an analytic catalog entry.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/artifacts",
+            "description": "Returns the description information (type, description, etc.) for all artifacts associated with the given analytic catalog entry id. Note: it does not return the artifact file contents; use the download APIs to obtain an artifact file. An error is returned if the supplied analytic catalog entry id does not exist.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "1eb355807e4d98351a98484879f73f78",
+            "name": "Deploy an analytic with an optional deployment configuration by analytic catalog entry id.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/deployment",
+            "description": "This operation FORCE deploys the specified analytic into the Cloud Foundry environment with an optional deployment configuration, responds with the request id (generated for the request), and the current request status.  The force deploy usually takes longer than the standard timeout, so the calling process should use the returned request id to monitor the request status and to retrieve the deployment results.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "1bbcdd62e5c70431ee6821a10ebecc37",
+            "name": "Get the analytic deployment status by request id.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/deployment\/{requestId}",
+            "description": "Returns the analytic deployment status (one of 'queued,' 'processing,' or 'completed').",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "requestId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "ade43cf4c6ec313876e5fd1c77641df9",
+            "name": "Execute an analytic by analytic catalog entry id.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/execution",
+            "description": "This operation executes the specified analytic and responds with the result produced by analytic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "inputId",
+                    "description": "test artifact id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "6cd020fc0f8ad1428c1130f2a70a0f5b",
+            "name": "Get the analytic recent logs",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/logs",
+            "description": "Return the recent analytic logs",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "8051112de9712e968b1e1bc273bf0f9c",
+            "name": "Validate an analytic by analytic catalog entry id.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/validation",
+            "description": "This operation FORCE deploys the specified analytic into the Cloud Foundry environment, runs the analytic and responds with the validation request id (generated for the request), and the current request status.  The force deploy usually takes longer than the standard timeout, so the calling process should use the returned validation request id to monitor the request status and to retrieve the validation results.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "inputId",
+                    "description": "test artifact id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "4443a379d52f7b500908b39e45c8aaa8",
+            "name": "Undeploy test analytics.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/validation",
+            "description": "This operation un-deploys the analytic app from the Cloud Foundry environment only if the analytic has been validated for testing purposes. This api will not un-deploy production analytics.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "2b1746639621eb2bf9d41a0fe4c61cad",
+            "name": "Get the analytic validation status by validation request id.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/validation\/{validationRequestId}",
+            "description": "Returns the analytic validation status (one of 'queued,' 'processing,' or 'completed' and the result from running the analytic (when status is 'completed').",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "validationRequestId",
+                    "description": "analytic validation request id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "465e139d5837505d3d80bdc75cae1cc2",
+            "name": "Delete all versions of the named analytic.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{name}\/versions",
+            "description": "Given the name of an analytic, this API deletes all its versions.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "analytic name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "de71a5d122b521af8b15beb6b7f2918a",
+            "name": "Upload an artifact and attach it to an analytic catalog entry.",
+            "url": "https\/\/api\/v1\/catalog\/artifacts",
+            "description": "Upload a single artifact file in a multipart MIME structure and attach it to an analytic catalog entry. The multipart MIME structure must have the catalog entry id tagged as 'catalogEntryId',  the file contents tagged as 'file',  the artifact type tagged as 'type', and  a description (under 1024 characters) tagged as 'description'. Artifact types can be any string.  Artifacts with the type 'executable' must contain the executable for the analytic.   An analytic can only have 1 artifact labelled ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "file",
+                    "description": "(Required) artifact file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "catalogEntryId",
+                    "description": "(Required) analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "(Required) artifact type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "description",
+                    "description": "artifact description",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "074da8565e73d39f46a25b4be24b5812",
+            "name": "Update an artifact by id.",
+            "url": "https\/\/api\/v1\/catalog\/artifacts\/{id}",
+            "description": "Update an artifact in the catalog with the contents of the supplied multipart MIME structure. The multipart MIME structure may have any of the following: new file contents tagged as 'file',  a new artifact type tagged as 'type', and  a new description (under 1024 characters) tagged as 'description'. Artifact types can be any string.  Artifacts with the type 'executable' must contain the executable for the analytic.   An analytic can only have 1 artifact labelled as 'executable' (See the document",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "(Required) artifact file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "(Required) artifact type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "description",
+                    "description": "artifact description",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "ed46fb4878881c0f13b41a51bfc8b20c",
+            "name": "Delete an artifact by id.",
+            "url": "https\/\/api\/v1\/catalog\/artifacts\/{id}",
+            "description": "Deletes the artifact by artifact id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "0278b3b91a3df04085fc1e63ed77b5b3",
+            "name": "Download an artifact file by id.",
+            "url": "https\/\/api\/v1\/catalog\/artifacts\/{id}\/file",
+            "description": "The file is downloaded as an octet-stream.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "e420d971b9b2b5b82146ec8f9798c4cb",
+            "name": "Retrieve the full taxonomy.",
+            "url": "https\/\/api\/v1\/catalog\/taxonomy",
+            "description": "This operation retrieves the full taxonomy structure from the catalog.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "94c956ca817624796ed94b5c25eadb84",
+            "name": "Load a taxonomy.",
+            "url": "https\/\/api\/v1\/catalog\/taxonomy",
+            "description": "This operation loads the supplied taxonomy structure into catalog. If a taxonomy already exists in the catalog, new paths in the supplied structure will be added. It will not delete existing paths. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "rawModeData": ""
+        }
+    ]
+}

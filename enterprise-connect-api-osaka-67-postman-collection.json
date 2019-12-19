@@ -1,0 +1,467 @@
+{
+    "id": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+    "name": "Enterprise Connect API (osaka.67)",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "4cc64feca7203882b2942141b034e87b",
+            "name": "Get EC Gateway settings",
+            "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/api\/settings",
+            "description": "Get your EC Gateway settings details\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Bearer *your_token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "rawModeData": ""
+        },
+        {
+            "id": "517bda17bb040310b9d562e70a29bb69",
+            "name": "Validate the oauth2 token",
+            "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/api\/token\/validate",
+            "description": "Validate the oauth2 token for the gateway usage\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Bearer *your_token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "rawModeData": ""
+        },
+        {
+            "id": "216d3d1770efc748e26d274bf837b60c",
+            "name": "Validate the EC service status",
+            "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/health\/check",
+            "description": "Validate the EC API status\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "rawModeData": ""
+        },
+        {
+            "id": "9892518a9493d4067f32c35a9b275354",
+            "name": "Validate the EC service memory usage",
+            "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/health\/memory",
+            "description": "Validate the EC gateway memory usage\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "rawModeData": ""
+        },
+        {
+            "id": "b067acc7fd297c254b187768a56c7cba",
+            "name": "Report usage",
+            "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/reports\/usage",
+            "description": "Report usage by zoneid",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Bearer *your_token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "content",
+                    "description": "The content for reporting the usage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "rawModeData": ""
+        },
+        {
+            "id": "d5a020f5af096ceea1b8f76becf4a8f7",
+            "name": "Get last usage",
+            "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/reports\/usage",
+            "description": "get last usage by zoneid",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Bearer *your_token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "rawModeData": ""
+        },
+        {
+            "id": "56b454d6e0f213e85e3e352ac7d295af",
+            "name": "Request a digital certificate",
+            "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/certs",
+            "description": "Submit a CSR for a certificate for the EC usage",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Bearer *your_token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "content",
+                    "description": "The content for reporting the usage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "rawModeData": ""
+        },
+        {
+            "id": "10499820bc0bcc9bc4b806ecad1a030e",
+            "name": "Retrieve current certificate",
+            "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/certs",
+            "description": "Retrieve the current certificate issued by the GE Digital CA.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Bearer *your_token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "rawModeData": ""
+        },
+        {
+            "id": "c6405b84829f198ec2fe8e57cbe929ab",
+            "name": "Create an EC system account",
+            "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/admin\/accounts\/{predix-zone-id}",
+            "description": "Create a EC system account with the CF details\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Bearer *your_token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "predix",
+                    "description": "Cloud Foundry service instance details.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "settings",
+                    "description": "Cloud Foundry setting details.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "rawModeData": ""
+        },
+        {
+            "id": "1f8f7da48926bc723b37f1af4c8f9bf7",
+            "name": " Get the EC system account",
+            "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/admin\/accounts\/{predix-zone-id}",
+            "description": "Get an existing EC system account by predix zone id\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Bearer *your_token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "predix",
+                    "description": "Cloud Foundry service instance details.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "rawModeData": ""
+        },
+        {
+            "id": "520eb933cdd95a634e7e2cd06bfa9225",
+            "name": "Delete the EC system account",
+            "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/admin\/accounts\/{predix-zone-id}",
+            "description": "Delete an existing EC system account by predix zone id\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Bearer *your_token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "predix",
+                    "description": "Cloud Foundry service instance details.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "rawModeData": ""
+        },
+        {
+            "id": "4a4647e111a635d42947cda8a5ec6d91",
+            "name": "Update the EC gateway setting in the account",
+            "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/admin\/accounts\/{predix-zone-id}",
+            "description": "Update the EC gateway setting in the account with the CF details\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Bearer *your_token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "predix",
+                    "description": "Cloud Foundry service instance details.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "settings",
+                    "description": "Cloud Foundry setting details.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "rawModeData": ""
+        }
+    ]
+}

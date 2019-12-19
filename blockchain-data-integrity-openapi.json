@@ -1,0 +1,200 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Blockchain Data Integrity",
+        "description": "Blockchain data integrity service provided by Ericsson",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsbcdi-proxy-service.run.aws-usw02-pr.ice.predix.io\/"
+    ],
+    "paths": {
+        "\/v1\/proxy\/signature": {
+            "post": {
+                "summary": "Post Proxy Signature",
+                "description": "Post proxy signature.",
+                "operationId": "PostV1ProxySignature",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "serviceInstanceId"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "token"
+                    },
+                    {
+                        "name": "request",
+                        "in": "body",
+                        "description": "request"
+                    }
+                ]
+            }
+        },
+        "\/v1\/proxy\/signature\/details": {
+            "post": {
+                "summary": "Post Proxy Signature Details",
+                "description": "Post proxy signature details.",
+                "operationId": "PostV1ProxySignatureDetails",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "serviceInstanceId"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "token"
+                    },
+                    {
+                        "name": "request",
+                        "in": "body",
+                        "description": "request"
+                    }
+                ]
+            }
+        },
+        "\/v1\/proxy\/signature\/extension": {
+            "post": {
+                "summary": "Post Proxy Signature Extension",
+                "description": "Post proxy signature extension.",
+                "operationId": "PostV1ProxySignatureExtension",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "serviceInstanceId"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "token"
+                    },
+                    {
+                        "name": "request",
+                        "in": "body",
+                        "description": "request"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "ExtensionRequest": {
+                "type": "object",
+                "properties": {
+                    "signature": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Details": {
+                "type": "object",
+                "properties": {
+                    "aggregationTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "identity": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DetailsRequest": {
+                "type": "object",
+                "properties": {
+                    "signature": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "VerificationResult": {
+                "type": "object",
+                "properties": {
+                    "policyResults": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "PublicationRecord": {
+                "type": "object",
+                "properties": {
+                    "publicationCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "publicationReferences": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "publicationRepositoryURIs": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "publicationTime": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Signature": {
+                "type": "object",
+                "properties": {
+                    "signature": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "PolicyResults": {
+                "type": "object",
+                "properties": {
+                    "policy": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "policyResultCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "verificationError": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SignatureRequest": {
+                "type": "object"
+            },
+            "DataHash": {
+                "type": "object",
+                "properties": {
+                    "algorithm": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}

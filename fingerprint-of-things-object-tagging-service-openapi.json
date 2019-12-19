@@ -1,0 +1,959 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Fingerprint of Things Object Tagging Service",
+        "description": "Query objects by their unique microscopic surface features, trace parts, and detect counterfeits.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/"
+    ],
+    "paths": {
+        "\/v1\/group\/createGroup": {
+            "post": {
+                "summary": "Create Group",
+                "description": "Create group.",
+                "operationId": "CreateGroup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "OAuth2 token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Zone ID"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Request body"
+                    }
+                ]
+            }
+        },
+        "\/v1\/group\/deleteGroup": {
+            "post": {
+                "summary": "Delete Group",
+                "description": "Delete group.",
+                "operationId": "DeleteGroup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "OAuth2 token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Zone ID"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Request body"
+                    }
+                ]
+            }
+        },
+        "\/v1\/object\/preregisterObject": {
+            "post": {
+                "summary": "Object Pre-Register",
+                "description": "Pre-register object with image.<br> Individual ID must be designated by user.",
+                "operationId": "UserIssue",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "OAuth2 token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Zone ID"
+                    },
+                    {
+                        "name": "individualId",
+                        "in": "formData",
+                        "description": "Individual ID"
+                    },
+                    {
+                        "name": "registImage",
+                        "in": "formData",
+                        "description": "Image data(Max file size: 5MByte)"
+                    },
+                    {
+                        "name": "applyFlag",
+                        "in": "formData",
+                        "description": "* DO NOT USE. This parameter will be deleted. <br>Apply flag(0:Do not apply 1:Apply)<br> *Default value is '1:Apply'."
+                    }
+                ]
+            }
+        },
+        "\/v1\/object\/preregisterObjectWithoutID": {
+            "post": {
+                "summary": "Object Pre-Register without ID",
+                "description": "Pre-register object with image.<br> Individual ID will be issued from system.",
+                "operationId": "SystemIssue",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "OAuth2 token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Zone ID"
+                    },
+                    {
+                        "name": "registImage",
+                        "in": "formData",
+                        "description": "Image data(Max file size: 5MByte)"
+                    },
+                    {
+                        "name": "applyFlag",
+                        "in": "formData",
+                        "description": "* DO NOT USE. This parameter will be deleted. <br>Apply flag(0:Do not apply 1:Apply)<br> *Default value is '1:Apply'."
+                    }
+                ]
+            }
+        },
+        "\/v1\/object\/deleteRegisteredObject": {
+            "post": {
+                "summary": "Delete Registered Object",
+                "description": "Delete registered object.",
+                "operationId": "DeleteRegularRegistration",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "OAuth2 token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Zone ID"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Request body"
+                    }
+                ]
+            }
+        },
+        "\/v1\/object\/deletePreregisteredObject": {
+            "post": {
+                "summary": "Delete Pre-Registered Object",
+                "description": "Delete pre-registered object.",
+                "operationId": "DeleteTempRegistration",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "OAuth2 token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Zone ID"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Request body"
+                    }
+                ]
+            }
+        },
+        "\/v1\/object\/setObjectDoNotRegisterFlag": {
+            "post": {
+                "summary": "Switch Apply Flag",
+                "description": "* DO NOT USE. This API will be deleted.<br>Switch the Apply flag on or off.",
+                "operationId": "Config",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "OAuth2 token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Zone ID"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Request body"
+                    }
+                ]
+            }
+        },
+        "\/v1\/object\/setGroupDoNotRegisterFlag": {
+            "post": {
+                "summary": "Switch Apply Flag per Group",
+                "description": "* DO NOT USE. This API will be deleted.<br>Switch the Apply flag per group",
+                "operationId": "GroupConfig",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "OAuth2 token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Zone ID"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Request body"
+                    }
+                ]
+            }
+        },
+        "\/v1\/group\/putInGroup": {
+            "post": {
+                "summary": "Put Object in Group",
+                "description": "Put Object in Group.",
+                "operationId": "JoinGroup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "OAuth2 token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Zone ID"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Request body"
+                    }
+                ]
+            }
+        },
+        "\/v1\/group\/removeFromGroup": {
+            "post": {
+                "summary": "Remove Object from Group",
+                "description": "Remove Object from Group.",
+                "operationId": "LeaveGroup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "OAuth2 token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Zone ID"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Request body"
+                    }
+                ]
+            }
+        },
+        "\/v1\/object\/registerObject": {
+            "post": {
+                "summary": "Register Object",
+                "description": "Register Object. A registered object can be queried from Query APIs.",
+                "operationId": "Apply",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "OAuth2 token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Zone ID"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Request body"
+                    }
+                ]
+            }
+        },
+        "\/v1\/object\/registerGroup": {
+            "post": {
+                "summary": "Register Object per Group",
+                "description": "Register Object per Group. A registered object can be queried from Query APIs.",
+                "operationId": "GroupApply",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "OAuth2 token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Zone ID"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Request body"
+                    }
+                ]
+            }
+        },
+        "\/v1\/object\/listObjects": {
+            "post": {
+                "summary": "List Registered Objects",
+                "description": "List registered Objects.",
+                "operationId": "Reference",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "OAuth2 token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Zone ID"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Request body"
+                    }
+                ]
+            }
+        },
+        "\/v1\/group\/listGroups": {
+            "post": {
+                "summary": "List Groups",
+                "description": "List groups",
+                "operationId": "GroupReference",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "OAuth2 token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Zone ID"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Request body"
+                    }
+                ]
+            }
+        },
+        "\/v1\/object\/checkPreregisteredObject": {
+            "post": {
+                "summary": "Check Pre-Registered Object",
+                "description": "Check a score of Pre-Registered Object.",
+                "operationId": "Check",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "OAuth2 token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Zone ID"
+                    },
+                    {
+                        "name": "registImage",
+                        "in": "formData",
+                        "description": "Image data(Max file size: 5MByte)"
+                    },
+                    {
+                        "name": "individualId",
+                        "in": "formData",
+                        "description": "Individual ID"
+                    }
+                ]
+            }
+        },
+        "\/v1\/query\/queryByObject": {
+            "post": {
+                "summary": "Query by Object",
+                "description": "Query image by object.",
+                "operationId": "Dozicheck",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "OAuth2 token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Zone ID"
+                    },
+                    {
+                        "name": "idSpecificationFlag",
+                        "in": "formData",
+                        "description": "ID specification flag<br> (0: Query with all registered objects , 1: Query with specified object by individual ID)"
+                    },
+                    {
+                        "name": "individualId",
+                        "in": "formData",
+                        "description": "Individual ID"
+                    },
+                    {
+                        "name": "queryImage",
+                        "in": "formData",
+                        "description": "Query image data(Max file size: 5MByte)"
+                    },
+                    {
+                        "name": "checkResultDisplayNumber",
+                        "in": "formData",
+                        "description": "Result display number:<br> Specify number of verification result to retrieve.<br> If not set, use system default value (Default value: 1,500)."
+                    }
+                ]
+            }
+        },
+        "\/v1\/query\/queryByGroup": {
+            "post": {
+                "summary": "Query by Group",
+                "description": "Query image per group.",
+                "operationId": "Groupzicheck",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "OAuth2 token"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Zone ID"
+                    },
+                    {
+                        "name": "idSpecificationFlag",
+                        "in": "formData",
+                        "description": "ID specification flag<br> (0: Query with all registered objects , 1: Query with specified object by individual ID)"
+                    },
+                    {
+                        "name": "groupId",
+                        "in": "formData",
+                        "description": "Group ID:<br> Use CSV form when specifying multiple IDs.<br> *Required when ID specification flag is 1."
+                    },
+                    {
+                        "name": "queryImage",
+                        "in": "formData",
+                        "description": "Query image data(Max file size: 5MByte)"
+                    },
+                    {
+                        "name": "checkResultDisplayNumber",
+                        "in": "formData",
+                        "description": "Result display number:<br> Specify number of verification result to retrieve.<br> If not set, use system default value (Default value: 1,500)."
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "createGroup_request": {
+                "type": "object",
+                "properties": {
+                    "groupId": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "deleteGroup_request": {
+                "type": "object",
+                "properties": {
+                    "groupId": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "individualid": {
+                "type": "object",
+                "properties": {
+                    "individualId": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "config_request": {
+                "type": "object",
+                "properties": {
+                    "individualId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "applyFlag": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "groupConfig_request": {
+                "type": "object",
+                "properties": {
+                    "groupId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "applyFlag": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "joinGroup_request": {
+                "type": "object",
+                "properties": {
+                    "groupId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "individualId": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "leaveGroup_request": {
+                "type": "object",
+                "properties": {
+                    "groupId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "individualId": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "apply_request": {
+                "type": "object",
+                "properties": {
+                    "idSpecificationFlag": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "individualId": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "groupApply_request": {
+                "type": "object",
+                "properties": {
+                    "idSpecificationFlag": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "groupId": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "reference_request": {
+                "type": "object",
+                "properties": {
+                    "idSpecificationFlag": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "individualId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "groupId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "registrationStatus": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "applyFlag": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "groupReference_request": {
+                "type": "object",
+                "properties": {
+                    "idSpecificationFlag": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "groupId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "createDateMin": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "createDateMax": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "res_groupid": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "errorCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "groupId": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "res_deleteGroup": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "errorCode": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "res_individualid": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "errorCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "individualId": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "res_delete": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "errorCode": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "res_config": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "errorCode": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "res_groupConfig": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "errorCode": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "res_joinGroup": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "errorCode": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "res_leaveGroup": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "errorCode": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "res_apply": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "errorCode": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "res_groupApply": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "errorCode": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "res_reference": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "errorCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "individualIdList": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "individual": {
+                "type": "object",
+                "properties": {
+                    "individualId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "groupId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "registrationStatus": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "applyFlag": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "registrationDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "res_groupReference": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "errorCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "groupIdList": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "group": {
+                "type": "object",
+                "properties": {
+                    "groupId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "individualCount": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "registrationDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "res_precheck": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "errorCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "checkId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "checkResult": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "scoreList": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "score_pre": {
+                "type": "object",
+                "properties": {
+                    "individualId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "score": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "res_check": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "errorCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "checkId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "checkResult": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "scoreList": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "score": {
+                "type": "object",
+                "properties": {
+                    "individualId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "score": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "res_groupcheck": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "errorCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "checkId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "checkResult": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "scoreList": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}

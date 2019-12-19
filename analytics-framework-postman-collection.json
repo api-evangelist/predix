@@ -1,0 +1,2724 @@
+{
+    "id": "11ec68fb38e76e9f77033047b71da6c1",
+    "name": "Analytics Framework",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "405a76e9e87152df98847fb7feb2907a",
+            "name": "Execute the analytic synchronously.",
+            "url": "https\/\/api\/v1\/analytic\/execution",
+            "description": "Execute the analytic synchronously with the given execution payload.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "da66e10ec6cfa5e6011a7139b11031ef",
+            "name": "Execute the analytic asynchronously using input data.",
+            "url": "https\/\/api\/v1\/analytic\/execution\/async",
+            "description": "Execute the analytic asynchronously with the given input data payload.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "1f9ca32f0690c83bf12675fd0e8caffd",
+            "name": "Cleanup analytic execution result by request id.",
+            "url": "https\/\/api\/v1\/analytic\/execution\/async\/{requestId}",
+            "description": "Removes the analytic execution result from the cache. It is highly recommended to clean your old result data to have room for future result data.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "requestId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "263175652960b2da5c1e3cec262e8657",
+            "name": "Get the analytic execution result by request id.",
+            "url": "https\/\/api\/v1\/analytic\/execution\/async\/{requestId}\/result",
+            "description": "Returns the analytic execution result.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "requestId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "bd61a54c154dfa49b575c9692eb149cf",
+            "name": "Get the analytic execution status by request id.",
+            "url": "https\/\/api\/v1\/analytic\/execution\/async\/{requestId}\/status",
+            "description": "Returns the analytic execution status (one of QUEUED, PROCESSING, COMPLETED, or FAILED).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "requestId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "8bd2ac0e63e618b7b92b93bd3113a485",
+            "name": "Healthcheck for custom datasource.",
+            "url": "https\/\/api\/v1\/analytics\/customdata\/healthcheck",
+            "description": "Indicates whether custom data connector is up and running.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "57c8d1fbc25d2e2a1abd9dd32abc4bfa",
+            "name": "Retrieve analytic input data from custom datasource.",
+            "url": "https\/\/api\/v1\/analytics\/customdata\/read",
+            "description": "Returns the analytic input data used during runtime execution.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "8a0a44f7781f916ac523e06e12ea35da",
+            "name": "Write analytic output data to custom datasource.",
+            "url": "https\/\/api\/v1\/analytics\/customdata\/write",
+            "description": "Writes analytic output data generated during runtime execution.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "12f5cb7459f638f29990bcfe7148a284",
+            "name": "Get all analytic catalog entries.",
+            "url": "https\/\/api\/v1\/catalog\/analytics",
+            "description": "Returns all analytic catalog entries as specified by page and sort criteria.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "page index : zero-based page index",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "page size : between 1 and 1000 inclusive",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortOrder",
+                    "description": "sort order : asc | desc",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortableFields",
+                    "description": "sortable fields : name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "taxonomyPath",
+                    "description": "taxonomy path : taxonomyPath",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "e72a9cc45581340827ec42a748eb5b4f",
+            "name": "Create an analytic catalog entry.",
+            "url": "https\/\/api\/v1\/catalog\/analytics",
+            "description": "Creates the analytic catalog entry with a generated id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "044845571f0e873f8cc7eabb9b49ca90",
+            "name": "Get all versions of the analytic catalog entry with the given name.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/versions",
+            "description": "Returns all versions of the analytic catalog entry with the given name.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "analytic name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "485dbdb3d5192d12936d0f5a8a562c95",
+            "name": "Get an analytic catalog entry by id.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}",
+            "description": "Returns the analytic catalog entry with the given id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "ab90522e94ade62a17f27570f3a46b54",
+            "name": "Update an analytic catalog entry by id.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}",
+            "description": "The analytic catalog entry with the given id will be updated.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "9f97c3e668cab6c46b01b0773e0bd919",
+            "name": "Delete an analytic catalog entry by id.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}",
+            "description": "Deletes the analytic catalog entry with the given id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "80828f3218bd0b7c6fec7a6c34f47eca",
+            "name": "Get the descriptive information of the artifacts corresponding to an analytic catalog entry.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/artifacts",
+            "description": "Returns the description information (type, description, etc.) for all artifacts associated with the given analytic catalog entry id. Note: it does not return the artifact file contents; use the download APIs to obtain an artifact file. An error is returned if the supplied analytic catalog entry id does not exist.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "f7a512c85199b1aee34733ed54c96558",
+            "name": "Deploy an analytic with an optional deployment configuration by analytic catalog entry id.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/deployment",
+            "description": "This operation FORCE deploys the specified analytic into the Cloud Foundry environment with an optional deployment configuration, responds with the request id (generated for the request), and the current request status.  The force deploy usually takes longer than the standard timeout, so the calling process should use the returned request id to monitor the request status and to retrieve the deployment results.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "291c30b44a1f4bbeae152edc1cea9403",
+            "name": "Get the analytic deployment status by request id.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/deployment\/{requestId}",
+            "description": "Returns the analytic deployment status (one of 'queued,' 'processing,' or 'completed').",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "requestId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "c4262560d5042aa6a36c56faaa7cf03f",
+            "name": "Execute an analytic by analytic catalog entry id.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/execution",
+            "description": "This operation executes the specified analytic and responds with the result produced by analytic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "inputId",
+                    "description": "test artifact id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "6abe2dc0a2f8e7e51704c72e0bc5337e",
+            "name": "Get the analytic recent logs",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/logs",
+            "description": "Return the recent analytic logs",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "93153602d0a1974dce45ba6d8f066f4e",
+            "name": "Validate an analytic by analytic catalog entry id.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/validation",
+            "description": "This operation FORCE deploys the specified analytic into the Cloud Foundry environment, runs the analytic and responds with the validation request id (generated for the request), and the current request status.  The force deploy usually takes longer than the standard timeout, so the calling process should use the returned validation request id to monitor the request status and to retrieve the validation results.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "inputId",
+                    "description": "test artifact id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "e33feeb7f21bd1d7a96d29bc5e4e182e",
+            "name": "Undeploy test analytics.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/validation",
+            "description": "This operation un-deploys the analytic app from the Cloud Foundry environment only if the analytic has been validated for testing purposes. This api will not un-deploy production analytics.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "55bc80af5d6bf012ea05ac0b3ca6d534",
+            "name": "Get the analytic validation status by validation request id.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/validation\/{validationRequestId}",
+            "description": "Returns the analytic validation status (one of 'queued,' 'processing,' or 'completed' and the result from running the analytic (when status is 'completed').",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "validationRequestId",
+                    "description": "analytic validation request id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "5ca9ca18efe3ade966dbed4af223967a",
+            "name": "Delete all versions of the named analytic.",
+            "url": "https\/\/api\/v1\/catalog\/analytics\/{name}\/versions",
+            "description": "Given the name of an analytic, this API deletes all its versions.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "analytic name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "48e64de798b7d7bd25ac85afe0ba3dae",
+            "name": "Upload an artifact and attach it to an analytic catalog entry.",
+            "url": "https\/\/api\/v1\/catalog\/artifacts",
+            "description": "Upload a single artifact file in a multipart MIME structure and attach it to an analytic catalog entry. The multipart MIME structure must have the catalog entry id tagged as 'catalogEntryId',  the file contents tagged as 'file',  the artifact type tagged as 'type', and  a description (under 1024 characters) tagged as 'description'. Artifact types can be any string.  Artifacts with the type 'executable' must contain the executable for the analytic.   An analytic can only have 1 artifact labelled ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "file",
+                    "description": "(Required) artifact file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "catalogEntryId",
+                    "description": "(Required) analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "(Required) artifact type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "description",
+                    "description": "artifact description",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "38f0d3d7ddacad313a908b820e3f7547",
+            "name": "Update an artifact by id.",
+            "url": "https\/\/api\/v1\/catalog\/artifacts\/{id}",
+            "description": "Update an artifact in the catalog with the contents of the supplied multipart MIME structure. The multipart MIME structure may have any of the following: new file contents tagged as 'file',  a new artifact type tagged as 'type', and  a new description (under 1024 characters) tagged as 'description'. Artifact types can be any string.  Artifacts with the type 'executable' must contain the executable for the analytic.   An analytic can only have 1 artifact labelled as 'executable' (See the document",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "(Required) artifact file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "(Required) artifact type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "description",
+                    "description": "artifact description",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "94b2b15510018c67ca9177edd48bd0b7",
+            "name": "Delete an artifact by id.",
+            "url": "https\/\/api\/v1\/catalog\/artifacts\/{id}",
+            "description": "Deletes the artifact by artifact id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "86fc03a7725c1f08b382d07418edba24",
+            "name": "Download an artifact file by id.",
+            "url": "https\/\/api\/v1\/catalog\/artifacts\/{id}\/file",
+            "description": "The file is downloaded as an octet-stream.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "23cf33b14d56ee90ff3bc741126b3daf",
+            "name": "Retrieve the full taxonomy.",
+            "url": "https\/\/api\/v1\/catalog\/taxonomy",
+            "description": "This operation retrieves the full taxonomy structure from the catalog.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "740ac0158f2d647e6b701b13c3b6e381",
+            "name": "Load a taxonomy.",
+            "url": "https\/\/api\/v1\/catalog\/taxonomy",
+            "description": "This operation loads the supplied taxonomy structure into catalog. If a taxonomy already exists in the catalog, new paths in the supplied structure will be added. It will not delete existing paths. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "1b68dd838426e33734ba261da03693b4",
+            "name": "Execute the specified orchestration.",
+            "url": "https\/\/api\/v1\/execution",
+            "description": "To successfully execute the orchestration, the OrchestrationRequest must contain valid orchestration id, bpmn workflow xml and optionally input data for each analytic step defined in the workflow. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "b1c1f767da4bb5a2f1bd05e602960fdf",
+            "name": "Retrieve orchestration execution result",
+            "url": "https\/\/api\/v1\/monitoring\/orchestrations\/{orchestrationRequestId}",
+            "description": "Returns orchestration execution result for the given orchestration request id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orchestrationRequestId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "4fe17c5a35d6389ca682b99ce6bcaf70",
+            "name": "Get all job definition entries.",
+            "url": "https\/\/api\/v1\/scheduler\/jobs",
+            "description": "Returns all job definition entries as specified by page and sort criteria.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "page index : zero-based page index",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "page size : between 1 and 1000 inclusive",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortOrder",
+                    "description": "sort order : asc | desc",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "bd26e81954bdc69af745d3d667f761b0",
+            "name": "Create a scheduler job.",
+            "url": "https\/\/api\/v1\/scheduler\/jobs",
+            "description": "Creates the scheduler job with a generated id. Set the state value to 'Active' to start the job. Set the state value to 'Inactive' to avoid starting the job.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Refresh",
+                    "description": "Refresh-Token-For-Job-Execution",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "b2c9a063324848a1f194644226f6b831",
+            "name": "Get a scheduler job by id.",
+            "url": "https\/\/api\/v1\/scheduler\/jobs\/{id}",
+            "description": "Returns the scheduler job with the given id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "8847a55d06a0a2358c25c9588c8ec887",
+            "name": "Update an existing scheduler job.",
+            "url": "https\/\/api\/v1\/scheduler\/jobs\/{id}",
+            "description": "Updates the scheduled job. The updated changes will be effective from the next scheduling of this job. To suspend a job, update the job with state value 'Inactive'. To resume a job, update the job with state value 'Active'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Refresh",
+                    "description": "Refresh-Token-For-Job-Execution",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "060c9972c6b1f86fa45f296664dc05d3",
+            "name": "Delete job definition.",
+            "url": "https\/\/api\/v1\/scheduler\/jobs\/{id}",
+            "description": "Delete job definition for the given job id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "27b5d0a4f33b0b81b09cf10b9346e03d",
+            "name": "Retrieve job execution history of the given job.",
+            "url": "https\/\/api\/v1\/scheduler\/jobs\/{id}\/history",
+            "description": "Retrieve job execution history",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startTime",
+                    "description": "Start time in millis",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "endTime",
+                    "description": "End time in millis",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "ed869327e8907367e177c211f51625b5",
+            "name": "Get all orchestration configuration entries.",
+            "url": "https\/\/api\/v2\/config\/orchestrations",
+            "description": "Returns all orchestration configuration entries as specified by page and sort criteria.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "page index : zero-based page index",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "page size : between 1 and 1000 inclusive",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortOrder",
+                    "description": "sort order : asc | desc",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortableFields",
+                    "description": "sortable fields : name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "4c7d1f66ee61475926a2ec9163d6c497",
+            "name": "Create an orchestration configuration entry.",
+            "url": "https\/\/api\/v2\/config\/orchestrations",
+            "description": "Creates the orchestration configuration entry with a generated id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "424435c6f1daf609bc59a4b4281936d6",
+            "name": "Upload an artifact and attach it to an orchestration configuration entry.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/artifacts",
+            "description": "Upload a single artifact file in a multipart MIME structure and attach it to an orchestration configuration entry. The multipart MIME structure must have the orchestration entry id tagged as 'orchestrationEntryId',  the file contents tagged as 'file',  the artifact type tagged as 'type', and  the name of artifact tagged as 'name'.  A description (under 1024 characters) tagged as 'description' can be optionally specified. Artifact types can be either 'portToFieldMap', 'bpmn' or any.   If the arti",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "(Required) artifact file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "orchestrationEntryId",
+                    "description": "(Required) orchestration configuration entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "(Required) artifact type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "(Required) Artifact name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "stepId",
+                    "description": "Orchestration Step ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "description",
+                    "description": "artifact description",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "2545f1de280eca97b8418f89f093f7eb",
+            "name": "Update an artifact by id.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/artifacts\/{id}",
+            "description": "Update the artifact of the orchestration configuration with the contents of the supplied multipart MIME structure. The multipart MIME structure may have new file contents tagged as 'file',  new artifact type tagged as 'type',  new name of artifact tagged as 'name',  new description (under 1024 characters) tagged as 'description', and  new value of the orchestration step id tagged as 'stepId.   Artifact types can be either 'portToFieldMap', 'bpmn' or any.  (See the documentation for more informat",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "(Required) artifact file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "(Required) artifact type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "(Required) Artifact name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "stepId",
+                    "description": "Orchestration Step ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "description",
+                    "description": "artifact description",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "43efcf00e0fc3e8409e87a581d9cf44c",
+            "name": "Delete an orchestration artifact by id.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/artifacts\/{id}",
+            "description": "Delete the orchestration artifact by artifact id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "5da61a6681dbe61091a2c8bc8bd25520",
+            "name": "Download an orchestration artifact file by id.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/artifacts\/{id}\/file",
+            "description": "The file is downloaded as an octet-stream.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "d6fc6ef0b6cc38679a1e06a7b645e2c7",
+            "name": "Get the default tag query corresponding for the tenant.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/defaulttagquery",
+            "description": "Returns all information (query string, fieldnamespecifier, tagnamespecifer, description etc.) associated with the default tag query. An error is returned if tag query does not exist for the tenant.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "b7737610aed9fc5930d83d7245e66ea7",
+            "name": "Create the default tag query corresponding for the tenant.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/defaulttagquery",
+            "description": "Creates the default tag query including all information (query string, fieldnamespecifier, tagnamespecifer, description etc.) associated with the query.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "7bb0e8044636db720749148f01ab4ea5",
+            "name": "Update the default tag query for the tenant.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/defaulttagquery",
+            "description": "Updates the default tag query including all information (query string, fieldnamespecifier, tagnamespecifer, description etc.) associated with the query.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "265be6642c41aa36d8f7a575a373d812",
+            "name": "Delete the default tag query for the tenant.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/defaulttagquery",
+            "description": "Deletes the default tag query.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "090752526614f7940e51c0cd0650bed3",
+            "name": "Get all model entries.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/models",
+            "description": "Returns all model entries as specified by page and sort criteria. By default, retrieves all models for tenant. If additional query params specified, then results will be filtered",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "modelKey",
+                    "description": "Model Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelName",
+                    "description": "Model Name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelVersion",
+                    "description": "Model Version",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "page index : zero-based page index",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "page size : between 1 and 1000 inclusive",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "17d7e2016ac838b5e1dc874074a382a7",
+            "name": "Upload a model.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/models",
+            "description": "Upload a model in a multipart MIME structure. The multipart MIME structure must have the modelKey  tagged as 'modelKey',  the modelName  tagged as 'modelName',  the modelVersion  tagged as 'modelVersion',  the file contents tagged as 'file',  a description (under 1024 characters) tagged as 'description'. (See the documentation for more information regarding these files.)",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "(Required) artifact file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelKey",
+                    "description": "(Required) Model Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelName",
+                    "description": "(Required) Model Name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelVersion",
+                    "description": "(Required) Model Version",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "description",
+                    "description": "artifact description",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "f43184dda56bc6b803c1870a332297c3",
+            "name": "Update model by id.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/models\/{id}",
+            "description": "Update a model with attributes of the supplied multipart MIME structure. The multipart MIME structure must have the modelKey  tagged as 'modelKey',  the modelName  tagged as 'modelName',  the modelVersion  tagged as 'modelVersion',  the file contents tagged as 'file',  a description (under 1024 characters) tagged as 'description'. (See the documentation for more information regarding these files.)",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "(Required) artifact file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelKey",
+                    "description": "(Required) Model Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelName",
+                    "description": "(Required) Model Name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelVersion",
+                    "description": "(Required) Model Version",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "description",
+                    "description": "artifact description",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "4384c953fe752ec9d813041b874beb8c",
+            "name": "Delete a model by id.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/models\/{id}",
+            "description": "Delete a model by model id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "69f691cd2f2249b211c75a33600a8d10",
+            "name": "Download a model file by id.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/models\/{id}\/file",
+            "description": "The file is downloaded as an octet-stream.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "ea6aa67da286a500ead0676f485ee9a5",
+            "name": "Get an orchestration configuration entry by id.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/{id}",
+            "description": "Returns the orchestration configuration entry with the given id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "0b71ef32c4839d7a2da8c61dfa821fbe",
+            "name": "Update an existing orchestration configuration entry.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/{id}",
+            "description": "Updates the orchestration configuration entry with given orchestration configuration.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "e570da7ceeea151e8f4030bdcc323128",
+            "name": "Delete an orchestration configuration entry by id.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/{id}",
+            "description": "Deletes the orchestration configuration entry with the given id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "e2e26775a49171c4f935e4ab9255fad3",
+            "name": "Get the descriptive information of the orchestration artifacts corresponding to an orchestration configuration entry.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/{id}\/artifacts",
+            "description": "Returns the description information (type, description, etc.) for all orchestration artifacts associated with the given configuration entry id. Note: it does not return the orchestration artifact file contents; use the download APIs to obtain an artifact file. An error is returned if the supplied orchestration configuration entry id does not exist.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "fe559243665f97694a05cdf174eb83b5",
+            "name": "Download an orchestration artifact file by orchestration id and artifact type.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/{id}\/file",
+            "description": "The file is downloaded as an octet-stream. If the type is bpmn, then then bpmn xml is downloaded. If the type is portToFieldMap, then the system expects analyticStepId to download the portToFieldMap for the given step",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "analytic catalog entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "artifact type (Ex. \"bpmn\", \"portToFieldMap\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "analytic name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "5556e7aed7fb2bbd55922e08b060c310",
+            "name": "Execute the specified orchestration.",
+            "url": "https\/\/api\/v2\/execution",
+            "description": "To successfully execute the orchestration, the OrchestrationExecutionRequest must contain valid orchestration id, asset id, asset data field mapping details. This API will execute the orchestration in synchronous mode and if the execution is not completed  in 1 minute then the request will fail. After successful completion, the response will contain each orchestration steps output data.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "56804c0b009ad4985992f47d76028ff2",
+            "name": "Execute the specified orchestration in asynchronous mode.",
+            "url": "https\/\/api\/v2\/execution\/async",
+            "description": "To successfully execute the orchestration, the OrchestrationExecutionRequest must contain valid orchestration id, asset id, asset data field mapping details. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "request payload containing analytic input data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "b5c8d5949977406cd6f31d04d5900207",
+            "name": "Deploy the specified orchestration workflow file to the Orchestration Engine.",
+            "url": "https\/\/api\/v2\/execution\/orchestrations\/{orchConfigId}\/deployment",
+            "description": "This API will deploy the BPMN file associated with the specified orchestration configuration to the Orchestration Engine in preparation for orchestration execution.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orchConfigId",
+                    "description": "orchestration configuration id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "b7f50d27f08a9f836ff67c8c314fd60e",
+            "name": "Execute the orchestration with given bpmn and input data.",
+            "url": "https\/\/api\/v2\/execution\/testrun",
+            "description": "To successfully execute the orchestration, the request must contain valid bpmn20.xml, input data for each step in the bpmn.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "bpmn",
+                    "description": "BPMN file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "input",
+                    "description": "Input data file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        },
+        {
+            "id": "5f5d96fc32f206835e3d40465e8a4fdc",
+            "name": "Validate the specified orchestration and the health of all the analytics used in the orchestration.",
+            "url": "https\/\/api\/v2\/execution\/validation",
+            "description": "To successfully validate the orchestration, the BPMN XML file must reference analytics that are running. The validation will call a 'healthCheck' entry on each analytic.  Analytics in the platform automatically have this entry, analytics outside the platform must implement this APIfor their validation to pass.  The results contain the http status for each for the healthCheck call to each analytic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "file",
+                    "description": "(Required) artifact file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "11ec68fb38e76e9f77033047b71da6c1",
+            "rawModeData": ""
+        }
+    ]
+}

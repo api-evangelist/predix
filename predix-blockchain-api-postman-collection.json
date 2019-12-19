@@ -1,0 +1,536 @@
+{
+    "id": "45355273e5e0ad0598a3d8f245ed8158",
+    "name": "Predix BlockChain API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "c409b8bbafb847edd2d0ac32e545a55b",
+            "name": "Put Chaincodes",
+            "url": "https\/\/v1\/chaincodes\/{chaincodeName}",
+            "description": "Deploy chaincode (smart contract) to Blockchain",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "access token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "predix",
+                    "description": "tenantId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "chaincodeName",
+                    "description": "name of chain code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "chaincode",
+                    "description": "upload compressed file (tar.gz)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "args",
+                    "description": "args for uploaded script, e.g. ['ab', '12']",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "45355273e5e0ad0598a3d8f245ed8158",
+            "rawModeData": ""
+        },
+        {
+            "id": "9cad305c9166af49f0f33d2ea61ba20c",
+            "name": "Get Chaincodes",
+            "url": "https\/\/v1\/chaincodes\/{chaincodeName}",
+            "description": "Get a single chaincode",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "access token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "predix",
+                    "description": "tenantId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "chaincodeName",
+                    "description": "name of chain code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "45355273e5e0ad0598a3d8f245ed8158",
+            "rawModeData": ""
+        },
+        {
+            "id": "64662e164365743fef44dea6fae351e7",
+            "name": "Get Chaincodes",
+            "url": "https\/\/v1\/chaincodes",
+            "description": "Get all chaincodes",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "access token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "predix",
+                    "description": "tenantId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "45355273e5e0ad0598a3d8f245ed8158",
+            "rawModeData": ""
+        },
+        {
+            "id": "e64604eb71679a69916e396d8f4bdce8",
+            "name": "Post Chaincodes Query",
+            "url": "https\/\/v1\/chaincodes\/{chaincodeName}\/query",
+            "description": "Performs query operation on the chaincode and returns the result",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "access token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "predix",
+                    "description": "tenantId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "chaincodeName",
+                    "description": "name of chain code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "payload",
+                    "description": "payload of function and args",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "45355273e5e0ad0598a3d8f245ed8158",
+            "rawModeData": ""
+        },
+        {
+            "id": "a9d48ad9c7d8d8ba93b6f81090d53749",
+            "name": "Post Users Userid Enroll",
+            "url": "https\/\/v1\/users\/{userId}\/enroll",
+            "description": "Enrolls the blockchain user by downloading its certificates and storing it in Vault. It also maps the oauth user with the blockchain user. This is the very first operation that must be performed.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "access token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "predix",
+                    "description": "tenantId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "user id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "secret",
+                    "description": "one time password",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "45355273e5e0ad0598a3d8f245ed8158",
+            "rawModeData": ""
+        },
+        {
+            "id": "2c2d6b34abebd99ff1bbb2be50b24156",
+            "name": "Put User",
+            "url": "https\/\/v1\/users\/{userId}",
+            "description": "Registers a new user with blockchain. It sets the attribute 'zone' for the user to 'tenantId' as specified in predix-zone-id header",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "access token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "predix",
+                    "description": "tenantId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "user id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "attributes",
+                    "description": "Attributes for this user",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "45355273e5e0ad0598a3d8f245ed8158",
+            "rawModeData": ""
+        },
+        {
+            "id": "547bd413e82d71e55995eda21247b3da",
+            "name": "Delete Users",
+            "url": "https\/\/v1\/users\/{userId}",
+            "description": "Deletes the user and the user mapping with oauth user. User can be deleted only after user has been enrolled.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "access token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "predix",
+                    "description": "tenantId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "user id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "45355273e5e0ad0598a3d8f245ed8158",
+            "rawModeData": ""
+        },
+        {
+            "id": "1322d1ed3c695a871b2320a8fd0fb78d",
+            "name": "Post Chaincodes Invoke",
+            "url": "https\/\/v1\/chaincodes\/{chaincodeName}\/invoke",
+            "description": "Performs the invoke or state change operation on chaincode. It invokes the function as specified in the body with given arguments. It returns the transaction id to the user.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "access token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "predix",
+                    "description": "tenantId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "chaincodeName",
+                    "description": "name of chain code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "payload",
+                    "description": "payload of function and args",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "45355273e5e0ad0598a3d8f245ed8158",
+            "rawModeData": ""
+        },
+        {
+            "id": "656e39418199a75091636c0c2de00253",
+            "name": "Get Blocks",
+            "url": "https\/\/v1\/blocks",
+            "description": "Get current blockchain root info",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "access token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "predix",
+                    "description": "tenantId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "45355273e5e0ad0598a3d8f245ed8158",
+            "rawModeData": ""
+        },
+        {
+            "id": "811a1438028281afb46c43bdf2fd9b5f",
+            "name": "Get Blocks Blocknumber",
+            "url": "https\/\/v1\/blocks\/{blockNumber}",
+            "description": "Get a single blockchain info",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "access token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "predix",
+                    "description": "tenantId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "blockNumber",
+                    "description": "block node number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "45355273e5e0ad0598a3d8f245ed8158",
+            "rawModeData": ""
+        },
+        {
+            "id": "3435421fb2953d4ae379705ec10fe45f",
+            "name": "Get Transactions",
+            "url": "https\/\/v1\/transactions\/{transactionId}",
+            "description": "Get a transaction info",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "access token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "predix",
+                    "description": "tenantId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "transactionId",
+                    "description": "transaction Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "45355273e5e0ad0598a3d8f245ed8158",
+            "rawModeData": ""
+        }
+    ]
+}

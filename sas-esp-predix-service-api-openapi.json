@@ -1,0 +1,84 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "SAS ESP Predix Service API",
+        "description": "SAS ESP Service for Predix",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpssas-proxy.run.aws-usw02-pr.ice.predix.io\/"
+    ],
+    "paths": {
+        "\/v1\/proxy\/projects\/{id}": {
+            "put": {
+                "summary": "Load\/Create Project",
+                "description": "API to Load\/Create project in ESP server.",
+                "operationId": "LoadOrCreateProjectUsingPUT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reqBody",
+                        "in": "body",
+                        "description": "reqBody"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete project.",
+                "description": "API to delete project from ESP server.",
+                "operationId": "DeleteProjectUsingDELETE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reqBody",
+                        "in": "body",
+                        "description": "reqBody"
+                    }
+                ]
+            }
+        },
+        "\/v1\/proxy\/projects\/{id}\/state": {
+            "put": {
+                "summary": "Update project status",
+                "description": "API to update project status etc. started, running, stopped",
+                "operationId": "ProjectStatusUsingPUT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reqBody",
+                        "in": "body",
+                        "description": "reqBody"
+                    }
+                ]
+            }
+        },
+        "\/v1\/proxy\/resource": {
+            "get": {
+                "summary": "retrieve service instance",
+                "description": "API to retrieve service instance",
+                "operationId": "RetrieveUsingGET",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/v1\/proxy\/server": {
+            "head": {
+                "summary": "ESP server health check",
+                "description": "API to to check health of ESP server.",
+                "operationId": "HealthCheckUsingHEAD",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reqBody",
+                        "in": "body",
+                        "description": "reqBody"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}

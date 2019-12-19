@@ -1,0 +1,716 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Nurego API",
+        "description": "### Getting Started ###\n\nDevelopers - you will find all the information that you need to integrate with Nurego below!\n\nNurego is a web-based application that provides organizations with total control of their service metering, entitlements and monetization.\nLearn how to integrate your subscription business with Nurego.\n\nYou can find more details, explanations and examples of Nurego APIs [here](https:\/\/docs.nurego.com\/reference#integrations-getting-started).\nWant a quick tutorial with inline code samples for Java? Give our [Quick Tutorial](https:\/\/docs.nurego.com\/reference#quick-tutorial) a try.\nIf you have any question, please don't hesitate to [contact us](mailto:support-ticket@nurego.com) or tweet us [@nuregoinc](https:\/\/twitter.com\/nuregoinc).\n",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapi.nurego.com\/"
+    ],
+    "paths": {
+        "\/v1\/registrations": {
+            "post": {
+                "summary": "Post Registrations",
+                "description": "The following parameters can be used to validate the user's request.\nThe parameters are optional, but the sample code includes email as part of the requestParams.post method.\n",
+                "operationId": "PostV1Registrations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Body Parameters"
+                    }
+                ]
+            }
+        },
+        "\/v1\/registrations\/{registration_id}": {
+            "get": {
+                "summary": "Get Registrations",
+                "description": "You can use a registration_id to retrieve the respective registration object.",
+                "operationId": "GetV1RegistrationsRegistration",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "registration_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v1\/accounts\/{account_id}": {
+            "parameters": {
+                "summary": "Parameters Accounts",
+                "description": "Parameters accounts.",
+                "operationId": "ParametersV1AccountsAccount",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get Accounts",
+                "description": "You can retrieve a specific account by using the account number.",
+                "operationId": "GetV1AccountsAccount",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Put Accounts",
+                "description": "You can update an account using the following parameters.\nUse this method to set the accounts payment method, credit card token (when applicable), bill to contact and custom fields.\n",
+                "operationId": "PutV1AccountsAccount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Body Parameters"
+                    }
+                ]
+            }
+        },
+        "\/v1\/organizations\/{organization_id}": {
+            "parameters": {
+                "summary": "Parameters Organizations",
+                "description": "Parameters organizations.",
+                "operationId": "ParametersV1OrganizationsOrganization",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get Organizations",
+                "description": "You can retrieve an organization by GUID using the following parameters.",
+                "operationId": "GetV1OrganizationsOrganization",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Post Organizations",
+                "description": "You can update an organization using the following parameters.",
+                "operationId": "PostV1OrganizationsOrganization",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Body Parameters"
+                    }
+                ]
+            }
+        },
+        "\/v1\/subscriptions\/{subscription_id}": {
+            "parameters": {
+                "summary": "Parameters Subscriptions",
+                "description": "Parameters subscriptions.",
+                "operationId": "ParametersV1SubscriptionsSubscription",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get Subscriptions",
+                "description": "You can retrieve a specific subscription by using it's id.",
+                "operationId": "GetV1SubscriptionsSubscription",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/v1\/organizations\/{organization_id}\/subscriptions": {
+            "parameters": {
+                "summary": "Parameters Organizations Subscriptions",
+                "description": "Parameters organizations subscriptions.",
+                "operationId": "ParametersV1OrganizationsOrganizationSubscriptions",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Post Organizations Subscriptions",
+                "description": "Create a new subscription to a plan.",
+                "operationId": "PostV1OrganizationsOrganizationSubscriptions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Body Parameters"
+                    }
+                ]
+            }
+        },
+        "\/v1\/organizations\/{organization_id}\/subscriptions\/{subscription_id}": {
+            "parameters": {
+                "summary": "Parameters Organizations Subscriptions",
+                "description": "Parameters organizations subscriptions.",
+                "operationId": "ParametersV1OrganizationsOrganizationSubscriptionsSubscription",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Put Organizations Subscriptions",
+                "description": "You can update a subscription's plan, using the following parameters.",
+                "operationId": "PutV1OrganizationsOrganizationSubscriptionsSubscription",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Body Parameters"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete Organizations Subscriptions",
+                "description": "You can cancel a plan subscription using the following parameters. When the last subscription is canceled, the customer will become canceled.",
+                "operationId": "DeleteV1OrganizationsOrganizationSubscriptionsSubscription",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/v1\/subscriptions\/{subscription_id}\/entitlements": {
+            "parameters": {
+                "summary": "Parameters Subscriptions Entitlements",
+                "description": "Parameters subscriptions entitlements.",
+                "operationId": "ParametersV1SubscriptionsSubscriptionEntitlements",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Post Subscriptions Entitlements",
+                "description": "You can use this method to retrieve the Entitlements associated with a specific Subscription. It returns a list of entitlement objects.",
+                "operationId": "PostV1SubscriptionsSubscriptionEntitlements",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Body Parameters"
+                    }
+                ]
+            }
+        },
+        "\/v1\/usages": {
+            "post": {
+                "summary": "Post Usages",
+                "description": "You can use this method to report usage events for multiple subscriptions and multiple features with a single API call.",
+                "operationId": "PostV1Usages",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Body Parameters"
+                    }
+                ]
+            }
+        },
+        "\/v1\/catalog": {
+            "get": {
+                "summary": "Get Catalog",
+                "description": "You can retrieve the service catalog for specific distribution channels, segments or customers.",
+                "operationId": "GetV1Catalog",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Body Parameters"
+                    }
+                ]
+            }
+        },
+        "\/v1\/offerings": {
+            "get": {
+                "summary": "Get Offerings",
+                "description": "You can retrieve the available Offerings for a specific Segment and\/or Distribution channel, by using the following attributes in your method call.",
+                "operationId": "GetV1Offerings",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Body Parameters"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "subscription": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "subscription_start": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "subscription_end": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "plan_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "created_state": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "closed_state": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "organization_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "days_till_end_of_trial": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "days_till_end_of_grace": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "create_a_subscription": {
+                "type": "object",
+                "properties": {
+                    "plan_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "external_subscription_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "provider": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "skip_service_webhook": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "webhook_params": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "update_a_subscription": {
+                "type": "object",
+                "properties": {
+                    "plan_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "provider": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "skip_service_webhook": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "webhook_params": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Update_an_Organization": {
+                "type": "object",
+                "properties": {
+                    "provider": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "suspend_reason": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "coupon": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "custom_field": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "webhook_params": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Update_an_Account": {
+                "type": "object",
+                "properties": {
+                    "provider": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "po_number": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "payment_method": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "bill_to_contact": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "custom_field": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Registration_create_params": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "plan_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "service_id": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Registration": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "plan_id": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Account": {
+                "type": "object",
+                "properties": {
+                    "account_no": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "suspend_reason": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "po_number": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "external_ids": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "bill_to_contact": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "custom_field": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "catalog": {
+                "type": "object",
+                "properties": {
+                    "categories": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Retrieve_a_Specific_Catalog": {
+                "type": "object",
+                "properties": {
+                    "segment_guid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "distribution_channel": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "customer_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "external_provider": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Offering": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "revision": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "created_by": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "update_at": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "plans": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Retrieve_a_Specific_Offering": {
+                "type": "object",
+                "properties": {
+                    "segment_guid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "distribution_channel": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "customer_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "external_provider": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Entitlement": {
+                "type": "object",
+                "properties": {
+                    "feature_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "feature_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "subscription_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "max_allowed_amount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "current_used_amount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "unit_of_measure": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Retrieve_Entitlements_for_a_Subscription": {
+                "type": "object",
+                "properties": {
+                    "feature_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "unit_of_measure": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "provider": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Usage": {
+                "type": "object",
+                "properties": {
+                    "organization_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "organization_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "organization_external_ids": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "subscription_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "plan_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "plan_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "service_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "service_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "feature_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "feature_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "time": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Set_Usages": {
+                "type": "object",
+                "properties": {
+                    "subscription_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "provider": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "feature_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "unit_of_measure": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "usage_date": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "guid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "source_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "location": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "location_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "asset_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "user_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "custom1": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "custom2": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}

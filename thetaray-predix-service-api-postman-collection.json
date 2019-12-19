@@ -1,0 +1,222 @@
+{
+    "id": "2427c79c9ca6f3fc7b2f5d759ede4869",
+    "name": "ThetaRay Predix Service API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "f5aea17848437c340952e2624ea57b9f",
+            "name": "Analyses List",
+            "url": "httpsthetaray-anomaly-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/analyses",
+            "description": "Get list of Analyses",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "2427c79c9ca6f3fc7b2f5d759ede4869",
+            "rawModeData": ""
+        },
+        {
+            "id": "5e4ad39da0b412438ad7542efc66d73b",
+            "name": "Anomalies Report",
+            "url": "httpsthetaray-anomaly-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/anomalies\/report",
+            "description": "Retrieves Anomalies Report",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "analysisId",
+                    "description": "Analysis Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dataSourceName",
+                    "description": "Data Source name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "numOfTopFeatures",
+                    "description": "Number of top features to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromAnomaly",
+                    "description": "Fetch from Anomaly in Analysis",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toAnomaly",
+                    "description": "Fetch up to Anomaly in Analysis",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "2427c79c9ca6f3fc7b2f5d759ede4869",
+            "rawModeData": ""
+        },
+        {
+            "id": "7905cc8acb82d674405d7dc5611e0132",
+            "name": "Clusters Report",
+            "url": "httpsthetaray-anomaly-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/clusters\/report",
+            "description": "Get Clusters report",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "analysisId",
+                    "description": "Analysis Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dataSourceName",
+                    "description": "Data Source name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "withMinClusterSize",
+                    "description": "Get only Clusters with minimum size",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromAnomaly",
+                    "description": "Fetch from Anomaly in Analysis",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toAnomaly",
+                    "description": "Fetch up to Anomaly in Analysis",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filterOnlyUsedToCluster",
+                    "description": "Filter Anomalies used to set create Clusters",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "2427c79c9ca6f3fc7b2f5d759ede4869",
+            "rawModeData": ""
+        },
+        {
+            "id": "a489540b9a92f6451d498d478c2ef681",
+            "name": "Data Sources List",
+            "url": "httpsthetaray-anomaly-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/datasources\/datasources",
+            "description": "Get list of all Data Sources",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "2427c79c9ca6f3fc7b2f5d759ede4869",
+            "rawModeData": ""
+        },
+        {
+            "id": "89039a5419792c476292dd0da3de13ec",
+            "name": "Upload a file",
+            "url": "httpsthetaray-anomaly-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/datasources\/process",
+            "description": "Upload a data file",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dataSourceName",
+                    "description": "Data Source name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "The file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "2427c79c9ca6f3fc7b2f5d759ede4869",
+            "rawModeData": ""
+        }
+    ]
+}

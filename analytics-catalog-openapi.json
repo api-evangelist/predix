@@ -1,0 +1,1029 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Analytics Catalog",
+        "description": "",
+        "termsOfService": ""
+    },
+    "servers": [
+        "https\/"
+    ],
+    "paths": {
+        "\/api\/v1\/analytic\/execution": {
+            "post": {
+                "summary": "Execute the analytic synchronously.",
+                "description": "Execute the analytic synchronously with the given execution payload.",
+                "operationId": "SynchronousExecution",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "request payload containing analytic input data"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/analytic\/execution\/async": {
+            "post": {
+                "summary": "Execute the analytic asynchronously using input data.",
+                "description": "Execute the analytic asynchronously with the given input data payload.",
+                "operationId": "AsynchronousExecution",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "request payload containing analytic input data"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/analytic\/execution\/async\/{requestId}": {
+            "delete": {
+                "summary": "Cleanup analytic execution result by request id.",
+                "description": "Removes the analytic execution result from the cache. It is highly recommended to clean your old result data to have room for future result data.",
+                "operationId": "ClearAnalyticExecutionResult",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "requestId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/analytic\/execution\/async\/{requestId}\/result": {
+            "get": {
+                "summary": "Get the analytic execution result by request id.",
+                "description": "Returns the analytic execution result.",
+                "operationId": "RetrieveAnalyticExecutionResult",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "requestId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/analytic\/execution\/async\/{requestId}\/status": {
+            "get": {
+                "summary": "Get the analytic execution status by request id.",
+                "description": "Returns the analytic execution status (one of QUEUED, PROCESSING, COMPLETED, or FAILED).",
+                "operationId": "RetrieveAnalyticExecutionStatus",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "requestId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/catalog\/analytics": {
+            "get": {
+                "summary": "Get all analytic catalog entries.",
+                "description": "Returns all analytic catalog entries as specified by page and sort criteria.",
+                "operationId": "RetrieveAll",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "page index : zero-based page index"
+                    },
+                    {
+                        "name": "size",
+                        "in": "query",
+                        "description": "page size : between 1 and 1000 inclusive"
+                    },
+                    {
+                        "name": "sortOrder",
+                        "in": "query",
+                        "description": "sort order : asc | desc"
+                    },
+                    {
+                        "name": "sortableFields",
+                        "in": "query",
+                        "description": "sortable fields : name"
+                    },
+                    {
+                        "name": "taxonomyPath",
+                        "in": "query",
+                        "description": "taxonomy path : taxonomyPath"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create an analytic catalog entry.",
+                "description": "Creates the analytic catalog entry with a generated id.",
+                "operationId": "CreateAnalyticCatalogEntry",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "request payload containing analytic input data"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/catalog\/analytics\/versions": {
+            "get": {
+                "summary": "Get all versions of the analytic catalog entry with the given name.",
+                "description": "Returns all versions of the analytic catalog entry with the given name.",
+                "operationId": "RetrieveByName",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "analytic name"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/catalog\/analytics\/{id}": {
+            "get": {
+                "summary": "Get an analytic catalog entry by id.",
+                "description": "Returns the analytic catalog entry with the given id.",
+                "operationId": "RetrieveAnalyticCatalogEntryById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "analytic catalog entry id"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update an analytic catalog entry by id.",
+                "description": "The analytic catalog entry with the given id will be updated.",
+                "operationId": "UpdateAnalyticCatalogEntry",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "analytic catalog entry id"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "request payload containing analytic input data"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete an analytic catalog entry by id.",
+                "description": "Deletes the analytic catalog entry with the given id.",
+                "operationId": "DeleteAnalyticCatalogEntryById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "analytic catalog entry id"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/catalog\/analytics\/{id}\/artifacts": {
+            "get": {
+                "summary": "Get the descriptive information of the artifacts corresponding to an analytic catalog entry.",
+                "description": "Returns the description information (type, description, etc.) for all artifacts associated with the given analytic catalog entry id. Note: it does not return the artifact file contents; use the download APIs to obtain an artifact file. An error is returned if the supplied analytic catalog entry id does not exist.",
+                "operationId": "RetrieveArtifactsByCatalogEntryId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "analytic catalog entry id"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/catalog\/analytics\/{id}\/deployment": {
+            "post": {
+                "summary": "Deploy an analytic with an optional deployment configuration by analytic catalog entry id.",
+                "description": "This operation FORCE deploys the specified analytic into the Cloud Foundry environment with an optional deployment configuration, responds with the request id (generated for the request), and the current request status.  The force deploy usually takes longer than the standard timeout, so the calling process should use the returned request id to monitor the request status and to retrieve the deployment results.",
+                "operationId": "DeployAnalytic",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "analytic catalog entry id"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "request payload containing analytic input data"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/catalog\/analytics\/{id}\/deployment\/{requestId}": {
+            "get": {
+                "summary": "Get the analytic deployment status by request id.",
+                "description": "Returns the analytic deployment status (one of 'queued,' 'processing,' or 'completed').",
+                "operationId": "RetrieveAnalyticDeploymentResult",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "analytic catalog entry id"
+                    },
+                    {
+                        "name": "requestId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/catalog\/analytics\/{id}\/execution": {
+            "post": {
+                "summary": "Execute an analytic by analytic catalog entry id.",
+                "description": "This operation executes the specified analytic and responds with the result produced by analytic.",
+                "operationId": "ExecuteAnalytic",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "analytic catalog entry id"
+                    },
+                    {
+                        "name": "inputId",
+                        "in": "query",
+                        "description": "test artifact id"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "request payload containing analytic input data"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/catalog\/analytics\/{id}\/logs": {
+            "get": {
+                "summary": "Get the analytic recent logs",
+                "description": "Return the recent analytic logs",
+                "operationId": "RetrieveAnalyticLog",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "analytic catalog entry id"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/catalog\/analytics\/{id}\/validation": {
+            "post": {
+                "summary": "Validate an analytic by analytic catalog entry id.",
+                "description": "This operation FORCE deploys the specified analytic into the Cloud Foundry environment, runs the analytic and responds with the validation request id (generated for the request), and the current request status.  The force deploy usually takes longer than the standard timeout, so the calling process should use the returned validation request id to monitor the request status and to retrieve the validation results.",
+                "operationId": "ValidateAnalytic",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "analytic catalog entry id"
+                    },
+                    {
+                        "name": "inputId",
+                        "in": "query",
+                        "description": "test artifact id"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "request payload containing analytic input data"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Undeploy test analytics.",
+                "description": "This operation un-deploys the analytic app from the Cloud Foundry environment only if the analytic has been validated for testing purposes. This api will not un-deploy production analytics.",
+                "operationId": "InvalidateAnalytic",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "analytic catalog entry id"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/catalog\/analytics\/{id}\/validation\/{validationRequestId}": {
+            "get": {
+                "summary": "Get the analytic validation status by validation request id.",
+                "description": "Returns the analytic validation status (one of 'queued,' 'processing,' or 'completed' and the result from running the analytic (when status is 'completed').",
+                "operationId": "RetrieveAnalyticValidationResult",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "analytic catalog entry id"
+                    },
+                    {
+                        "name": "validationRequestId",
+                        "in": "path",
+                        "description": "analytic validation request id"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/catalog\/analytics\/{name}\/versions": {
+            "delete": {
+                "summary": "Delete all versions of the named analytic.",
+                "description": "Given the name of an analytic, this API deletes all its versions.",
+                "operationId": "DeleteAllVersions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "analytic name"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/catalog\/artifacts": {
+            "post": {
+                "summary": "Upload an artifact and attach it to an analytic catalog entry.",
+                "description": "Upload a single artifact file in a multipart MIME structure and attach it to an analytic catalog entry. The multipart MIME structure must have the catalog entry id tagged as 'catalogEntryId',  the file contents tagged as 'file',  the artifact type tagged as 'type', and  a description (under 1024 characters) tagged as 'description'. Artifact types can be any string.  Artifacts with the type 'executable' must contain the executable for the analytic.   An analytic can only have 1 artifact labelled ",
+                "operationId": "UploadAnalyticArtifact",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": "(Required) artifact file"
+                    },
+                    {
+                        "name": "catalogEntryId",
+                        "in": "formData",
+                        "description": "(Required) analytic catalog entry id"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": "(Required) artifact type"
+                    },
+                    {
+                        "name": "description",
+                        "in": "formData",
+                        "description": "artifact description"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/catalog\/artifacts\/{id}": {
+            "put": {
+                "summary": "Update an artifact by id.",
+                "description": "Update an artifact in the catalog with the contents of the supplied multipart MIME structure. The multipart MIME structure may have any of the following: new file contents tagged as 'file',  a new artifact type tagged as 'type', and  a new description (under 1024 characters) tagged as 'description'. Artifact types can be any string.  Artifacts with the type 'executable' must contain the executable for the analytic.   An analytic can only have 1 artifact labelled as 'executable' (See the document",
+                "operationId": "UpdateAnalyticArtifact",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "analytic catalog entry id"
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": "(Required) artifact file"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": "(Required) artifact type"
+                    },
+                    {
+                        "name": "description",
+                        "in": "formData",
+                        "description": "artifact description"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete an artifact by id.",
+                "description": "Deletes the artifact by artifact id.",
+                "operationId": "DeleteAnalyticArtifact",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "analytic catalog entry id"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/catalog\/artifacts\/{id}\/file": {
+            "get": {
+                "summary": "Download an artifact file by id.",
+                "description": "The file is downloaded as an octet-stream.",
+                "operationId": "DownloadAnalyticArtifact",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "analytic catalog entry id"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/catalog\/taxonomy": {
+            "get": {
+                "summary": "Retrieve the full taxonomy.",
+                "description": "This operation retrieves the full taxonomy structure from the catalog.",
+                "operationId": "RetrieveFullTaxonomy",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Load a taxonomy.",
+                "description": "This operation loads the supplied taxonomy structure into catalog. If a taxonomy already exists in the catalog, new paths in the supplied structure will be added. It will not delete existing paths. ",
+                "operationId": "LoadTaxonomy",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "request payload containing analytic input data"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "AnalyticCatalogEntry": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "author": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "version": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "supportedLanguage": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "customMetadata": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "taxonomyLocation": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "state": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "access": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "createdTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "updatedTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AnalyticCatalogEntryList": {
+                "type": "object",
+                "properties": {
+                    "analyticCatalogEntries": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AnalyticCatalogEntryPage": {
+                "type": "object",
+                "properties": {
+                    "currentPageSize": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "maximumPageSize": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "currentPageNumber": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "totalElements": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "totalPages": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "analyticCatalogEntries": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AnalyticDeploymentConfiguration": {
+                "type": "object",
+                "properties": {
+                    "memory": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "diskQuota": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "instances": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AnalyticDeploymentResult": {
+                "type": "object",
+                "properties": {
+                    "analyticId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "requestId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "inputConfigData": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "createdTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "updatedTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AnalyticExecutionResult": {
+                "type": "object",
+                "properties": {
+                    "analyticId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "inputData": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "createdTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "updatedTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AnalyticExecutionStatus": {
+                "type": "object",
+                "properties": {
+                    "analyticId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "requestId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "analyticExecutionState": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "createdTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "updatedTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AnalyticValidationResult": {
+                "type": "object",
+                "properties": {
+                    "analyticId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "validationRequestId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "inputData": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "createdTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "updatedTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Artifact": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "filename": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "createdTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "updatedTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArtifactList": {
+                "type": "object",
+                "properties": {
+                    "artifacts": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Attachment": {
+                "type": "object",
+                "properties": {
+                    "headers": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "object": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "contentId": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "CommandInfo": {
+                "type": "object",
+                "properties": {
+                    "commandName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "commandClass": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ContentDisposition": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "filename": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "parameters": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DataFlavor": {
+                "type": "object",
+                "properties": {
+                    "mimeType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "humanPresentableName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "primaryType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "subType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "mimeTypeSerializedObject": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "defaultRepresentationClassAsString": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "representationClassInputStream": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "representationClassReader": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "representationClassCharBuffer": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "representationClassByteBuffer": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "representationClassSerializable": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "representationClassRemote": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "flavorSerializedObjectType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "flavorRemoteObjectType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "flavorJavaFileListType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "flavorTextType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DataHandler": {
+                "type": "object",
+                "properties": {
+                    "contentType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "transferDataFlavors": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "preferredCommands": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "allCommands": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "content": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DataSource": {
+                "type": "object",
+                "properties": {
+                    "contentType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "severity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "detail": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "parameters": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "MediaType": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "subType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "parameters": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "wildcardType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "wildcardSubtype": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "MultipartBody": {
+                "type": "object",
+                "properties": {
+                    "allAttachments": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "childAttachments": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}

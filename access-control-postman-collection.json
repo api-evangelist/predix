@@ -1,0 +1,666 @@
+{
+    "id": "a124de3fd370b1336e78b5761db2d6c5",
+    "name": "Access Control",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "af9c3aaf079994a2ea45e4e96a9d1e7d",
+            "name": "Monitoring API that allows to check the ACS heartbeat",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/monitoring\/heartbeat",
+            "description": "Monitoring api that allows to check the acs heartbeat.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "edb4e10a2e133c96c3e9437a3cf7498f",
+            "name": "Retrieves connector configuration for external resource attributes for the given zone.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/connector\/resource",
+            "description": "Retrieves connector configuration for external resource attributes for the given zone..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "402f4f2565e4366570597c4aeab2a0fe",
+            "name": "Creates or updates connector configuration for external resource attributes for the given zone.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/connector\/resource",
+            "description": "Creates or updates connector configuration for external resource attributes for the given zone..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "connector",
+                    "description": "New or updated connector configuration for external resource attributes",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "2d48a04cad6c5ea2932fa9eca6169a12",
+            "name": "Deletes connector configuration for external resource attributes for the given zone.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/connector\/resource",
+            "description": "Deletes connector configuration for external resource attributes for the given zone..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "f6ba501bae75da8e2636709e5992f909",
+            "name": "Retrieves connector configuration for external subject attributes for the given zone.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/connector\/subject",
+            "description": "Retrieves connector configuration for external subject attributes for the given zone..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "0caf6ef92dc0a354ddcf749ce5671662",
+            "name": "Creates or updates connector configuration for external subject attributes for the given zone.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/connector\/subject",
+            "description": "Creates or updates connector configuration for external subject attributes for the given zone..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "connector",
+                    "description": "New or updated connector configuration for external resource attributes",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "5a230df53c1f0562964edcc4d28a28ae",
+            "name": "Deletes connector configuration for external subject attributes for the given zone.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/connector\/subject",
+            "description": "Deletes connector configuration for external subject attributes for the given zone..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "88859f09322ed72a7f905224b53f575a",
+            "name": "Evaluates all applicable policies and returns decision result",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/policy-evaluation",
+            "description": "Evaluates all applicable policies and returns decision result.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "request",
+                    "description": "request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "8a1ae20678b5ef5d9ed609617937b903",
+            "name": "Returns all the policy sets for the given zone.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/policy-set",
+            "description": "Returns all the policy sets for the given zone..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "1efeb624f4a645981243e2836447c5c5",
+            "name": "Retrieves a policy set for the given zone.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/policy-set\/{policySetId}",
+            "description": "Retrieves a policy set for the given zone..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "policySetId",
+                    "description": "policySetId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "17c6d6d43cf347b2c36df8c565528d48",
+            "name": "Creates\/Updates a policy set for the given zone.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/policy-set\/{policySetId}",
+            "description": "Creates\/updates a policy set for the given zone..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "policySet",
+                    "description": "policySet",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "policySetId",
+                    "description": "policySetId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "b60ad0685143c9044a7d52e23d832961",
+            "name": "Deletes a policy set for the given zone.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/policy-set\/{policySetId}",
+            "description": "Deletes a policy set for the given zone..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "policySetId",
+                    "description": "policySetId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "be83d88f5858e040d28bd131208eec5c",
+            "name": "Retrieves the list of all resources for the given zone.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/resource",
+            "description": "Retrieves the list of all resources for the given zone..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "803631e003febdbca6dcba0590f1cedc",
+            "name": "Creates a list of resources for the given zone. Existing resources will be updated with the provided values.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/resource",
+            "description": "Creates a list of resources for the given zone. existing resources will be updated with the provided values..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "resources",
+                    "description": "resources",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "29a558357531e6781f92daf0619057bf",
+            "name": "Retrieves the resource for the given zone. The resourceIdentifier must be URL encoded in application\/x-www-form-urlencoded format with UTF-8.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/resource\/{resourceIdentifier}",
+            "description": "Retrieves the resource for the given zone. the resourceidentifier must be url encoded in application\/x-www-form-urlencoded format with utf-8..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "resourceIdentifier",
+                    "description": "resourceIdentifier",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "includeInheritedAttributes",
+                    "description": "includeInheritedAttributes",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "40ad4c75502f87d88a4f37daea6f82c7",
+            "name": "Creates\/Updates a given resource for a given zone. The resourceIdentifier must be URL encoded in application\/x-www-form-urlencoded format with UTF-8.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/resource\/{resourceIdentifier}",
+            "description": "Creates\/updates a given resource for a given zone. the resourceidentifier must be url encoded in application\/x-www-form-urlencoded format with utf-8..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "resource",
+                    "description": "resource",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resourceIdentifier",
+                    "description": "resourceIdentifier",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "8144b414a258d7664813bfa9d01a4466",
+            "name": "Deletes the resource for a given zone. The resourceIdentifier must be URL encoded in application\/x-www-form-urlencoded format with UTF-8.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/resource\/{resourceIdentifier}",
+            "description": "Deletes the resource for a given zone. the resourceidentifier must be url encoded in application\/x-www-form-urlencoded format with utf-8..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "resourceIdentifier",
+                    "description": "resourceIdentifier",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "e4bcf9110316ee7169879b60e2e31684",
+            "name": "Retrieves the list of subjects for the given zone.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/subject",
+            "description": "Retrieves the list of subjects for the given zone..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "0df279995c520b9c09ceb2a82603ea19",
+            "name": "Creates a list of subjects. Existing subjects will be updated with the provided values.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/subject",
+            "description": "Creates a list of subjects. existing subjects will be updated with the provided values..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "subjects",
+                    "description": "subjects",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "cb603bfd1f5d7989c85f5ed2348f32f7",
+            "name": "Retrieves the subject for the given zone. The subjectIdentifier must be URL encoded in application\/x-www-form-urlencoded format with UTF-8.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/subject\/{subjectIdentifier}",
+            "description": "Retrieves the subject for the given zone. the subjectidentifier must be url encoded in application\/x-www-form-urlencoded format with utf-8..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "subjectIdentifier",
+                    "description": "subjectIdentifier",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "includeInheritedAttributes",
+                    "description": "includeInheritedAttributes",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "4d9dc12b0b03ab8ceb0dc246d5c490dd",
+            "name": "Creates\/Updates a given Subject.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/subject\/{subjectIdentifier}",
+            "description": "Creates\/updates a given subject..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "subject",
+                    "description": "subject",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "subjectIdentifier",
+                    "description": "subjectIdentifier",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        },
+        {
+            "id": "93e15cde79066a4ecc0e12e35dda0421",
+            "name": "Deletes the subject for a given zone. The subjectIdentifier must be URL encoded in application\/x-www-form-urlencoded format with UTF-8.",
+            "url": "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/\/v1\/subject\/{subjectIdentifier}",
+            "description": "Deletes the subject for a given zone. the subjectidentifier must be url encoded in application\/x-www-form-urlencoded format with utf-8..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "subjectIdentifier",
+                    "description": "subjectIdentifier",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a124de3fd370b1336e78b5761db2d6c5",
+            "rawModeData": ""
+        }
+    ]
+}

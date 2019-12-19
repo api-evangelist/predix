@@ -1,0 +1,917 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Tenant Management",
+        "description": "Tenancy Management Service (TMS)",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/"
+    ],
+    "paths": {
+        "\/v1\/client-credentials": {
+            "get": {
+                "summary": "Get tenant credentials ",
+                "description": "Get tenant credentials .",
+                "operationId": "GetTenantCredentialsUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "TMS",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create tenant credentials ",
+                "description": "Create tenant credentials .",
+                "operationId": "CreateTenantCredentialsUsingPOST",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantCredentialsRequests",
+                        "in": "body",
+                        "description": "tenantCredentialsRequests"
+                    },
+                    {
+                        "name": "TMS",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Create tenant credentials ",
+                "description": "Create tenant credentials .",
+                "operationId": "UpdateTenantCredentialsUsingPUT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantCredentialsRequest",
+                        "in": "body",
+                        "description": "tenantCredentialsRequest"
+                    },
+                    {
+                        "name": "TMS",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v1\/client-credentials\/client-ids\/{clientId}": {
+            "delete": {
+                "summary": "Delete tenant credentials ",
+                "description": "Delete tenant credentials .",
+                "operationId": "DeleteTenantCredentialsUsingDELETE1",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "clientId",
+                        "in": "path",
+                        "description": "clientId"
+                    },
+                    {
+                        "name": "TMS",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v1\/client-credentials\/client-ids\/{clientId}\/authorized-clients\/{authorizedClientId}": {
+            "delete": {
+                "summary": "Delete tenant credentials ",
+                "description": "Delete tenant credentials .",
+                "operationId": "DeleteTenantCredentialsUsingDELETE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "clientId",
+                        "in": "path",
+                        "description": "clientId"
+                    },
+                    {
+                        "name": "authorizedClientId",
+                        "in": "path",
+                        "description": "authorizedClientId"
+                    },
+                    {
+                        "name": "TMS",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v1\/tenant": {
+            "get": {
+                "summary": "Retrieve all the tenants in the given zone",
+                "description": "Retrieve all the tenants in the given zone.",
+                "operationId": "GetTenantsUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "create a tenant",
+                "description": "Create a tenant.",
+                "operationId": "CreateTenantUsingPOST",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantProvisioningRequest",
+                        "in": "body",
+                        "description": "tenantProvisioningRequest"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "update a tenant",
+                "description": "Update a tenant.",
+                "operationId": "UpdateTenantUsingPUT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantProvisioningRequest",
+                        "in": "body",
+                        "description": "tenantProvisioningRequest"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v1\/tenant\/profile": {
+            "get": {
+                "summary": "Lookup Tenant by Subdomain",
+                "description": "Lookup tenant by subdomain.",
+                "operationId": "GetTenantBySubdomainUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "TMS",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v1\/tenant\/profile\/service\/{serviceName}": {
+            "get": {
+                "summary": "Lookup Tenant service by Subdomain",
+                "description": "Lookup tenant service by subdomain.",
+                "operationId": "GetTenantServiceBySubdomainUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "serviceName",
+                        "in": "path",
+                        "description": "serviceName"
+                    },
+                    {
+                        "name": "TMS",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v1\/tenant\/{tenantName}": {
+            "get": {
+                "summary": "Retrieve a tenant and its list of services",
+                "description": "Retrieve a tenant and its list of services.",
+                "operationId": "GetTenantUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantName",
+                        "in": "path",
+                        "description": "tenantName"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete a tenant",
+                "description": "Delete a tenant.",
+                "operationId": "DeleteTenantUsingDELETE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantName",
+                        "in": "path",
+                        "description": "tenantName"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v1\/tenant\/{tenantName}\/service\/{instanceName}": {
+            "put": {
+                "summary": "update a PROVISIONED service instance",
+                "description": "Update a provisioned service instance.",
+                "operationId": "UpdateServiceUsingPUT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "serviceRequest",
+                        "in": "body",
+                        "description": "serviceRequest"
+                    },
+                    {
+                        "name": "tenantName",
+                        "in": "path",
+                        "description": "tenantName"
+                    },
+                    {
+                        "name": "instanceName",
+                        "in": "path",
+                        "description": "instanceName"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v1\/tenant\/{tenantName}\/service\/{serviceName}": {
+            "get": {
+                "summary": "Retrieve service details",
+                "description": "Retrieve service details.",
+                "operationId": "GetServiceDetailsUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantName",
+                        "in": "path",
+                        "description": "tenantName"
+                    },
+                    {
+                        "name": "serviceName",
+                        "in": "path",
+                        "description": "serviceName"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete service instance",
+                "description": "Delete service instance.",
+                "operationId": "DeleteServiceInstanceUsingDELETE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantName",
+                        "in": "path",
+                        "description": "tenantName"
+                    },
+                    {
+                        "name": "serviceName",
+                        "in": "path",
+                        "description": "serviceName"
+                    },
+                    {
+                        "name": "instanceName",
+                        "in": "query",
+                        "description": "instanceName"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v1\/tenant\/{tenantName}\/service\/{serviceName}\/credentials": {
+            "get": {
+                "summary": "Retrieve service credentials",
+                "description": "Retrieve service credentials.",
+                "operationId": "GetServiceCredentialsUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantName",
+                        "in": "path",
+                        "description": "tenantName"
+                    },
+                    {
+                        "name": "serviceName",
+                        "in": "path",
+                        "description": "serviceName"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v1\/tenant\/{tenantName}\/status": {
+            "get": {
+                "summary": "Retrieve a tenant's status",
+                "description": "Retrieve a tenant's status.",
+                "operationId": "GetTenantStatusUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantName",
+                        "in": "path",
+                        "description": "tenantName"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v2\/tenants\/{tenantSubdomain}": {
+            "get": {
+                "summary": "Lookup Tenant by Subdomain",
+                "description": "Lookup tenant by subdomain.",
+                "operationId": "GetTenantProfileBySubdomainUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantSubdomain",
+                        "in": "path",
+                        "description": "tenantSubdomain"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Create or Update Tenant by Subdomain",
+                "description": "Create or update tenant by subdomain.",
+                "operationId": "UpsertTenantBySubdomainUsingPUT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantSubdomain",
+                        "in": "path",
+                        "description": "tenantSubdomain"
+                    },
+                    {
+                        "name": "tenantProfile",
+                        "in": "body",
+                        "description": "tenantProfile"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete Tenant by Subdomain",
+                "description": "Delete tenant by subdomain.",
+                "operationId": "DeleteTenantBySubdomainUsingDELETE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantSubdomain",
+                        "in": "path",
+                        "description": "tenantSubdomain"
+                    }
+                ]
+            }
+        },
+        "\/v2\/tenants\/{tenantSubdomain}\/service-instances\/{serviceInstanceName}": {
+            "get": {
+                "summary": "Lookup Tenant Service by Subdomain",
+                "description": "Lookup tenant service by subdomain.",
+                "operationId": "GetTenantServiceBySubdomainUsingGET1",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantSubdomain",
+                        "in": "path",
+                        "description": "tenantSubdomain"
+                    },
+                    {
+                        "name": "serviceInstanceName",
+                        "in": "path",
+                        "description": "serviceInstanceName"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update Tenant Service by Subdomain",
+                "description": "Update tenant service by subdomain.",
+                "operationId": "UpsertTenantServiceUsingPUT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantSubdomain",
+                        "in": "path",
+                        "description": "tenantSubdomain"
+                    },
+                    {
+                        "name": "serviceInstanceName",
+                        "in": "path",
+                        "description": "serviceInstanceName"
+                    },
+                    {
+                        "name": "serviceRequest",
+                        "in": "body",
+                        "description": "serviceRequest"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete Tenant Service by Subdomain",
+                "description": "Delete tenant service by subdomain.",
+                "operationId": "DeleteTenantServiceInstanceUsingDELETE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantSubdomain",
+                        "in": "path",
+                        "description": "tenantSubdomain"
+                    },
+                    {
+                        "name": "serviceInstanceName",
+                        "in": "path",
+                        "description": "serviceInstanceName"
+                    }
+                ]
+            }
+        },
+        "\/v2\/tenants\/{tenantSubdomain}\/status": {
+            "get": {
+                "summary": "Lookup Tenant status by Subdomain",
+                "description": "Lookup tenant status by subdomain.",
+                "operationId": "GetTenantProfileStatusBySubdomainUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tenantSubdomain",
+                        "in": "path",
+                        "description": "tenantSubdomain"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "ServiceInstanceRequest": {
+                "type": "object",
+                "properties": {
+                    "serviceInstanceName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "serviceName": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ServiceStatusResponse": {
+                "type": "object",
+                "properties": {
+                    "serviceInstanceName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "serviceName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TmsResponse": {
+                "type": "object",
+                "properties": {
+                    "orgGuid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "planGuid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "serviceId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "spaceGuid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "tmsInstanceId": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TenantSecretsStatusResponse": {
+                "type": "object",
+                "properties": {
+                    "statusMessage": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Zone": {
+                "type": "object",
+                "properties": {
+                    "http": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "oauth": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TenantProvisioningResponse": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "services": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "subdomain": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "templateName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "tenantId": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TenantCredentialsResponse": {
+                "type": "object",
+                "properties": {
+                    "clientId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "clientSecret": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "issuer": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "serviceName": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TenantUaa": {
+                "type": "object",
+                "properties": {
+                    "tenantUaaList": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "CredentialResponse": {
+                "type": "object",
+                "properties": {
+                    "credentials": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "stdCredentials": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TenantStatusResponse": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ProfileResponse": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "orgGuid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "services": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "spaceGuid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "subdomain": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TenantCredentialResponseList": {
+                "type": "object",
+                "properties": {
+                    "responses": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ServiceRequest": {
+                "type": "object",
+                "properties": {
+                    "parameters": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "seq": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "serviceInstanceName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "serviceName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "servicePlan": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "trustedIssuerIds": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ServiceResponse": {
+                "type": "object",
+                "properties": {
+                    "credentials": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "scopes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "serviceInstanceId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "serviceInstanceName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "serviceName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "statusMessage": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "stdCredentials": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TenantProvisioningRequest": {
+                "type": "object",
+                "properties": {
+                    "credentialStorageProvider": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "subdomain": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "templateName": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TemplateData": {
+                "type": "object",
+                "properties": {
+                    "serviceInstances": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "services": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TenantCedentialRequest": {
+                "type": "object",
+                "properties": {
+                    "authorizedClientId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "clientId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "clientSecret": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "issuer": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "serviceName": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TenantProfile": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "orgGuid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "serviceInstances": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "services": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "spaceGuid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "subdomain": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "tenantUaa": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ServiceCredential": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "parameters": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TenantResponse": {
+                "type": "object",
+                "properties": {
+                    "appTemplate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "tenantId": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TmsRequest": {
+                "type": "object",
+                "properties": {
+                    "orgGuid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "parameters": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "planGuid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "serviceId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "spaceGuid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "tmsInstanceId": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}

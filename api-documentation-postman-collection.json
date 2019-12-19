@@ -1,0 +1,3047 @@
+{
+    "id": "bce637a7adb3267f14a8cea99e853819",
+    "name": "Api Documentation",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "5d1747af8bf7706228eab3048a4b54a1",
+            "name": "Get Dags",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags",
+            "description": "Get dags.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tag",
+                    "description": "tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "minUpdateTime",
+                    "description": "minUpdateTime",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxUpdateTime",
+                    "description": "maxUpdateTime",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Results page you want to retrieve (0..N)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "Number of records per page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sorting criteria in the format: property(,asc|desc). Default sort order is ascending. Multiple sort criteria are supported.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "88bc952553418e8c7a3a41eeb53e41ce",
+            "name": "Post Dags",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags",
+            "description": "Post dags.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dag",
+                    "description": "dag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "5727cbc3005934a4a107a0994ae5d109",
+            "name": "Put Dags Pause",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/pause\/{dagName}",
+            "description": "Put dags pause.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dagName",
+                    "description": "dagName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "184843fa1f020a7015145782a163b678",
+            "name": "Get Dags Status",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/status\/{dagName}",
+            "description": "Get dags status.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dagName",
+                    "description": "dagName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "16da4576507842c6005d6119a69859b3",
+            "name": "Get Dags Status Runs",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/status\/{dagName}\/runs",
+            "description": "Get dags status runs.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dagName",
+                    "description": "dagName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_time",
+                    "description": "start_time",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_time",
+                    "description": "end_time  or 'latest' for latest dag run",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "1e1163a7b5007f8850ebee145dc3524b",
+            "name": "Get Dags Status Runs Runid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/status\/{dagName}\/runs\/{runId}",
+            "description": "Get dags status runs runid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dagName",
+                    "description": "dagName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "runId",
+                    "description": "runId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "c46f4e309f8bdff15a22ef24025978dc",
+            "name": "Get Dags Status Tasks",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/status\/{dagName}\/tasks",
+            "description": "Get dags status tasks.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dagName",
+                    "description": "dagName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_time",
+                    "description": "start_time",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_time",
+                    "description": "end_time  or 'latest' for latest dag run",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "328874d372bd82904217738dd0c5b323",
+            "name": "Get Dags Status Tasks Runs Runid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/status\/{dagName}\/tasks\/runs\/{runId}",
+            "description": "Get dags status tasks runs runid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dagName",
+                    "description": "dagName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "runId",
+                    "description": "runId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "9e1992c89ce91b52bbe7a555d9f6345a",
+            "name": "Get Dags Status Tasks Taskid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/status\/{dagName}\/tasks\/{taskId}",
+            "description": "Get dags status tasks taskid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dagName",
+                    "description": "dagName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "taskId",
+                    "description": "taskId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "f2e9c5cabf4dd5aab71c1cf0ba12ad42",
+            "name": "Get Dags Status Tasks Taskid Runs Runid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/status\/{dagName}\/tasks\/{taskId}\/runs\/{runId}",
+            "description": "Get dags status tasks taskid runs runid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dagName",
+                    "description": "dagName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "taskId",
+                    "description": "taskId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "runId",
+                    "description": "runId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "7ae1a9136f686cb7369d83fb7e41706e",
+            "name": "Get Dags Statusall",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/statusall",
+            "description": "Get dags statusall.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "f7d1b335aebedb40431427201b383226",
+            "name": "Get Dags Tags",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/tags",
+            "description": "Get dags tags.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "f035cb40b970a2e3e458fdb91971c915",
+            "name": "Post Dags Trigger",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/trigger\/{dagName}\/{dagId}",
+            "description": "Post dags trigger.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "jsonBody",
+                    "description": "jsonBody",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dagName",
+                    "description": "Dag Reference Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dagId",
+                    "description": "dagId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "542c1eeaeded36066bed3d228c54d50d",
+            "name": "Get Dags",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/{dagName}",
+            "description": "Get dags.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dagName",
+                    "description": "dagName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "45f2f11d7c6125ab336c793d642b0d3d",
+            "name": "Post Dags",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/{dagName}",
+            "description": "Post dags.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dagName",
+                    "description": "dagName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "4fb6fb4f34adb9578f17548e62bd551d",
+            "name": "Delete Dags",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/{dagName}",
+            "description": "Delete dags.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dagName",
+                    "description": "dagName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "2a4a42bcd297e68d881bb90c7c11bfc9",
+            "name": "Post Dags Deploy",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/{dagName}\/deploy",
+            "description": "Post dags deploy.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dagName",
+                    "description": "dagName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "f0374e6d67252602016bf93e7b31074b",
+            "name": "Get Dependencies",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies",
+            "description": "Get dependencies.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "Results page you want to retrieve (0..N)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "Number of records per page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sorting criteria in the format: property(,asc|desc). Default sort order is ascending. Multiple sort criteria are supported.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "03d919b35add9546001a6ee9d6a36d9c",
+            "name": "Post Dependencies",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies",
+            "description": "Post dependencies.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "7d33bbff256d80e1db3977c8b53174fe",
+            "name": "Post Dependencies Deploy",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies\/deploy",
+            "description": "Post dependencies deploy.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "afaccf769385712a8659b459d75aa4e1",
+            "name": "Post Dependencies Deploy Dependencyid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies\/deploy\/{dependencyId}",
+            "description": "Post dependencies deploy dependencyid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dependencyId",
+                    "description": "dependencyId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "704e6cad135e459753ba42f987a96fd2",
+            "name": "Get Dependencies Tags",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies\/tags",
+            "description": "Get dependencies tags.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "8040318b4467b083f9c39c7c6d724562",
+            "name": "Post Dependencies Undeploy",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies\/undeploy",
+            "description": "Post dependencies undeploy.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "75c6ac6ce0ac3d5fa37f7e34395f7cb5",
+            "name": "Post Dependencies Undeploy Dependencyid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies\/undeploy\/{dependencyId}",
+            "description": "Post dependencies undeploy dependencyid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dependencyId",
+                    "description": "dependencyId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "223bd3c1a8c52892a96f2e8da37ab15a",
+            "name": "Get Dependencies Dependencyid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies\/{dependencyId}",
+            "description": "Get dependencies dependencyid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dependencyId",
+                    "description": "dependencyId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "4654db0fe4d46da41dd92e925bb58be5",
+            "name": "Post Dependencies Dependencyid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies\/{dependencyId}",
+            "description": "Post dependencies dependencyid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dependencyId",
+                    "description": "dependencyId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "599932d69002c02bfaa32d45c92f2f02",
+            "name": "Delete Dependencies Dependencyid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies\/{dependencyId}",
+            "description": "Delete dependencies dependencyid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dependencyId",
+                    "description": "dependencyId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "a60d90092e7d349d37dc3ce00bcdadba",
+            "name": "Get Flow Templates",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates",
+            "description": "Get flow templates.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tag",
+                    "description": "tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "minUpdateTime",
+                    "description": "minUpdateTime",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxUpdateTime",
+                    "description": "maxUpdateTime",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "displayShellTemplates",
+                    "description": "displayShellTemplates",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Results page you want to retrieve (0..N)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "Number of records per page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sorting criteria in the format: property(,asc|desc). Default sort order is ascending. Multiple sort criteria are supported.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "c55444cede947bbcccd335e9f34f3b5a",
+            "name": "Post Flow Templates",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates",
+            "description": "Post flow templates.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "731156c73bff77f953b0f0b558e429e2",
+            "name": "Get Flow Templates Tags",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/tags",
+            "description": "Get flow templates tags.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "e53e2324b9d433099581411dff7ff09e",
+            "name": "Get Flow Templates Flowtemplateid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}",
+            "description": "Get flow templates flowtemplateid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowTemplateId",
+                    "description": "flowTemplateId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "122a45af95a790826559317428d406a9",
+            "name": "Post Flow Templates Flowtemplateid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}",
+            "description": "Post flow templates flowtemplateid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowTemplateId",
+                    "description": "flowTemplateId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "7703e477cd23641d40474efd7f813277",
+            "name": "Put Flow Templates Flowtemplateid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}",
+            "description": "Put flow templates flowtemplateid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowTemplateId",
+                    "description": "flowTemplateId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "flowTemplate",
+                    "description": "flowTemplate",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "5bb2e8f815b9e253f13ef06adb35ed14",
+            "name": "Delete Flow Templates Flowtemplateid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}",
+            "description": "Delete flow templates flowtemplateid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowTemplateId",
+                    "description": "flowTemplateId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "9bff1c53dac1c93fe5eefef17a9ba75d",
+            "name": "Get Flow Templates Flowtemplateid Download",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/download",
+            "description": "Get flow templates flowtemplateid download.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowTemplateId",
+                    "description": "flowTemplateId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "46c677193baa2f4075ea043888e9083f",
+            "name": "Get Flow Templates Flowtemplateid Flows",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows",
+            "description": "Get flow templates flowtemplateid flows.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowTemplateId",
+                    "description": "flowTemplateId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tag",
+                    "description": "tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "minUpdateTime",
+                    "description": "minUpdateTime",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxUpdateTime",
+                    "description": "maxUpdateTime",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Results page you want to retrieve (0..N)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "Number of records per page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sorting criteria in the format: property(,asc|desc). Default sort order is ascending. Multiple sort criteria are supported.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "dd7b399690653438c52fb8feb9fe5b7d",
+            "name": "Post Flow Templates Flowtemplateid Flows",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows",
+            "description": "Post flow templates flowtemplateid flows.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowTemplateId",
+                    "description": "flowTemplateId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "launch",
+                    "description": "launch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "77021a61b5faed72660e44db5e47cd35",
+            "name": "Get Flow Templates Flowtemplateid Flows Flowid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}",
+            "description": "Get flow templates flowtemplateid flows flowid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowTemplateId",
+                    "description": "flowTemplateId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "41bc62e273f77b7507d053ba8ab30674",
+            "name": "Post Flow Templates Flowtemplateid Flows Flowid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}",
+            "description": "Post flow templates flowtemplateid flows flowid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "flow",
+                    "description": "flow",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "8f4fd918f8a1f8d70e0b266aa3623916",
+            "name": "Delete Flow Templates Flowtemplateid Flows Flowid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}",
+            "description": "Delete flow templates flowtemplateid flows flowid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "462b633234c9923707814261f89a5011",
+            "name": "Get Flow Templates Flowtemplateid Flows Flowid Config",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}\/config",
+            "description": "Get flow templates flowtemplateid flows flowid config.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "f6f0bf2356ce641b7c464da506e3b1ef",
+            "name": "Post Flow Templates Flowtemplateid Flows Flowid Config",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}\/config",
+            "description": "Post flow templates flowtemplateid flows flowid config.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "e222452d9edcd54ce029851e440c2d0a",
+            "name": "Get Flow Templates Flowtemplateid Flows Flowid Config Filename",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}\/config\/{fileName}",
+            "description": "Get flow templates flowtemplateid flows flowid config filename.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "fileName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "1afc80e925da3e6a89fedce2dff1d3f0",
+            "name": "Delete Flow Templates Flowtemplateid Flows Flowid Config Filename",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}\/config\/{fileName}",
+            "description": "Delete flow templates flowtemplateid flows flowid config filename.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "fileName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "4783183b98c72dd56aa0d26fbbff49a7",
+            "name": "Post Flow Templates Flowtemplateid Flows Flowid Launch",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}\/launch",
+            "description": "Post flow templates flowtemplateid flows flowid launch.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "launchRequest",
+                    "description": "launchRequest",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "9d8c4f2ad2a34b35712efaea65ead699",
+            "name": "Post Flow Templates Flowtemplateid Flows Flowid Stop",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}\/stop",
+            "description": "Post flow templates flowtemplateid flows flowid stop.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "8df5f618aad3d0af0e0c6890a04ef062",
+            "name": "Get Flow Templates Flowtemplateid Flows Flowid Tags",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}\/tags",
+            "description": "Get flow templates flowtemplateid flows flowid tags.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "a0489a2c507dd25b2373642b898a2cae",
+            "name": "Post Flow Templates Flowtemplateid Flows Flowid Tags",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}\/tags",
+            "description": "Post flow templates flowtemplateid flows flowid tags.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "tags",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "ec60d8b1f97cf55b49e6d9f0a9f7721c",
+            "name": "Get Flow Templates Flowtemplateid List",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/list",
+            "description": "Get flow templates flowtemplateid list.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowTemplateId",
+                    "description": "flowTemplateId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "be2a13ae5202ec518b86cac266c7dbfa",
+            "name": "Get Flow Templates Flowtemplateid Tags",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/tags",
+            "description": "Get flow templates flowtemplateid tags.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowTemplateId",
+                    "description": "flowTemplateId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "e904f8a0134f52ee8863dee0379522c0",
+            "name": "Post Flow Templates Flowtemplateid Tags",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/tags",
+            "description": "Post flow templates flowtemplateid tags.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowTemplateId",
+                    "description": "flowTemplateId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "tags",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "4e756b99919f92e82059ee0b9f885259",
+            "name": "Get Flows",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows",
+            "description": "Get flows.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tag",
+                    "description": "tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "minUpdateTime",
+                    "description": "minUpdateTime",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxUpdateTime",
+                    "description": "maxUpdateTime",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Results page you want to retrieve (0..N)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "Number of records per page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sorting criteria in the format: property(,asc|desc). Default sort order is ascending. Multiple sort criteria are supported.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "834aa6e174e7204cb135b4e66e0520f6",
+            "name": "Post Flows",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows",
+            "description": "Post flows.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "bd96d1e88325a400214bf508c1d2fae1",
+            "name": "Get Flows Tags",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/tags",
+            "description": "Get flows tags.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "6de39d267ed6abb860327b252cbcc6eb",
+            "name": "Post Flows Flowid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}",
+            "description": "Post flows flowid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "f72b90c8373d9246102ae74270836b46",
+            "name": "Delete Flows Flowid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}",
+            "description": "Delete flows flowid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "e67a22b76e8e17a5ff0a0b7b0aa286ac",
+            "name": "Get Flows Flowid Config",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}\/config",
+            "description": "Get flows flowid config.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "4d5f6c73078aa3b703a69e9c007774ce",
+            "name": "Post Flows Flowid Config",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}\/config",
+            "description": "Post flows flowid config.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "ea9a3152939e084f04c76a02939a5392",
+            "name": "Get Flows Flowid Config Filename",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}\/config\/{fileName}",
+            "description": "Get flows flowid config filename.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "fileName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "489b0c3d2a5958f8ba96e82a9b579924",
+            "name": "Delete Flows Flowid Config Filename",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}\/config\/{fileName}",
+            "description": "Delete flows flowid config filename.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "fileName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "25f77496dc05096986eae9b527673601",
+            "name": "Post Flows Flowid Create Template",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}\/create-template",
+            "description": "Post flows flowid create template.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "1a0f45c9142fdeb6cb1f6539f6975d39",
+            "name": "Get Flows Flowid Download",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}\/download",
+            "description": "Get flows flowid download.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "75649bce87b564b4373515fe9989c2a2",
+            "name": "Post Flows Flowid Tags",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}\/tags",
+            "description": "Post flows flowid tags.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowId",
+                    "description": "flowId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "tags",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "84714f3290adf1cdd704c74d39edf941",
+            "name": "Get Flows Flowname",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowName}",
+            "description": "Get flows flowname.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowName",
+                    "description": "flowName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "5b86545d0f91c707cb1e6569e63be11d",
+            "name": "Post Flows Flowname Launch",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowName}\/launch",
+            "description": "Post flows flowname launch.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowName",
+                    "description": "flowName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "launchRequest",
+                    "description": "launchRequest",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "5fa38b708c8578eb9e4c61daf08c2bdd",
+            "name": "Post Flows Flowname Stop",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowName}\/stop",
+            "description": "Post flows flowname stop.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "flowName",
+                    "description": "flowName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "8242e956eddf655fc9a80a1fce74b161",
+            "name": "Get Instances",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances",
+            "description": "Get instances.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "flowName",
+                    "description": "flowName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "statuses",
+                    "description": "statuses",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tag",
+                    "description": "tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "minUpdateTime",
+                    "description": "minUpdateTime",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxUpdateTime",
+                    "description": "maxUpdateTime",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Results page you want to retrieve (0..N)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "Number of records per page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sorting criteria in the format: property(,asc|desc). Default sort order is ascending. Multiple sort criteria are supported.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "8b46aef9b89ec08a690f5318d244f406",
+            "name": "Get Instances Instanceid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}",
+            "description": "Get instances instanceid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "673eea3222d53ed5d4829b301ea3cb17",
+            "name": "Delete Instances Instanceid",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}",
+            "description": "Delete instances instanceid.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "a908bd8125154ad389156e0c3668b456",
+            "name": "Get Instances Instanceid Appattempts Attemptid Containers",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/appattempts\/{attemptId}\/containers",
+            "description": "Get instances instanceid appattempts attemptid containers.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "attemptId",
+                    "description": "attemptId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "ae9de46b3dfb19b5a4dda3d35fd73c07",
+            "name": "Get Instances Instanceid Config",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/config",
+            "description": "Get instances instanceid config.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "4b1a06252fd3ccafc593247a8f05e73f",
+            "name": "Get Instances Instanceid Config Filename",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/config\/{fileName}",
+            "description": "Get instances instanceid config filename.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileName",
+                    "description": "fileName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "d320dac848d51e3fa56d5a72322e064d",
+            "name": "Get Instances Instanceid Containers",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/containers",
+            "description": "Get instances instanceid containers.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "b24db235917339c9932e24ecd8e854e7",
+            "name": "Get Instances Instanceid Containers Containerid Logs",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/containers\/{containerId}\/logs",
+            "description": "Get instances instanceid containers containerid logs.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "containerId",
+                    "description": "containerId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "84b3c7c41f451c0fb9acc020c541e335",
+            "name": "Get Instances Instanceid Containers Containerid Logs Logname",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/containers\/{containerId}\/logs\/{logName}",
+            "description": "Get instances instanceid containers containerid logs logname.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "containerId",
+                    "description": "containerId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "logName",
+                    "description": "logName",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "offset",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "length",
+                    "description": "length",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "088394ba5d3366488012920058296e61",
+            "name": "Get Instances Instanceid Sparkproxy **",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/sparkproxy\/**",
+            "description": "Get instances instanceid sparkproxy **.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "1a0aa1a2860a2e89df76b9f7b479655a",
+            "name": "Head Instances Instanceid Sparkproxy **",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/sparkproxy\/**",
+            "description": "Head instances instanceid sparkproxy **.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "head",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "bd15e3797947f2fb93e1f13a5f45dfe3",
+            "name": "Post Instances Instanceid Sparkproxy **",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/sparkproxy\/**",
+            "description": "Post instances instanceid sparkproxy **.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "ee99092aac5ce4f9f291ca618689c1b2",
+            "name": "Put Instances Instanceid Sparkproxy **",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/sparkproxy\/**",
+            "description": "Put instances instanceid sparkproxy **.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "ba5c31407846f8782b8e163991fdbc68",
+            "name": "Delete Instances Instanceid Sparkproxy **",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/sparkproxy\/**",
+            "description": "Delete instances instanceid sparkproxy **.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "cbfd3258da0b02e7c9f5466338a82a0c",
+            "name": "Options Instances Instanceid Sparkproxy **",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/sparkproxy\/**",
+            "description": "Options instances instanceid sparkproxy **.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "options",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "cefd624bcb44b9e737cb215481263ac4",
+            "name": "Patch Instances Instanceid Sparkproxy **",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/sparkproxy\/**",
+            "description": "Patch instances instanceid sparkproxy **.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        },
+        {
+            "id": "2912c98f1c7de21e51c80db335d79219",
+            "name": "Get Instances Instanceid Submit Logs",
+            "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/submit-logs",
+            "description": "Get instances instanceid submit logs.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "instanceId",
+                    "description": "instanceId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "offset",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "length",
+                    "description": "length",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "rawModeData": ""
+        }
+    ]
+}

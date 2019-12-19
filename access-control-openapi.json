@@ -1,0 +1,551 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Access Control",
+        "description": "Access Control Services (ACS). ",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpspredix-acs.run.aws-usw02-pr.ice.predix.io\/"
+    ],
+    "paths": {
+        "\/monitoring\/heartbeat": {
+            "get": {
+                "summary": "Monitoring API that allows to check the ACS heartbeat",
+                "description": "Monitoring api that allows to check the acs heartbeat.",
+                "operationId": "GetHeartBeatUsingGET",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/v1\/connector\/resource": {
+            "get": {
+                "summary": "Retrieves connector configuration for external resource attributes for the given zone.",
+                "description": "Retrieves connector configuration for external resource attributes for the given zone..",
+                "operationId": "GetResourceConnectorUsingGET1",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Creates or updates connector configuration for external resource attributes for the given zone.",
+                "description": "Creates or updates connector configuration for external resource attributes for the given zone..",
+                "operationId": "PutResourceConnectorUsingPUT1",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "connector",
+                        "in": "body",
+                        "description": "New or updated connector configuration for external resource attributes"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Deletes connector configuration for external resource attributes for the given zone.",
+                "description": "Deletes connector configuration for external resource attributes for the given zone..",
+                "operationId": "DeleteResourceConnectorUsingDELETE",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/v1\/connector\/subject": {
+            "get": {
+                "summary": "Retrieves connector configuration for external subject attributes for the given zone.",
+                "description": "Retrieves connector configuration for external subject attributes for the given zone..",
+                "operationId": "GetSubjectConnectorUsingGET",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Creates or updates connector configuration for external subject attributes for the given zone.",
+                "description": "Creates or updates connector configuration for external subject attributes for the given zone..",
+                "operationId": "PutSubjectConnectorUsingPUT1",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "connector",
+                        "in": "body",
+                        "description": "New or updated connector configuration for external resource attributes"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Deletes connector configuration for external subject attributes for the given zone.",
+                "description": "Deletes connector configuration for external subject attributes for the given zone..",
+                "operationId": "DeleteSubjectConnectorUsingDELETE",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/v1\/policy-evaluation": {
+            "post": {
+                "summary": "Evaluates all applicable policies and returns decision result",
+                "description": "Evaluates all applicable policies and returns decision result.",
+                "operationId": "EvalPolicyV1UsingPOST",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "request",
+                        "in": "body",
+                        "description": "request"
+                    }
+                ]
+            }
+        },
+        "\/v1\/policy-set": {
+            "get": {
+                "summary": "Returns all the policy sets for the given zone.",
+                "description": "Returns all the policy sets for the given zone..",
+                "operationId": "GetAllPolicySetsUsingGET1",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/v1\/policy-set\/{policySetId}": {
+            "get": {
+                "summary": "Retrieves a policy set for the given zone.",
+                "description": "Retrieves a policy set for the given zone..",
+                "operationId": "GetPolicySetUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "policySetId",
+                        "in": "path",
+                        "description": "policySetId"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Creates\/Updates a policy set for the given zone.",
+                "description": "Creates\/updates a policy set for the given zone..",
+                "operationId": "CreatePolicySetUsingPUT1",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "policySet",
+                        "in": "body",
+                        "description": "policySet"
+                    },
+                    {
+                        "name": "policySetId",
+                        "in": "path",
+                        "description": "policySetId"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Deletes a policy set for the given zone.",
+                "description": "Deletes a policy set for the given zone..",
+                "operationId": "DeletePolicySetUsingDELETE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "policySetId",
+                        "in": "path",
+                        "description": "policySetId"
+                    }
+                ]
+            }
+        },
+        "\/v1\/resource": {
+            "get": {
+                "summary": "Retrieves the list of all resources for the given zone.",
+                "description": "Retrieves the list of all resources for the given zone..",
+                "operationId": "GetResourcesUsingGET",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Creates a list of resources for the given zone. Existing resources will be updated with the provided values.",
+                "description": "Creates a list of resources for the given zone. existing resources will be updated with the provided values..",
+                "operationId": "AppendResourcesUsingPOST",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "resources",
+                        "in": "body",
+                        "description": "resources"
+                    }
+                ]
+            }
+        },
+        "\/v1\/resource\/{resourceIdentifier}": {
+            "get": {
+                "summary": "Retrieves the resource for the given zone. The resourceIdentifier must be URL encoded in application\/x-www-form-urlencoded format with UTF-8.",
+                "description": "Retrieves the resource for the given zone. the resourceidentifier must be url encoded in application\/x-www-form-urlencoded format with utf-8..",
+                "operationId": "GetResourceV1UsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "resourceIdentifier",
+                        "in": "path",
+                        "description": "resourceIdentifier"
+                    },
+                    {
+                        "name": "includeInheritedAttributes",
+                        "in": "query",
+                        "description": "includeInheritedAttributes"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Creates\/Updates a given resource for a given zone. The resourceIdentifier must be URL encoded in application\/x-www-form-urlencoded format with UTF-8.",
+                "description": "Creates\/updates a given resource for a given zone. the resourceidentifier must be url encoded in application\/x-www-form-urlencoded format with utf-8..",
+                "operationId": "PutResourceV1UsingPUT1",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "resource",
+                        "in": "body",
+                        "description": "resource"
+                    },
+                    {
+                        "name": "resourceIdentifier",
+                        "in": "path",
+                        "description": "resourceIdentifier"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Deletes the resource for a given zone. The resourceIdentifier must be URL encoded in application\/x-www-form-urlencoded format with UTF-8.",
+                "description": "Deletes the resource for a given zone. the resourceidentifier must be url encoded in application\/x-www-form-urlencoded format with utf-8..",
+                "operationId": "DeleteResourceV1UsingDELETE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "resourceIdentifier",
+                        "in": "path",
+                        "description": "resourceIdentifier"
+                    }
+                ]
+            }
+        },
+        "\/v1\/subject": {
+            "get": {
+                "summary": "Retrieves the list of subjects for the given zone.",
+                "description": "Retrieves the list of subjects for the given zone..",
+                "operationId": "GetSubjectsUsingGET1",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Creates a list of subjects. Existing subjects will be updated with the provided values.",
+                "description": "Creates a list of subjects. existing subjects will be updated with the provided values..",
+                "operationId": "AppendsubjectsUsingPOST1",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "subjects",
+                        "in": "body",
+                        "description": "subjects"
+                    }
+                ]
+            }
+        },
+        "\/v1\/subject\/{subjectIdentifier}": {
+            "get": {
+                "summary": "Retrieves the subject for the given zone. The subjectIdentifier must be URL encoded in application\/x-www-form-urlencoded format with UTF-8.",
+                "description": "Retrieves the subject for the given zone. the subjectidentifier must be url encoded in application\/x-www-form-urlencoded format with utf-8..",
+                "operationId": "GetSubjectUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "subjectIdentifier",
+                        "in": "path",
+                        "description": "subjectIdentifier"
+                    },
+                    {
+                        "name": "includeInheritedAttributes",
+                        "in": "query",
+                        "description": "includeInheritedAttributes"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Creates\/Updates a given Subject.",
+                "description": "Creates\/updates a given subject..",
+                "operationId": "PutSubjectUsingPUT1",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "subject",
+                        "in": "body",
+                        "description": "subject"
+                    },
+                    {
+                        "name": "subjectIdentifier",
+                        "in": "path",
+                        "description": "subjectIdentifier"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Deletes the subject for a given zone. The subjectIdentifier must be URL encoded in application\/x-www-form-urlencoded format with UTF-8.",
+                "description": "Deletes the subject for a given zone. the subjectidentifier must be url encoded in application\/x-www-form-urlencoded format with utf-8..",
+                "operationId": "DeleteSubjectUsingDELETE1",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "subjectIdentifier",
+                        "in": "path",
+                        "description": "subjectIdentifier"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Policy": {
+                "type": "object",
+                "properties": {
+                    "conditions": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "effect": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "Condition": {
+                "type": "object",
+                "properties": {
+                    "condition": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "The resource the access control operation would read, create, delete, or modify. Typically used within a policy definition": {
+                "type": "object",
+                "properties": {
+                    "attributeUriTemplate": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "attributes": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "uriTemplate": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "Attribute": {
+                "type": "object",
+                "properties": {
+                    "issuer": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "Parent": {
+                "type": "object",
+                "properties": {
+                    "identifier": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "scopes": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "BaseResource": {
+                "type": "object",
+                "properties": {
+                    "attributes": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "parents": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "resourceIdentifier": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "PolicyEvaluationRequestV1": {
+                "type": "object",
+                "properties": {
+                    "action": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "policySetsEvaluationOrder": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "resourceAttributes": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "resourceIdentifier": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "subjectAttributes": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "subjectIdentifier": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "PolicySet": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "policies": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "Target": {
+                "type": "object",
+                "properties": {
+                    "action": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "SubjectType": {
+                "type": "object",
+                "properties": {
+                    "attributes": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "AttributeAdapterConnection": {
+                "type": "object",
+                "properties": {
+                    "adapterEndpoint": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "uaaClientId": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "uaaClientSecret": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "uaaTokenUrl": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "AttributeConnector": {
+                "type": "object",
+                "properties": {
+                    "adapters": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "isActive": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "maxCachedIntervalMinutes": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "PolicyEvaluationResult": {
+                "type": "object",
+                "properties": {
+                    "effect": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "resolvedResourceUris": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "resourceAttributes": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "subjectAttributes": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "timestamp": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "BaseSubject": {
+                "type": "object",
+                "properties": {
+                    "attributes": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "parents": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "subjectIdentifier": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            }
+        }
+    }
+}

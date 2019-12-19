@@ -1,0 +1,1730 @@
+{
+    "id": "41e15ef013f0a8dc48537a7e8c22db32",
+    "name": "Analytics Runtime",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "469be65d27720186d3c5e3bdda0a0ed0",
+            "name": "Healthcheck for custom datasource.",
+            "url": "https\/\/api\/v1\/analytics\/customdata\/healthcheck",
+            "description": "Indicates whether custom data connector is up and running.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "e92b972d9d9d884c405f8ef35330b8db",
+            "name": "Retrieve analytic input data from custom datasource.",
+            "url": "https\/\/api\/v1\/analytics\/customdata\/read",
+            "description": "Returns the analytic input data used during runtime execution.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Analytic Input Data Read request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "781327d99d1e4e0df3ca459ef41ce3a0",
+            "name": "Write analytic output data to custom datasource.",
+            "url": "https\/\/api\/v1\/analytics\/customdata\/write",
+            "description": "Writes analytic output data generated during runtime execution.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Analytic Input Data Read request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "e09e0b4a714df046e7a29f21ddba8f1a",
+            "name": "Execute the specified orchestration.",
+            "url": "https\/\/api\/v1\/execution",
+            "description": "To successfully execute the orchestration, the OrchestrationRequest must contain valid orchestration id, bpmn workflow xml and optionally input data for each analytic step defined in the workflow. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Analytic Input Data Read request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "df25c83a1fa9d71d9371ba9734aadc80",
+            "name": "Retrieve orchestration execution result",
+            "url": "https\/\/api\/v1\/monitoring\/orchestrations\/{orchestrationRequestId}",
+            "description": "Returns orchestration execution result for the given orchestration request id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orchestrationRequestId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "e7998c6b77716fabb37519d013a9b0a0",
+            "name": "Get all job definition entries.",
+            "url": "https\/\/api\/v1\/scheduler\/jobs",
+            "description": "Returns all job definition entries as specified by page and sort criteria.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "page index : zero-based page index",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "page size : between 1 and 1000 inclusive",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortOrder",
+                    "description": "sort order : asc | desc",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "5d7c5d8a4eda361f30a9ff0a7c3ab855",
+            "name": "Create a scheduler job.",
+            "url": "https\/\/api\/v1\/scheduler\/jobs",
+            "description": "Creates the scheduler job with a generated id. Set the state value to 'Active' to start the job. Set the state value to 'Inactive' to avoid starting the job.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Refresh",
+                    "description": "Refresh-Token-For-Job-Execution",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "bab9cdcb96fb1505d233a910915d21f2",
+            "name": "Get a scheduler job by id.",
+            "url": "https\/\/api\/v1\/scheduler\/jobs\/{id}",
+            "description": "Returns the scheduler job with the given id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "Job id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "613dae289d0f306783e50195f7a556d3",
+            "name": "Update an existing scheduler job.",
+            "url": "https\/\/api\/v1\/scheduler\/jobs\/{id}",
+            "description": "Updates the scheduled job. The updated changes will be effective from the next scheduling of this job. To suspend a job, update the job with state value 'Inactive'. To resume a job, update the job with state value 'Active'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Refresh",
+                    "description": "Refresh-Token-For-Job-Execution",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "Job id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "dd73faa3cb3dda1230550425cec80acc",
+            "name": "Delete job definition.",
+            "url": "https\/\/api\/v1\/scheduler\/jobs\/{id}",
+            "description": "Delete job definition for the given job id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "Job id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "8047a2711da77a0a2ef31c9b5d42d9ca",
+            "name": "Retrieve job execution history of the given job.",
+            "url": "https\/\/api\/v1\/scheduler\/jobs\/{id}\/history",
+            "description": "Retrieve job execution history",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "Job id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startTime",
+                    "description": "Start time in millis",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "endTime",
+                    "description": "End time in millis",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "4372d2ab7d9cf364adeb1c8b5e2980b9",
+            "name": "Get all orchestration configuration entries.",
+            "url": "https\/\/api\/v2\/config\/orchestrations",
+            "description": "Returns all orchestration configuration entries as specified by page and sort criteria.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "page index : zero-based page index",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "page size : between 1 and 1000 inclusive",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortOrder",
+                    "description": "sort order : asc | desc",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortableFields",
+                    "description": "sortable fields : name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "276fde9735947f38f22f5cbf5f7004de",
+            "name": "Create an orchestration configuration entry.",
+            "url": "https\/\/api\/v2\/config\/orchestrations",
+            "description": "Creates the orchestration configuration entry with a generated id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Analytic Input Data Read request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "89030cc2c505667dcfd92dd502224501",
+            "name": "Upload an artifact and attach it to an orchestration configuration entry.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/artifacts",
+            "description": "Upload a single artifact file in a multipart MIME structure and attach it to an orchestration configuration entry. The multipart MIME structure must have the orchestration entry id tagged as 'orchestrationEntryId',  the file contents tagged as 'file',  the artifact type tagged as 'type', and  the name of artifact tagged as 'name'.  A description (under 1024 characters) tagged as 'description' can be optionally specified. Artifact types can be either 'portToFieldMap', 'bpmn' or any.   If the arti",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "(Required) Artifact file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "orchestrationEntryId",
+                    "description": "(Required) orchestration configuration entry id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "(Required) Artifact type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "(Required) Artifact name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "stepId",
+                    "description": "Orchestration Step ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "description",
+                    "description": "Artifact description",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "2ae6adde444e7905ab0d246e8561542a",
+            "name": "Update an artifact by id.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/artifacts\/{id}",
+            "description": "Update the artifact of the orchestration configuration with the contents of the supplied multipart MIME structure. The multipart MIME structure may have new file contents tagged as 'file',  new artifact type tagged as 'type',  new name of artifact tagged as 'name',  new description (under 1024 characters) tagged as 'description', and  new value of the orchestration step id tagged as 'stepId.   Artifact types can be either 'portToFieldMap', 'bpmn' or any.  (See the documentation for more informat",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Job id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "(Required) Artifact file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "(Required) Artifact type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "(Required) Artifact name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "stepId",
+                    "description": "Orchestration Step ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "description",
+                    "description": "Artifact description",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "bad874ac85e5bbe090d2d1cc895f8e0f",
+            "name": "Delete an orchestration artifact by id.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/artifacts\/{id}",
+            "description": "Delete the orchestration artifact by artifact id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Job id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "4fbf02ec2f091cd8d2bae6b7acb06bd3",
+            "name": "Download an orchestration artifact file by id.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/artifacts\/{id}\/file",
+            "description": "The file is downloaded as an octet-stream.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Job id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "ac4990ef2079d8c4e72d2faac9d6e80b",
+            "name": "Get the default tag query corresponding for the tenant.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/defaulttagquery",
+            "description": "Returns all information (query string, fieldnamespecifier, tagnamespecifer, description etc.) associated with the default tag query. An error is returned if tag query does not exist for the tenant.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "3dc7715b4202c858341bc27a771ff054",
+            "name": "Create the default tag query corresponding for the tenant.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/defaulttagquery",
+            "description": "Creates the default tag query including all information (query string, fieldnamespecifier, tagnamespecifer, description etc.) associated with the query.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Analytic Input Data Read request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "3d6a11ba03bd1d326df9a470f19349a3",
+            "name": "Update the default tag query for the tenant.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/defaulttagquery",
+            "description": "Updates the default tag query including all information (query string, fieldnamespecifier, tagnamespecifer, description etc.) associated with the query.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Analytic Input Data Read request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "48b87034031cb8e9a082dff25529f2c9",
+            "name": "Delete the default tag query for the tenant.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/defaulttagquery",
+            "description": "Deletes the default tag query.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "685bab7a8d9a7bf1843321e982a6fc0c",
+            "name": "Get all model entries.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/models",
+            "description": "Returns all model entries as specified by page and sort criteria. By default, retrieves all models for tenant. If additional query params specified, then results will be filtered",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "modelKey",
+                    "description": "Model Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelName",
+                    "description": "Model Name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelVersion",
+                    "description": "Model Version",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "page index : zero-based page index",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "page size : between 1 and 1000 inclusive",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "8e4f7889dea894caa095220a01b2bb91",
+            "name": "Upload a model.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/models",
+            "description": "Upload a model in a multipart MIME structure. The multipart MIME structure must have the modelKey  tagged as 'modelKey',  the modelName  tagged as 'modelName',  the modelVersion  tagged as 'modelVersion',  the file contents tagged as 'file',  a description (under 1024 characters) tagged as 'description'. (See the documentation for more information regarding these files.)",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "(Required) Artifact file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelKey",
+                    "description": "(Required) Model Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelName",
+                    "description": "(Required) Model Name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelVersion",
+                    "description": "(Required) Model Version",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "description",
+                    "description": "Artifact description",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "067caebc69a5de10fa84c79949145218",
+            "name": "Update model by id.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/models\/{id}",
+            "description": "Update a model with attributes of the supplied multipart MIME structure. The multipart MIME structure must have the modelKey  tagged as 'modelKey',  the modelName  tagged as 'modelName',  the modelVersion  tagged as 'modelVersion',  the file contents tagged as 'file',  a description (under 1024 characters) tagged as 'description'. (See the documentation for more information regarding these files.)",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Job id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "(Required) Artifact file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelKey",
+                    "description": "(Required) Model Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelName",
+                    "description": "(Required) Model Name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelVersion",
+                    "description": "(Required) Model Version",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "description",
+                    "description": "Artifact description",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "26127155e6ba1cec4e019bf5663147a5",
+            "name": "Delete a model by id.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/models\/{id}",
+            "description": "Delete a model by model id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Job id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "94e4b32801f66358ba5bfc8df47bf7f9",
+            "name": "Download a model file by id.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/models\/{id}\/file",
+            "description": "The file is downloaded as an octet-stream.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Job id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "9d20d52db85a42433e1dc3625fb765e5",
+            "name": "Get an orchestration configuration entry by id.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/{id}",
+            "description": "Returns the orchestration configuration entry with the given id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Job id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "bb4db5386b2de1ad083c73c218228ba9",
+            "name": "Update an existing orchestration configuration entry.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/{id}",
+            "description": "Updates the orchestration configuration entry with given orchestration configuration.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Job id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "Analytic Input Data Read request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "b0ea3ed5d62f9826ac3d1e9f05d32f18",
+            "name": "Delete an orchestration configuration entry by id.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/{id}",
+            "description": "Deletes the orchestration configuration entry with the given id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Job id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "937661f510b94b274c9e159aaab811b9",
+            "name": "Get the descriptive information of the orchestration artifacts corresponding to an orchestration configuration entry.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/{id}\/artifacts",
+            "description": "Returns the description information (type, description, etc.) for all orchestration artifacts associated with the given configuration entry id. Note: it does not return the orchestration artifact file contents; use the download APIs to obtain an artifact file. An error is returned if the supplied orchestration configuration entry id does not exist.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Job id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "822ec2d73d87eaeb87a36b00f134c1e1",
+            "name": "Download an orchestration artifact file by orchestration id and artifact type.",
+            "url": "https\/\/api\/v2\/config\/orchestrations\/{id}\/file",
+            "description": "The file is downloaded as an octet-stream. If the type is bpmn, then then bpmn xml is downloaded. If the type is portToFieldMap, then the system expects analyticStepId to download the portToFieldMap for the given step",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Job id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "artifact type (Ex. \"bpmn\", \"portToFieldMap\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "artifact name (analytic step id)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Predix",
+                    "description": "Predix-Zone-Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Authorization",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "5e972ccf502c10c3cf166f324e88097a",
+            "name": "Execute the specified orchestration.",
+            "url": "https\/\/api\/v2\/execution",
+            "description": "To successfully execute the orchestration, the OrchestrationExecutionRequest must contain valid orchestration id, asset id, asset data field mapping details. This API will execute the orchestration in synchronous mode and if the execution is not completed  in 1 minute then the request will fail. After successful completion, the response will contain each orchestration steps output data.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Analytic Input Data Read request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "13b82eb98fe602ce637a91f3f45b7cad",
+            "name": "Execute the specified orchestration in asynchronous mode.",
+            "url": "https\/\/api\/v2\/execution\/async",
+            "description": "To successfully execute the orchestration, the OrchestrationExecutionRequest must contain valid orchestration id, asset id, asset data field mapping details. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Analytic Input Data Read request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "4beae00f15f40bc6f63f369d82c02f58",
+            "name": "Deploy the specified orchestration workflow file to the Orchestration Engine.",
+            "url": "https\/\/api\/v2\/execution\/orchestrations\/{orchConfigId}\/deployment",
+            "description": "This API will deploy the BPMN file associated with the specified orchestration configuration to the Orchestration Engine in preparation for orchestration execution.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orchConfigId",
+                    "description": "orchestration configuration id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "b80ad846fdb86b3d6fcba559bff172fc",
+            "name": "Execute the orchestration with given bpmn and input data.",
+            "url": "https\/\/api\/v2\/execution\/testrun",
+            "description": "To successfully execute the orchestration, the request must contain valid bpmn20.xml, input data for each step in the bpmn.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "bpmn",
+                    "description": "BPMN file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "input",
+                    "description": "Input data file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        },
+        {
+            "id": "cff1da9143a49f50df32d86d8ec216a7",
+            "name": "Validate the specified orchestration and the health of all the analytics used in the orchestration.",
+            "url": "https\/\/api\/v2\/execution\/validation",
+            "description": "To successfully validate the orchestration, the BPMN XML file must reference analytics that are running. The validation will call a 'healthCheck' entry on each analytic.  Analytics in the platform automatically have this entry, analytics outside the platform must implement this APIfor their validation to pass.  The results contain the http status for each for the healthCheck call to each analytic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "file",
+                    "description": "(Required) artifact file",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41e15ef013f0a8dc48537a7e8c22db32",
+            "rawModeData": ""
+        }
+    ]
+}

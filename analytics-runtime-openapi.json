@@ -1,0 +1,1924 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Analytics Runtime",
+        "description": "",
+        "termsOfService": ""
+    },
+    "servers": [
+        "https\/"
+    ],
+    "paths": {
+        "\/api\/v1\/analytics\/customdata\/healthcheck": {
+            "get": {
+                "summary": "Healthcheck for custom datasource.",
+                "description": "Indicates whether custom data connector is up and running.",
+                "operationId": "Healthcheck",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/api\/v1\/analytics\/customdata\/read": {
+            "post": {
+                "summary": "Retrieve analytic input data from custom datasource.",
+                "description": "Returns the analytic input data used during runtime execution.",
+                "operationId": "ReadCustomProviderData",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Analytic Input Data Read request"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/analytics\/customdata\/write": {
+            "post": {
+                "summary": "Write analytic output data to custom datasource.",
+                "description": "Writes analytic output data generated during runtime execution.",
+                "operationId": "WriteCustomProviderData",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Analytic Input Data Read request"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/execution": {
+            "post": {
+                "summary": "Execute the specified orchestration.",
+                "description": "To successfully execute the orchestration, the OrchestrationRequest must contain valid orchestration id, bpmn workflow xml and optionally input data for each analytic step defined in the workflow. ",
+                "operationId": "Run",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Analytic Input Data Read request"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/monitoring\/orchestrations\/{orchestrationRequestId}": {
+            "get": {
+                "summary": "Retrieve orchestration execution result",
+                "description": "Returns orchestration execution result for the given orchestration request id.",
+                "operationId": "RetrieveOrchestrationResult",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orchestrationRequestId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/scheduler\/jobs": {
+            "get": {
+                "summary": "Get all job definition entries.",
+                "description": "Returns all job definition entries as specified by page and sort criteria.",
+                "operationId": "RetrieveAllJobs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "page index : zero-based page index"
+                    },
+                    {
+                        "name": "size",
+                        "in": "query",
+                        "description": "page size : between 1 and 1000 inclusive"
+                    },
+                    {
+                        "name": "sortOrder",
+                        "in": "query",
+                        "description": "sort order : asc | desc"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a scheduler job.",
+                "description": "Creates the scheduler job with a generated id. Set the state value to 'Active' to start the job. Set the state value to 'Inactive' to avoid starting the job.",
+                "operationId": "CreateJob",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    },
+                    {
+                        "name": "Refresh",
+                        "in": "header",
+                        "description": "Refresh-Token-For-Job-Execution"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/scheduler\/jobs\/{id}": {
+            "get": {
+                "summary": "Get a scheduler job by id.",
+                "description": "Returns the scheduler job with the given id.",
+                "operationId": "RetrieveJob",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Job id"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update an existing scheduler job.",
+                "description": "Updates the scheduled job. The updated changes will be effective from the next scheduling of this job. To suspend a job, update the job with state value 'Inactive'. To resume a job, update the job with state value 'Active'.",
+                "operationId": "UpdateJob",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    },
+                    {
+                        "name": "Refresh",
+                        "in": "header",
+                        "description": "Refresh-Token-For-Job-Execution"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Job id"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete job definition.",
+                "description": "Delete job definition for the given job id.",
+                "operationId": "DeleteJob",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Job id"
+                    }
+                ]
+            }
+        },
+        "\/api\/v1\/scheduler\/jobs\/{id}\/history": {
+            "get": {
+                "summary": "Retrieve job execution history of the given job.",
+                "description": "Retrieve job execution history",
+                "operationId": "RetrieveJobHistory",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Job id"
+                    },
+                    {
+                        "name": "startTime",
+                        "in": "query",
+                        "description": "Start time in millis"
+                    },
+                    {
+                        "name": "endTime",
+                        "in": "query",
+                        "description": "End time in millis"
+                    }
+                ]
+            }
+        },
+        "\/api\/v2\/config\/orchestrations": {
+            "get": {
+                "summary": "Get all orchestration configuration entries.",
+                "description": "Returns all orchestration configuration entries as specified by page and sort criteria.",
+                "operationId": "RetrieveAllOrchConfigs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "page index : zero-based page index"
+                    },
+                    {
+                        "name": "size",
+                        "in": "query",
+                        "description": "page size : between 1 and 1000 inclusive"
+                    },
+                    {
+                        "name": "sortOrder",
+                        "in": "query",
+                        "description": "sort order : asc | desc"
+                    },
+                    {
+                        "name": "sortableFields",
+                        "in": "query",
+                        "description": "sortable fields : name"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create an orchestration configuration entry.",
+                "description": "Creates the orchestration configuration entry with a generated id.",
+                "operationId": "CreateOrchestrationEntry",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Analytic Input Data Read request"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            }
+        },
+        "\/api\/v2\/config\/orchestrations\/artifacts": {
+            "post": {
+                "summary": "Upload an artifact and attach it to an orchestration configuration entry.",
+                "description": "Upload a single artifact file in a multipart MIME structure and attach it to an orchestration configuration entry. The multipart MIME structure must have the orchestration entry id tagged as 'orchestrationEntryId',  the file contents tagged as 'file',  the artifact type tagged as 'type', and  the name of artifact tagged as 'name'.  A description (under 1024 characters) tagged as 'description' can be optionally specified. Artifact types can be either 'portToFieldMap', 'bpmn' or any.   If the arti",
+                "operationId": "UploadOrchConfigArtifact",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": "(Required) Artifact file"
+                    },
+                    {
+                        "name": "orchestrationEntryId",
+                        "in": "formData",
+                        "description": "(Required) orchestration configuration entry id"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": "(Required) Artifact type"
+                    },
+                    {
+                        "name": "name",
+                        "in": "formData",
+                        "description": "(Required) Artifact name"
+                    },
+                    {
+                        "name": "stepId",
+                        "in": "formData",
+                        "description": "Orchestration Step ID"
+                    },
+                    {
+                        "name": "description",
+                        "in": "formData",
+                        "description": "Artifact description"
+                    }
+                ]
+            }
+        },
+        "\/api\/v2\/config\/orchestrations\/artifacts\/{id}": {
+            "put": {
+                "summary": "Update an artifact by id.",
+                "description": "Update the artifact of the orchestration configuration with the contents of the supplied multipart MIME structure. The multipart MIME structure may have new file contents tagged as 'file',  new artifact type tagged as 'type',  new name of artifact tagged as 'name',  new description (under 1024 characters) tagged as 'description', and  new value of the orchestration step id tagged as 'stepId.   Artifact types can be either 'portToFieldMap', 'bpmn' or any.  (See the documentation for more informat",
+                "operationId": "UpdateOrchConfigArtifact",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Job id"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": "(Required) Artifact file"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": "(Required) Artifact type"
+                    },
+                    {
+                        "name": "name",
+                        "in": "formData",
+                        "description": "(Required) Artifact name"
+                    },
+                    {
+                        "name": "stepId",
+                        "in": "formData",
+                        "description": "Orchestration Step ID"
+                    },
+                    {
+                        "name": "description",
+                        "in": "formData",
+                        "description": "Artifact description"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete an orchestration artifact by id.",
+                "description": "Delete the orchestration artifact by artifact id.",
+                "operationId": "DeleteOrchConfigArtifact",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Job id"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            }
+        },
+        "\/api\/v2\/config\/orchestrations\/artifacts\/{id}\/file": {
+            "get": {
+                "summary": "Download an orchestration artifact file by id.",
+                "description": "The file is downloaded as an octet-stream.",
+                "operationId": "DownloadOrchConfigArtifact",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Job id"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            }
+        },
+        "\/api\/v2\/config\/orchestrations\/defaulttagquery": {
+            "get": {
+                "summary": "Get the default tag query corresponding for the tenant.",
+                "description": "Returns all information (query string, fieldnamespecifier, tagnamespecifer, description etc.) associated with the default tag query. An error is returned if tag query does not exist for the tenant.",
+                "operationId": "RetrieveDefaultTagQuery",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create the default tag query corresponding for the tenant.",
+                "description": "Creates the default tag query including all information (query string, fieldnamespecifier, tagnamespecifer, description etc.) associated with the query.",
+                "operationId": "CreateDefaultTagQuery",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Analytic Input Data Read request"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update the default tag query for the tenant.",
+                "description": "Updates the default tag query including all information (query string, fieldnamespecifier, tagnamespecifer, description etc.) associated with the query.",
+                "operationId": "UpdateDefaultTagQuery",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Analytic Input Data Read request"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete the default tag query for the tenant.",
+                "description": "Deletes the default tag query.",
+                "operationId": "DeleteDefaultTagQuery",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            }
+        },
+        "\/api\/v2\/config\/orchestrations\/models": {
+            "get": {
+                "summary": "Get all model entries.",
+                "description": "Returns all model entries as specified by page and sort criteria. By default, retrieves all models for tenant. If additional query params specified, then results will be filtered",
+                "operationId": "RetrieveAllModels",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "modelKey",
+                        "in": "query",
+                        "description": "Model Key"
+                    },
+                    {
+                        "name": "modelName",
+                        "in": "query",
+                        "description": "Model Name"
+                    },
+                    {
+                        "name": "modelVersion",
+                        "in": "query",
+                        "description": "Model Version"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "page index : zero-based page index"
+                    },
+                    {
+                        "name": "size",
+                        "in": "query",
+                        "description": "page size : between 1 and 1000 inclusive"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Upload a model.",
+                "description": "Upload a model in a multipart MIME structure. The multipart MIME structure must have the modelKey  tagged as 'modelKey',  the modelName  tagged as 'modelName',  the modelVersion  tagged as 'modelVersion',  the file contents tagged as 'file',  a description (under 1024 characters) tagged as 'description'. (See the documentation for more information regarding these files.)",
+                "operationId": "UploadModel",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": "(Required) Artifact file"
+                    },
+                    {
+                        "name": "modelKey",
+                        "in": "formData",
+                        "description": "(Required) Model Key"
+                    },
+                    {
+                        "name": "modelName",
+                        "in": "formData",
+                        "description": "(Required) Model Name"
+                    },
+                    {
+                        "name": "modelVersion",
+                        "in": "formData",
+                        "description": "(Required) Model Version"
+                    },
+                    {
+                        "name": "description",
+                        "in": "formData",
+                        "description": "Artifact description"
+                    }
+                ]
+            }
+        },
+        "\/api\/v2\/config\/orchestrations\/models\/{id}": {
+            "put": {
+                "summary": "Update model by id.",
+                "description": "Update a model with attributes of the supplied multipart MIME structure. The multipart MIME structure must have the modelKey  tagged as 'modelKey',  the modelName  tagged as 'modelName',  the modelVersion  tagged as 'modelVersion',  the file contents tagged as 'file',  a description (under 1024 characters) tagged as 'description'. (See the documentation for more information regarding these files.)",
+                "operationId": "UpdateModel",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Job id"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": "(Required) Artifact file"
+                    },
+                    {
+                        "name": "modelKey",
+                        "in": "formData",
+                        "description": "(Required) Model Key"
+                    },
+                    {
+                        "name": "modelName",
+                        "in": "formData",
+                        "description": "(Required) Model Name"
+                    },
+                    {
+                        "name": "modelVersion",
+                        "in": "formData",
+                        "description": "(Required) Model Version"
+                    },
+                    {
+                        "name": "description",
+                        "in": "formData",
+                        "description": "Artifact description"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete a model by id.",
+                "description": "Delete a model by model id.",
+                "operationId": "DeleteModel",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Job id"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            }
+        },
+        "\/api\/v2\/config\/orchestrations\/models\/{id}\/file": {
+            "get": {
+                "summary": "Download a model file by id.",
+                "description": "The file is downloaded as an octet-stream.",
+                "operationId": "DownloadModel",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Job id"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            }
+        },
+        "\/api\/v2\/config\/orchestrations\/{id}": {
+            "get": {
+                "summary": "Get an orchestration configuration entry by id.",
+                "description": "Returns the orchestration configuration entry with the given id.",
+                "operationId": "RetrieveOrchestrationEntryById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Job id"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update an existing orchestration configuration entry.",
+                "description": "Updates the orchestration configuration entry with given orchestration configuration.",
+                "operationId": "UpdateOrchestrationEntry",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Job id"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Analytic Input Data Read request"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete an orchestration configuration entry by id.",
+                "description": "Deletes the orchestration configuration entry with the given id.",
+                "operationId": "DeleteOrchestrationEntryById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Job id"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            }
+        },
+        "\/api\/v2\/config\/orchestrations\/{id}\/artifacts": {
+            "get": {
+                "summary": "Get the descriptive information of the orchestration artifacts corresponding to an orchestration configuration entry.",
+                "description": "Returns the description information (type, description, etc.) for all orchestration artifacts associated with the given configuration entry id. Note: it does not return the orchestration artifact file contents; use the download APIs to obtain an artifact file. An error is returned if the supplied orchestration configuration entry id does not exist.",
+                "operationId": "RetrieveArtifactsByOrchestrationEntryId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Job id"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            }
+        },
+        "\/api\/v2\/config\/orchestrations\/{id}\/file": {
+            "get": {
+                "summary": "Download an orchestration artifact file by orchestration id and artifact type.",
+                "description": "The file is downloaded as an octet-stream. If the type is bpmn, then then bpmn xml is downloaded. If the type is portToFieldMap, then the system expects analyticStepId to download the portToFieldMap for the given step",
+                "operationId": "DownloadArtifactByType",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Job id"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "artifact type (Ex. \"bpmn\", \"portToFieldMap\")"
+                    },
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "artifact name (analytic step id)"
+                    },
+                    {
+                        "name": "Predix",
+                        "in": "header",
+                        "description": "Predix-Zone-Id"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Authorization"
+                    }
+                ]
+            }
+        },
+        "\/api\/v2\/execution": {
+            "post": {
+                "summary": "Execute the specified orchestration.",
+                "description": "To successfully execute the orchestration, the OrchestrationExecutionRequest must contain valid orchestration id, asset id, asset data field mapping details. This API will execute the orchestration in synchronous mode and if the execution is not completed  in 1 minute then the request will fail. After successful completion, the response will contain each orchestration steps output data.",
+                "operationId": "RunSyncV2",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Analytic Input Data Read request"
+                    }
+                ]
+            }
+        },
+        "\/api\/v2\/execution\/async": {
+            "post": {
+                "summary": "Execute the specified orchestration in asynchronous mode.",
+                "description": "To successfully execute the orchestration, the OrchestrationExecutionRequest must contain valid orchestration id, asset id, asset data field mapping details. ",
+                "operationId": "RunAsync",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Analytic Input Data Read request"
+                    }
+                ]
+            }
+        },
+        "\/api\/v2\/execution\/orchestrations\/{orchConfigId}\/deployment": {
+            "post": {
+                "summary": "Deploy the specified orchestration workflow file to the Orchestration Engine.",
+                "description": "This API will deploy the BPMN file associated with the specified orchestration configuration to the Orchestration Engine in preparation for orchestration execution.",
+                "operationId": "RetrieveAndDeployBpmn",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orchConfigId",
+                        "in": "path",
+                        "description": "orchestration configuration id"
+                    }
+                ]
+            }
+        },
+        "\/api\/v2\/execution\/testrun": {
+            "post": {
+                "summary": "Execute the orchestration with given bpmn and input data.",
+                "description": "To successfully execute the orchestration, the request must contain valid bpmn20.xml, input data for each step in the bpmn.",
+                "operationId": "TestRun",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "bpmn",
+                        "in": "formData",
+                        "description": "BPMN file"
+                    },
+                    {
+                        "name": "input",
+                        "in": "formData",
+                        "description": "Input data file"
+                    }
+                ]
+            }
+        },
+        "\/api\/v2\/execution\/validation": {
+            "post": {
+                "summary": "Validate the specified orchestration and the health of all the analytics used in the orchestration.",
+                "description": "To successfully validate the orchestration, the BPMN XML file must reference analytics that are running. The validation will call a 'healthCheck' entry on each analytic.  Analytics in the platform automatically have this entry, analytics outside the platform must implement this APIfor their validation to pass.  The results contain the http status for each for the healthCheck call to each analytic.",
+                "operationId": "Validate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "file",
+                        "in": "body",
+                        "description": "(Required) artifact file"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "AnalyticData": {
+                "type": "object",
+                "properties": {
+                    "analyticStepId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "data": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AnalyticReadDataRequest": {
+                "type": "object",
+                "properties": {
+                    "field": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "customAttributes": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "systemAttributes": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "dataSourceId": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AnalyticReadDataResponse": {
+                "type": "object",
+                "properties": {
+                    "field": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "dataSourceId": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AnalyticWriteDataRequest": {
+                "type": "object",
+                "properties": {
+                    "field": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "customAttributes": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "systemAttributes": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "dataSourceId": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AnalyticWriteDataResponse": {
+                "type": "object",
+                "properties": {
+                    "field": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "dataSourceId": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AnalyticsCronExpression": {
+                "type": "object",
+                "properties": {
+                    "seconds": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "minutes": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "hours": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "dayOfMonth": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "months": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "dayOfWeek": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "years": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "timeZoneId": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AssetGroup": {
+                "type": "object",
+                "properties": {
+                    "dataSourceId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "assetSelectionFilter": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Attachment": {
+                "type": "object",
+                "properties": {
+                    "headers": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "object": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "contentId": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "CommandInfo": {
+                "type": "object",
+                "properties": {
+                    "commandName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "commandClass": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ContentDisposition": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "filename": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "parameters": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DataFlavor": {
+                "type": "object",
+                "properties": {
+                    "mimeType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "humanPresentableName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "primaryType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "subType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "mimeTypeSerializedObject": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "defaultRepresentationClassAsString": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "representationClassInputStream": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "representationClassReader": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "representationClassCharBuffer": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "representationClassByteBuffer": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "representationClassSerializable": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "representationClassRemote": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "flavorSerializedObjectType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "flavorRemoteObjectType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "flavorJavaFileListType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "flavorTextType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DataHandler": {
+                "type": "object",
+                "properties": {
+                    "transferDataFlavors": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "preferredCommands": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "allCommands": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "contentType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "content": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DataSource": {
+                "type": "object",
+                "properties": {
+                    "contentType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "severity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "detail": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "parameters": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Field": {
+                "type": "object",
+                "properties": {
+                    "fieldId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "fullyQualifiedPortName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "dataType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "engUnit": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "data": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "queryCriteria": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "HttpExecutionRequest": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "httpMethod": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "httpHeaders": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "inputData": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "HttpHeader": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Job": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "state": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "createdBy": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "updatedBy": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "createdTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "updatedTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "JobEntryPage": {
+                "type": "object",
+                "properties": {
+                    "currentPageSize": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "maximumPageSize": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "currentPageNumber": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "totalElements": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "totalPages": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "jobs": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "JobEvent": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "jobId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "fireTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "scheduledFireTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "cron": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "timeZoneId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "httpMethod": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "httpStatusCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "statusMessage": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "result": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "MediaType": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "subType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "parameters": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "wildcardType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "wildcardSubtype": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Model": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "modelKey": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "modelName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "modelVersion": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "filename": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "md5": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "createdTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "updatedTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ModelPage": {
+                "type": "object",
+                "properties": {
+                    "currentPageSize": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "maximumPageSize": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "currentPageNumber": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "totalElements": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "totalPages": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "models": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "MultipartBody": {
+                "type": "object",
+                "properties": {
+                    "allAttachments": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "childAttachments": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "OrchestrationArtifact": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "filename": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "stepId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "createdTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "updatedTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "OrchestrationArtifactList": {
+                "type": "object",
+                "properties": {
+                    "orchestrationArtifacts": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "OrchestrationEntry": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "author": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "createdTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "updatedTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "OrchestrationEntryPage": {
+                "type": "object",
+                "properties": {
+                    "currentPageSize": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "maximumPageSize": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "currentPageNumber": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "totalElements": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "totalPages": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "orchestrationEntries": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "OrchestrationExecutionContext": {
+                "type": "object",
+                "properties": {
+                    "assetId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "orchestrationConfigurationID": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "orchestrationExecutionRequestID": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "analyticId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "analyticName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "analyticVersion": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "analyticExecutionRequestID": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "OrchestrationExecutionRequest": {
+                "type": "object",
+                "properties": {
+                    "orchestrationConfigurationID": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "assetId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "assetDataFieldsMap": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "modelGroupKey": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "dataSource": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "customAttributes": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "OrchestrationExecutionResult": {
+                "type": "object",
+                "properties": {
+                    "orchestrationRequestId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "orchestrationExecutionStatus": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "OrchestrationExecutionStatus": {
+                "type": "object",
+                "properties": {
+                    "contextId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "assetId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "fieldTagMap": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "orchestrationStepStatus": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "startTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "endTime": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "OrchestrationRequest": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "bpmnXml": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "inputData": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "analyticInputData": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "OrchestrationResult": {
+                "type": "object",
+                "properties": {
+                    "contextId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "orchestrationStatus": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "output": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "analyticOutputData": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "OrchestrationStepStatus": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "analyticId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "analyticName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "analyticVersion": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "analyticRequestId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "stepId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "iterationId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "startTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "endTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "output": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "OrchestrationValidationResult": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "analyticValidationStatusMap": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "TagNamesDefaultQuery": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "defaultTagNameQuery": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "fieldNameSpecifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "tagNameSpecifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "author": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "createdTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "updatedTimestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}

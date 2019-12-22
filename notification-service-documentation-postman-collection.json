@@ -1,5 +1,5 @@
 {
-    "id": "978e36647291353f0e95b213972c86e0",
+    "id": "1a1e2f450b6a1d3dd14ad07e862ec0cd",
     "name": "Notification Service Documentation",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "0376cef0137abeba90729fab7a2ef1fb",
+            "id": "3f12fe6659643c1f35ba524728dc1d27",
             "name": "Get Tenants",
             "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}",
             "description": "Get tenants.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "collectionId": "1a1e2f450b6a1d3dd14ad07e862ec0cd",
             "rawModeData": ""
         },
         {
-            "id": "77391cfc9a26dcc680601bd0f8834621",
+            "id": "d75601d65f27dbb2d782dc409d38803c",
             "name": "Put Tenants",
             "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}",
             "description": "Put tenants.",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "collectionId": "1a1e2f450b6a1d3dd14ad07e862ec0cd",
             "rawModeData": ""
         },
         {
-            "id": "419d8fe74832ff90c848e3eb128ae71f",
+            "id": "b7031c666776617bf8b45f5cdf2291a0",
             "name": "Get Tenants Configurations",
             "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/configurations",
             "description": "Get tenants configurations.",
@@ -113,11 +113,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "collectionId": "1a1e2f450b6a1d3dd14ad07e862ec0cd",
             "rawModeData": ""
         },
         {
-            "id": "c81469656acd4ac40f4b5e3552b43679",
+            "id": "e2470489cc5582443e295d688cc295df",
             "name": "Post Tenants Configurations",
             "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/configurations",
             "description": "Post tenants configurations.",
@@ -151,11 +151,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "collectionId": "1a1e2f450b6a1d3dd14ad07e862ec0cd",
             "rawModeData": ""
         },
         {
-            "id": "28b28605c8fa4ee1642c785be6984acb",
+            "id": "ee523c86f23e20b5d442b9fd5f89219e",
             "name": "Get Tenants Configurations",
             "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/configurations\/{uuid}",
             "description": "Get tenants configurations.",
@@ -189,11 +189,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "collectionId": "1a1e2f450b6a1d3dd14ad07e862ec0cd",
             "rawModeData": ""
         },
         {
-            "id": "6005b9690476f44bbc3f73fdcd59547f",
+            "id": "28a0204f9052ccde33bdb42bd706cde0",
             "name": "Put Tenants Configurations",
             "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/configurations\/{uuid}",
             "description": "Put tenants configurations.",
@@ -234,11 +234,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "collectionId": "1a1e2f450b6a1d3dd14ad07e862ec0cd",
             "rawModeData": ""
         },
         {
-            "id": "6cd7acb4eae83bda5abdf0bc18bcdd02",
+            "id": "219eff9828f5cffc6e6a94bd5f703206",
             "name": "Delete Tenants Configurations",
             "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/configurations\/{uuid}",
             "description": "Delete tenants configurations.",
@@ -272,11 +272,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "collectionId": "1a1e2f450b6a1d3dd14ad07e862ec0cd",
             "rawModeData": ""
         },
         {
-            "id": "14a051ad339c58a4fac488c6596461e4",
+            "id": "92584a3e96a6736de0e716e2130791f4",
             "name": "Post Tenants Email",
             "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/email",
             "description": "Post tenants email.",
@@ -317,11 +317,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "collectionId": "1a1e2f450b6a1d3dd14ad07e862ec0cd",
             "rawModeData": ""
         },
         {
-            "id": "daec6ec1fd083e45f869999689c38ea9",
+            "id": "e9061d50a730e4c65f00c575e1daa1b4",
             "name": "Get Tenants Events",
             "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/events",
             "description": "Get tenants events.",
@@ -369,11 +369,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "collectionId": "1a1e2f450b6a1d3dd14ad07e862ec0cd",
             "rawModeData": ""
         },
         {
-            "id": "a8c6eccc823987dd6b18fd80fd0d0c93",
+            "id": "2d87808068c8964ad64f797825d37aac",
             "name": "Get Tenants Usage",
             "url": "httpsev-notification-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/usage",
             "description": "Get tenants usage.",
@@ -414,7 +414,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "978e36647291353f0e95b213972c86e0",
+            "collectionId": "1a1e2f450b6a1d3dd14ad07e862ec0cd",
             "rawModeData": ""
         }
     ]

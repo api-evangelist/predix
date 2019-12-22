@@ -1,5 +1,5 @@
 {
-    "id": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+    "id": "4cfb778974654c6da82014183b2c94e5",
     "name": "Enterprise Connect API (osaka.67)",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "4cc64feca7203882b2942141b034e87b",
+            "id": "33134aeff506b59732e136b963ac0584",
             "name": "Get EC Gateway settings",
             "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/api\/settings",
             "description": "Get your EC Gateway settings details\n",
@@ -44,11 +44,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "collectionId": "4cfb778974654c6da82014183b2c94e5",
             "rawModeData": ""
         },
         {
-            "id": "517bda17bb040310b9d562e70a29bb69",
+            "id": "c5d6c88ca431528a56c6a293a8acd8d4",
             "name": "Validate the oauth2 token",
             "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/api\/token\/validate",
             "description": "Validate the oauth2 token for the gateway usage\n",
@@ -82,11 +82,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "collectionId": "4cfb778974654c6da82014183b2c94e5",
             "rawModeData": ""
         },
         {
-            "id": "216d3d1770efc748e26d274bf837b60c",
+            "id": "e2ec613dd0675ddf5d934b864699cfe1",
             "name": "Validate the EC service status",
             "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/health\/check",
             "description": "Validate the EC API status\n",
@@ -105,11 +105,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "collectionId": "4cfb778974654c6da82014183b2c94e5",
             "rawModeData": ""
         },
         {
-            "id": "9892518a9493d4067f32c35a9b275354",
+            "id": "eda1796b73560c3a447995c1b78e5356",
             "name": "Validate the EC service memory usage",
             "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/health\/memory",
             "description": "Validate the EC gateway memory usage\n",
@@ -128,11 +128,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "collectionId": "4cfb778974654c6da82014183b2c94e5",
             "rawModeData": ""
         },
         {
-            "id": "b067acc7fd297c254b187768a56c7cba",
+            "id": "48115753a0517e4e9efc5c3e2e77bfe2",
             "name": "Report usage",
             "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/reports\/usage",
             "description": "Report usage by zoneid",
@@ -173,11 +173,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "collectionId": "4cfb778974654c6da82014183b2c94e5",
             "rawModeData": ""
         },
         {
-            "id": "d5a020f5af096ceea1b8f76becf4a8f7",
+            "id": "4641642821a1a0e55fda8c248aed2fe4",
             "name": "Get last usage",
             "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/reports\/usage",
             "description": "get last usage by zoneid",
@@ -211,11 +211,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "collectionId": "4cfb778974654c6da82014183b2c94e5",
             "rawModeData": ""
         },
         {
-            "id": "56b454d6e0f213e85e3e352ac7d295af",
+            "id": "6a3130bbe103548fe9078285b5f87e2d",
             "name": "Request a digital certificate",
             "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/certs",
             "description": "Submit a CSR for a certificate for the EC usage",
@@ -256,11 +256,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "collectionId": "4cfb778974654c6da82014183b2c94e5",
             "rawModeData": ""
         },
         {
-            "id": "10499820bc0bcc9bc4b806ecad1a030e",
+            "id": "d964f72001ba8ca6ab77f7599d1db626",
             "name": "Retrieve current certificate",
             "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/certs",
             "description": "Retrieve the current certificate issued by the GE Digital CA.",
@@ -294,11 +294,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "collectionId": "4cfb778974654c6da82014183b2c94e5",
             "rawModeData": ""
         },
         {
-            "id": "c6405b84829f198ec2fe8e57cbe929ab",
+            "id": "02b0eee4f0fa2b1499c7e46ed30fb794",
             "name": "Create an EC system account",
             "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/admin\/accounts\/{predix-zone-id}",
             "description": "Create a EC system account with the CF details\n",
@@ -339,11 +339,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "collectionId": "4cfb778974654c6da82014183b2c94e5",
             "rawModeData": ""
         },
         {
-            "id": "1f8f7da48926bc723b37f1af4c8f9bf7",
+            "id": "472607524f75f6427c4c1fad80c06622",
             "name": " Get the EC system account",
             "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/admin\/accounts\/{predix-zone-id}",
             "description": "Get an existing EC system account by predix zone id\n",
@@ -377,11 +377,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "collectionId": "4cfb778974654c6da82014183b2c94e5",
             "rawModeData": ""
         },
         {
-            "id": "520eb933cdd95a634e7e2cd06bfa9225",
+            "id": "84f89fff855d8c67eebf1919b57284c5",
             "name": "Delete the EC system account",
             "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/admin\/accounts\/{predix-zone-id}",
             "description": "Delete an existing EC system account by predix zone id\n",
@@ -415,11 +415,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "collectionId": "4cfb778974654c6da82014183b2c94e5",
             "rawModeData": ""
         },
         {
-            "id": "4a4647e111a635d42947cda8a5ec6d91",
+            "id": "f22bf3c997b44a61432767cad78f4588",
             "name": "Update the EC gateway setting in the account",
             "url": "httpsec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io\/v1\/admin\/accounts\/{predix-zone-id}",
             "description": "Update the EC gateway setting in the account with the CF details\n",
@@ -460,7 +460,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0abfc6a46a3cf7ce90e6f93bee9f7c34",
+            "collectionId": "4cfb778974654c6da82014183b2c94e5",
             "rawModeData": ""
         }
     ]

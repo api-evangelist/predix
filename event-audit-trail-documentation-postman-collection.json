@@ -1,5 +1,5 @@
 {
-    "id": "c63e9464c1077fc9249b30163385a2ea",
+    "id": "95c891c1b57334c70423755addda49d6",
     "name": "Event Audit Trail Documentation",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "0922929345d4b8dab03769ad2193bf9a",
+            "id": "2723912109592b32debd733a254fc84a",
             "name": "Get Plugins Archive Tenants Archives",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/plugins\/archive\/tenants\/{tenant_uuid}\/archives",
             "description": "Get plugins archive tenants archives.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "73c084d0236d790988f9da34f7e7ddf0",
+            "id": "76fa4d1a020c41da1657f3e7545baafe",
             "name": "Get Plugins Archive Tenants Archives",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/plugins\/archive\/tenants\/{tenant_uuid}\/archives\/{uuid}",
             "description": "Get plugins archive tenants archives.",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "5431ed9ae3f7fe79e0ff73e966295e9b",
+            "id": "a96e3d8310caf0914c4260c646414497",
             "name": "Delete Plugins Archive Tenants Archives",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/plugins\/archive\/tenants\/{tenant_uuid}\/archives\/{uuid}",
             "description": "Delete plugins archive tenants archives.",
@@ -113,11 +113,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "58444bbb0a0304fd1802e050bc5c0ae4",
+            "id": "39cd47585a35e151bae0cc8c6dd8f94f",
             "name": "Get Plugins Archive Tenants Configuration",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/plugins\/archive\/tenants\/{tenant_uuid}\/configuration",
             "description": "Get plugins archive tenants configuration.",
@@ -144,11 +144,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "1d408b789f775c18ad3ff9487ea282b1",
+            "id": "c0c2392aa5f72753ffd140e90689beb4",
             "name": "Post Plugins Archive Tenants Configuration",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/plugins\/archive\/tenants\/{tenant_uuid}\/configuration",
             "description": "Post plugins archive tenants configuration.",
@@ -182,11 +182,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "6cb442c3c8355ae28453f1e6d460e57f",
+            "id": "ad7b5a51d3f19da14dc49934084329c9",
             "name": "Get Plugins Archive Tenants Staged Events",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/plugins\/archive\/tenants\/{tenant_uuid}\/staged-events",
             "description": "Get plugins archive tenants staged events.",
@@ -213,11 +213,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "be3a44ce93eeaade9b61c0b136425030",
+            "id": "afb065323a93d3428aecf4931c5de087",
             "name": "Get Tenants",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}",
             "description": "Get tenants.",
@@ -244,11 +244,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "3a77720bf0ce704f1abdd1afe9ba52b0",
+            "id": "fda79b4a0d90d261dcfcf22664669319",
             "name": "Get Tenants Event Search",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/event-search",
             "description": "Get tenants event search.",
@@ -282,11 +282,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "3b000caedad6fc44e37842724ae27eea",
+            "id": "117ba43e3f0ed10bfb69bdcc3462f154",
             "name": "Get Tenants Events",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/events",
             "description": "Get tenants events.",
@@ -348,11 +348,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "c02eb31299710f0fcfa09293b6e701ad",
+            "id": "d80022f2c572edc2d4fd14275d42ca56",
             "name": "Post Tenants Events",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/events",
             "description": "Post tenants events.",
@@ -386,11 +386,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "475087467e5148330d791fdda22918a5",
+            "id": "22c986cb2e0604e56b592384ec941673",
             "name": "Get Tenants Events",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/events\/{uuid}",
             "description": "Get tenants events.",
@@ -424,11 +424,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "9058faea49214383ca9a24ba6b59bac1",
+            "id": "fcbed9cb9865118c4a951c2a5d7453af",
             "name": "Put Tenants Events",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/events\/{uuid}",
             "description": "Put tenants events.",
@@ -469,11 +469,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "6681c30751a0564d8b6115bf0fc58017",
+            "id": "02bbd1372aa4c4797a6ac99e531b10f5",
             "name": "Delete Tenants Events",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenants\/{tenant_uuid}\/events\/{uuid}",
             "description": "Delete tenants events.",
@@ -507,11 +507,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "c6bd1e73746282f817c820778e1deaea",
+            "id": "256fb279ca98de1097e1d68362f21f2e",
             "name": "Get Catalog",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v2\/catalog",
             "description": "Get catalog.",
@@ -530,11 +530,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "a2a2189a077559a21122e5a90e90006f",
+            "id": "4f7e5783bca0bb94bbdca0f6587b0847",
             "name": "Put Service Instances",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v2\/service_instances\/{instanceId}",
             "description": "Put service instances.",
@@ -575,11 +575,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "0daa87ef900941899a59cc1335215f4a",
+            "id": "754c9dfd4465319353be3f970bf9802f",
             "name": "Delete Service Instances",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v2\/service_instances\/{instanceId}",
             "description": "Delete service instances.",
@@ -627,11 +627,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "795099f57f82436c049a0f385e459e3d",
+            "id": "33dd956645f55bb6368b1ffd0ef60481",
             "name": "Patch Service Instances",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v2\/service_instances\/{instanceId}",
             "description": "Patch service instances.",
@@ -672,11 +672,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "3e20927335858af9f3fe525aa6bf8ff1",
+            "id": "3ddd8a18d044e95f34c4b0514611a374",
             "name": "Get Service Instances Last Operation",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v2\/service_instances\/{instanceId}\/last_operation",
             "description": "Get service instances last operation.",
@@ -703,11 +703,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "737da1e491046af8f1c2745f0bb94edf",
+            "id": "860a1e61367304d9a594019b81b0b72e",
             "name": "Put Service Instances Service Bindings Bindingid",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v2\/service_instances\/{instanceId}\/service_bindings\/{bindingId}",
             "description": "Put service instances service bindings bindingid.",
@@ -748,11 +748,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         },
         {
-            "id": "feae81469d560f2bb0b52ca3f4855e2d",
+            "id": "ecf47d3adf637f40b0c29966df3ae975",
             "name": "Delete Service Instances Service Bindings Bindingid",
             "url": "httpsevent-audit-trail.run.aws-usw02-pr.ice.predix.io\/\/v2\/service_instances\/{instanceId}\/service_bindings\/{bindingId}",
             "description": "Delete service instances service bindings bindingid.",
@@ -800,7 +800,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c63e9464c1077fc9249b30163385a2ea",
+            "collectionId": "95c891c1b57334c70423755addda49d6",
             "rawModeData": ""
         }
     ]

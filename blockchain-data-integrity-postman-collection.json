@@ -1,5 +1,5 @@
 {
-    "id": "be8f0b78937bf415855b97b6f77aad73",
+    "id": "748ecc5cd490b0c8a35c4469740ae23a",
     "name": "Blockchain Data Integrity",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "1c4000b1d7061cbcf646fe53b4df60b5",
+            "id": "d4b7e4204dd837abc8b458b5bef91ee3",
             "name": "Post Proxy Signature",
             "url": "httpsbcdi-proxy-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/signature",
             "description": "Post proxy signature.",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "be8f0b78937bf415855b97b6f77aad73",
+            "collectionId": "748ecc5cd490b0c8a35c4469740ae23a",
             "rawModeData": ""
         },
         {
-            "id": "0a6eb0e9dbc39a9a301d2b04a219ce33",
+            "id": "95dc48530d8586d22b840474d309388a",
             "name": "Post Proxy Signature Details",
             "url": "httpsbcdi-proxy-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/signature\/details",
             "description": "Post proxy signature details.",
@@ -96,11 +96,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "be8f0b78937bf415855b97b6f77aad73",
+            "collectionId": "748ecc5cd490b0c8a35c4469740ae23a",
             "rawModeData": ""
         },
         {
-            "id": "e531eb42f668ec0a078df4e4bbcd7be2",
+            "id": "1ca7401dfddcc41c9e70af39ab5b1315",
             "name": "Post Proxy Signature Extension",
             "url": "httpsbcdi-proxy-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/signature\/extension",
             "description": "Post proxy signature extension.",
@@ -141,7 +141,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "be8f0b78937bf415855b97b6f77aad73",
+            "collectionId": "748ecc5cd490b0c8a35c4469740ae23a",
             "rawModeData": ""
         }
     ]

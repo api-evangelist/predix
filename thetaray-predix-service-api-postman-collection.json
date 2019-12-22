@@ -1,5 +1,5 @@
 {
-    "id": "2427c79c9ca6f3fc7b2f5d759ede4869",
+    "id": "b04f99f36164b5a33fc48f8d65c86952",
     "name": "ThetaRay Predix Service API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "f5aea17848437c340952e2624ea57b9f",
+            "id": "aba77111a44748bbe5c2e8d324a0f454",
             "name": "Analyses List",
             "url": "httpsthetaray-anomaly-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/analyses",
             "description": "Get list of Analyses",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2427c79c9ca6f3fc7b2f5d759ede4869",
+            "collectionId": "b04f99f36164b5a33fc48f8d65c86952",
             "rawModeData": ""
         },
         {
-            "id": "5e4ad39da0b412438ad7542efc66d73b",
+            "id": "8123c5857df8df56cb3d5c36dac46ede",
             "name": "Anomalies Report",
             "url": "httpsthetaray-anomaly-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/anomalies\/report",
             "description": "Retrieves Anomalies Report",
@@ -88,11 +88,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2427c79c9ca6f3fc7b2f5d759ede4869",
+            "collectionId": "b04f99f36164b5a33fc48f8d65c86952",
             "rawModeData": ""
         },
         {
-            "id": "7905cc8acb82d674405d7dc5611e0132",
+            "id": "172f9e29bc7964d7e793e1cd7babf78f",
             "name": "Clusters Report",
             "url": "httpsthetaray-anomaly-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/clusters\/report",
             "description": "Get Clusters report",
@@ -154,11 +154,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2427c79c9ca6f3fc7b2f5d759ede4869",
+            "collectionId": "b04f99f36164b5a33fc48f8d65c86952",
             "rawModeData": ""
         },
         {
-            "id": "a489540b9a92f6451d498d478c2ef681",
+            "id": "dd41922eebb9c6353e55e2136f184729",
             "name": "Data Sources List",
             "url": "httpsthetaray-anomaly-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/datasources\/datasources",
             "description": "Get list of all Data Sources",
@@ -177,11 +177,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2427c79c9ca6f3fc7b2f5d759ede4869",
+            "collectionId": "b04f99f36164b5a33fc48f8d65c86952",
             "rawModeData": ""
         },
         {
-            "id": "89039a5419792c476292dd0da3de13ec",
+            "id": "47f2be5f226559c4960aec05308ebb6b",
             "name": "Upload a file",
             "url": "httpsthetaray-anomaly-service.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/datasources\/process",
             "description": "Upload a data file",
@@ -215,7 +215,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2427c79c9ca6f3fc7b2f5d759ede4869",
+            "collectionId": "b04f99f36164b5a33fc48f8d65c86952",
             "rawModeData": ""
         }
     ]

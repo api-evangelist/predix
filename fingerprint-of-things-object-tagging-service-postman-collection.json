@@ -1,5 +1,5 @@
 {
-    "id": "20f022a477678b4601ce5d0bc4012dec",
+    "id": "2a32ac3acce135691877716419abe911",
     "name": "Fingerprint of Things Object Tagging Service",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "342973a3bea3126d57accc39ff9ef898",
+            "id": "c71e1bcde33d5f7976dc754de1a3f1bf",
             "name": "Create Group",
             "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/group\/createGroup",
             "description": "Create group.",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "collectionId": "2a32ac3acce135691877716419abe911",
             "rawModeData": ""
         },
         {
-            "id": "2f94ed8465a194a196c9b9297e762b35",
+            "id": "9af78f0d6e2521d2a4f26f33dc945471",
             "name": "Delete Group",
             "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/group\/deleteGroup",
             "description": "Delete group.",
@@ -96,11 +96,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "collectionId": "2a32ac3acce135691877716419abe911",
             "rawModeData": ""
         },
         {
-            "id": "dd0e6d700af1971e9fe879719552dc4c",
+            "id": "8f062a0d1cadf76825bef9be9d095d91",
             "name": "Object Pre-Register",
             "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/preregisterObject",
             "description": "Pre-register object with image.<br> Individual ID must be designated by user.",
@@ -155,11 +155,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "collectionId": "2a32ac3acce135691877716419abe911",
             "rawModeData": ""
         },
         {
-            "id": "92cb56c115ba7e72ce8f0127af0a481a",
+            "id": "b6eefba2ffd9098f7f20fed6b4c5e726",
             "name": "Object Pre-Register without ID",
             "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/preregisterObjectWithoutID",
             "description": "Pre-register object with image.<br> Individual ID will be issued from system.",
@@ -207,11 +207,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "collectionId": "2a32ac3acce135691877716419abe911",
             "rawModeData": ""
         },
         {
-            "id": "5761f6b9acf7a4c4c9cb5744fe0e7e69",
+            "id": "5c96753be693771649f4febb68a9ee94",
             "name": "Delete Registered Object",
             "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/deleteRegisteredObject",
             "description": "Delete registered object.",
@@ -252,11 +252,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "collectionId": "2a32ac3acce135691877716419abe911",
             "rawModeData": ""
         },
         {
-            "id": "6f6e0edfa0b3c72ab4694b70212442cd",
+            "id": "344412373d8b204ac5b6c7d385c53ffe",
             "name": "Delete Pre-Registered Object",
             "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/deletePreregisteredObject",
             "description": "Delete pre-registered object.",
@@ -297,11 +297,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "collectionId": "2a32ac3acce135691877716419abe911",
             "rawModeData": ""
         },
         {
-            "id": "719c781c57daf63699f822455d1ed77c",
+            "id": "b997d50c748b343ff4fbe67816133942",
             "name": "Switch Apply Flag",
             "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/setObjectDoNotRegisterFlag",
             "description": "* DO NOT USE. This API will be deleted.<br>Switch the Apply flag on or off.",
@@ -342,11 +342,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "collectionId": "2a32ac3acce135691877716419abe911",
             "rawModeData": ""
         },
         {
-            "id": "a2720d6a725dc8da28442497d6eb0bbb",
+            "id": "5394659bdb3f01ed649524afe91e714f",
             "name": "Switch Apply Flag per Group",
             "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/setGroupDoNotRegisterFlag",
             "description": "* DO NOT USE. This API will be deleted.<br>Switch the Apply flag per group",
@@ -387,11 +387,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "collectionId": "2a32ac3acce135691877716419abe911",
             "rawModeData": ""
         },
         {
-            "id": "d8c6e503d1d6571aeb50467e5d2ea310",
+            "id": "4da42c680a0cdeed9a8c6e495e57375f",
             "name": "Put Object in Group",
             "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/group\/putInGroup",
             "description": "Put Object in Group.",
@@ -432,11 +432,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "collectionId": "2a32ac3acce135691877716419abe911",
             "rawModeData": ""
         },
         {
-            "id": "5169b556e00cfda5fbfd6438084b63e8",
+            "id": "01592c14009648bf9616e751261022a3",
             "name": "Remove Object from Group",
             "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/group\/removeFromGroup",
             "description": "Remove Object from Group.",
@@ -477,11 +477,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "collectionId": "2a32ac3acce135691877716419abe911",
             "rawModeData": ""
         },
         {
-            "id": "836e9fff5743fc7073785be1c8af12a8",
+            "id": "a28621e124ec1062b481bd524675e110",
             "name": "Register Object",
             "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/registerObject",
             "description": "Register Object. A registered object can be queried from Query APIs.",
@@ -522,11 +522,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "collectionId": "2a32ac3acce135691877716419abe911",
             "rawModeData": ""
         },
         {
-            "id": "92dcb678556a9d99b1b6df5c2a9ff38e",
+            "id": "2d68f507516475895d951392d439945e",
             "name": "Register Object per Group",
             "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/registerGroup",
             "description": "Register Object per Group. A registered object can be queried from Query APIs.",
@@ -567,11 +567,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "collectionId": "2a32ac3acce135691877716419abe911",
             "rawModeData": ""
         },
         {
-            "id": "0f7d84baa083c18eb1ac377b94c73d25",
+            "id": "1e45444522e8b74a076e82512b1e25e6",
             "name": "List Registered Objects",
             "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/listObjects",
             "description": "List registered Objects.",
@@ -612,11 +612,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "collectionId": "2a32ac3acce135691877716419abe911",
             "rawModeData": ""
         },
         {
-            "id": "3d195252203d5278717760f58f8a10ff",
+            "id": "1f1cf946477e30e7b895ebc5917a7b3b",
             "name": "List Groups",
             "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/group\/listGroups",
             "description": "List groups",
@@ -657,11 +657,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "collectionId": "2a32ac3acce135691877716419abe911",
             "rawModeData": ""
         },
         {
-            "id": "1a8fa1beabc815155bfba7b532323b48",
+            "id": "f3939045845e3fcac44aa5d1a207a8b7",
             "name": "Check Pre-Registered Object",
             "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/object\/checkPreregisteredObject",
             "description": "Check a score of Pre-Registered Object.",
@@ -709,11 +709,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "collectionId": "2a32ac3acce135691877716419abe911",
             "rawModeData": ""
         },
         {
-            "id": "a2b96e7eee6703f0f769b9cfee0404e3",
+            "id": "5ce4d639f80f817d9e9f25c35a76965b",
             "name": "Query by Object",
             "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/query\/queryByObject",
             "description": "Query image by object.",
@@ -775,11 +775,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "collectionId": "2a32ac3acce135691877716419abe911",
             "rawModeData": ""
         },
         {
-            "id": "30c03b3b6e6de1e92e17994f37cd64e7",
+            "id": "7c5a5fbc531daee63d80e2b2e529eb89",
             "name": "Query by Group",
             "url": "httpsfingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io\/\/v1\/query\/queryByGroup",
             "description": "Query image per group.",
@@ -841,7 +841,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "20f022a477678b4601ce5d0bc4012dec",
+            "collectionId": "2a32ac3acce135691877716419abe911",
             "rawModeData": ""
         }
     ]

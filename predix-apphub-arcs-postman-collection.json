@@ -1,5 +1,5 @@
 {
-    "id": "b296a63ce39e256d1d995c4efef9909e",
+    "id": "a0ae8b64241d5a21caa230fabed02cbc",
     "name": "Predix AppHub ARCS",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "594060980c719d19b4be0b815ca22c79",
+            "id": "6a6d6117797593b9637b76a53a4ee7f7",
             "name": "Get all the registered microapps",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/apps",
             "description": "Get the registered microapps for the given tenant",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "f94c885330a8ed7f09a884eda0b76f82",
+            "id": "6a0e5ea80b6481a218f8cb04de0d794d",
             "name": "Register the microapp",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/apps",
             "description": "Register the microapps",
@@ -60,11 +60,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "530bc57142c28a639fa034a5c23093cc",
+            "id": "abcdd0461dbf1e61b8a1eaa193b72f3b",
             "name": "Update the microapp",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/apps",
             "description": "Update the microapps",
@@ -91,11 +91,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "9d5f2a77c3885367ad2581e8f8577b51",
+            "id": "96773e908e9d7a733119da28127da2af",
             "name": "Get the registered microapp",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/apps\/{uuid}",
             "description": "Get the registered microapp for the given uri",
@@ -122,11 +122,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "154828e07ec706cd33ee5de48942274b",
+            "id": "381e0d8f1b4f088d7f26ebdbbd5ef8d4",
             "name": "Unregister the microapp",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/apps\/{uuid}",
             "description": "Unregister the microapp",
@@ -153,11 +153,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "ec82f2e40f16dcdcc9774311c66105e8",
+            "id": "9c7faa641dca452d925aae455a669720",
             "name": "Get global config information",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/globalconfig",
             "description": "Get global config information",
@@ -176,11 +176,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "6e91d3242beca1fa2e470d867cebc765",
+            "id": "ba74fd4f4ab8582e3ee8c2244ca34f1a",
             "name": "Save global config information",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/globalconfig",
             "description": "Save global config information",
@@ -207,11 +207,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "cd5679cbfdf748320399c1aa529b1d00",
+            "id": "dc0b7a81a61a5cf2b38811f23d09ecaf",
             "name": "Update global config information",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/globalconfig\/{uuid}",
             "description": "Update global config information",
@@ -245,11 +245,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "2de6a645d85d802700e316843d9e99c3",
+            "id": "bff3b25c21b420b39706bc2e762dc5c7",
             "name": "Delete global config information",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/globalconfig\/{uuid}",
             "description": "Delete global config information",
@@ -276,11 +276,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "2d6f5d2a9f0c72efba0508e3ab548301",
+            "id": "723832637ffcdc04f2a4b5909de7e989",
             "name": "Get the preferences information",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/preferences",
             "description": "Get the preferences information",
@@ -299,11 +299,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "f4f199e128951d8c5637034f143256f1",
+            "id": "0150b98aa44f3e67328735dfaf2a7149",
             "name": "Save the preferences information",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/preferences",
             "description": "save the preferences information",
@@ -330,11 +330,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "1555ee30f1bc076ae5483c7d346201be",
+            "id": "0d3d85ee2cb2ff3f61e61bae9c56644e",
             "name": "Update the preferences information",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/preferences\/{uuid}",
             "description": "Update the preferences information",
@@ -368,11 +368,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "a95c07a376bff8819bf3a83a4ab7b90f",
+            "id": "f7b821150a0b8532a381725a382eb6a7",
             "name": "Delete the preferences information",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/preferences\/{uuid}",
             "description": "Delete the preferences information",
@@ -399,11 +399,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "ac5f4c59eba55cadb27ca4334efe35a4",
+            "id": "8e111b5f74262ae993f977f34b878e31",
             "name": "Get the privileges information",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/privileges",
             "description": "Get the privileges information",
@@ -422,11 +422,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "0658a496bb5d5b1192f9a9192a16b868",
+            "id": "057a081f770c7954ff0d9c3f1249d3c1",
             "name": "Save the privileges information",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/privileges",
             "description": "Save the privileges information",
@@ -453,11 +453,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "d0970f13bb3046ea177ce27bf1e80f95",
+            "id": "845af443963b996a47db49e17a1dcf61",
             "name": "Update the privileges information",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/privileges\/{uuid}",
             "description": "Update the privileges information",
@@ -491,11 +491,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "87384c9e9a349a3489a9e3448173d003",
+            "id": "47bda98517e564b93b1f58c2bf4db106",
             "name": "Delete the privileges information",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/privileges\/{uuid}",
             "description": "Delete the privileges information",
@@ -522,11 +522,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "63b7be5f555a8f5ef9d024e0f5a7cd4d",
+            "id": "62465aae32e4fd820bb7a5e0d1a2d1c3",
             "name": "postTenantConfig",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/provision",
             "description": "",
@@ -553,11 +553,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "685f2803209252008b132a5d4b2873da",
+            "id": "d819029cd5db6d564bf7d8403ee23d89",
             "name": "deleteTenantConfig",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/provision\/{tenantId}",
             "description": "",
@@ -584,11 +584,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "dcc6aa7923faaad76dee78ea96ecb04d",
+            "id": "731fdfbb4aa3bfd05d2b3386b0335cc1",
             "name": "Get theme information for a tenant",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/themes",
             "description": "Get theme information",
@@ -607,11 +607,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "70e2c7739bc9955195c0c0bae41d5897",
+            "id": "5e3735db7a921063b91670d4593536ab",
             "name": "Save theme config information",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/themes",
             "description": "Save theme config information",
@@ -638,11 +638,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "6ea0ff4e40ad7971cde5c0b4d7cbddaa",
+            "id": "b4e58834eaad9e1b34a6344349685be7",
             "name": "Update theme",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/themes",
             "description": "Update theme",
@@ -669,11 +669,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "accc2f8d8c01859890e0d861ad29ac76",
+            "id": "37308a2038982c5257bee75621128e61",
             "name": "Get the registered theme by uri",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/themes\/{uuid}",
             "description": "Get the registered theme infromation for the given uri",
@@ -700,11 +700,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "b949719b6a128ce24e6d5549085cbb9c",
+            "id": "7bf44c4dcc01a0b65287a5ee5eb8df49",
             "name": "Delete theme",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/themes\/{uuid}",
             "description": "Delete theme",
@@ -731,11 +731,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "c69a801e58cd51a9f65f7b1a3e15028f",
+            "id": "ef5f7dedb57aa191e14589fee2abb11b",
             "name": "Get the current user information",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/user",
             "description": "Get the current user information",
@@ -754,11 +754,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "5b9ecfb3e885a2424aa85b4cdff8badb",
+            "id": "e3535902e288b4d8a5fa11693908986a",
             "name": "Save the current user information",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/user",
             "description": "Save the current user information",
@@ -785,11 +785,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "dbdcd50e884e22f43d7faab871d7ed5b",
+            "id": "d0f0c158c737eb3b99b31eb8f36360d0",
             "name": "Update the current user information",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/user\/{uuid}",
             "description": "Update the current user information",
@@ -823,11 +823,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         },
         {
-            "id": "c49e55aa32caab14d140de3bfe36e2d0",
+            "id": "1e0605c8e2f4d83712514086c6a2de44",
             "name": "Delete the current user information",
             "url": "httpspredix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io\/api\/user\/{uuid}",
             "description": "Delete the current user information",
@@ -854,7 +854,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b296a63ce39e256d1d995c4efef9909e",
+            "collectionId": "a0ae8b64241d5a21caa230fabed02cbc",
             "rawModeData": ""
         }
     ]

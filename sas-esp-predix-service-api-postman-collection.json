@@ -1,5 +1,5 @@
 {
-    "id": "a8d9d845d03845c3aa3d614dd9064c3d",
+    "id": "4e91b2e74ee0cbaa24c633d9cf50351a",
     "name": "SAS ESP Predix Service API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "97f97df39fb3e7f2b846b730449c15b8",
+            "id": "32774f194aeebe7bd9f8f9d8f50effa1",
             "name": "Load\/Create Project",
             "url": "httpssas-proxy.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/projects\/{id}",
             "description": "API to Load\/Create project in ESP server.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8d9d845d03845c3aa3d614dd9064c3d",
+            "collectionId": "4e91b2e74ee0cbaa24c633d9cf50351a",
             "rawModeData": ""
         },
         {
-            "id": "9b73bdc80b10ab7df20526681430892b",
+            "id": "6210378a5233759f1132cbcef7404483",
             "name": "Delete project.",
             "url": "httpssas-proxy.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/projects\/{id}",
             "description": "API to delete project from ESP server.",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8d9d845d03845c3aa3d614dd9064c3d",
+            "collectionId": "4e91b2e74ee0cbaa24c633d9cf50351a",
             "rawModeData": ""
         },
         {
-            "id": "68af5da64981c40d89e1764048a9d717",
+            "id": "af7985ad9a44885a0d2a1a20b527607b",
             "name": "Update project status",
             "url": "httpssas-proxy.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/projects\/{id}\/state",
             "description": "API to update project status etc. started, running, stopped",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8d9d845d03845c3aa3d614dd9064c3d",
+            "collectionId": "4e91b2e74ee0cbaa24c633d9cf50351a",
             "rawModeData": ""
         },
         {
-            "id": "a85eb6b204376e6d7693e42d005ed894",
+            "id": "c4b4f0ff413615903bcdef5c842a7bb2",
             "name": "retrieve service instance",
             "url": "httpssas-proxy.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/resource",
             "description": "API to retrieve service instance",
@@ -122,11 +122,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8d9d845d03845c3aa3d614dd9064c3d",
+            "collectionId": "4e91b2e74ee0cbaa24c633d9cf50351a",
             "rawModeData": ""
         },
         {
-            "id": "1e35163a5fb2803271c5be79a4428e81",
+            "id": "ab0e23b76987144fa687261b3cf19acd",
             "name": "ESP server health check",
             "url": "httpssas-proxy.run.aws-usw02-pr.ice.predix.io\/\/v1\/proxy\/server",
             "description": "API to to check health of ESP server.",
@@ -153,7 +153,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a8d9d845d03845c3aa3d614dd9064c3d",
+            "collectionId": "4e91b2e74ee0cbaa24c633d9cf50351a",
             "rawModeData": ""
         }
     ]

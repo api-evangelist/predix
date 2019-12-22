@@ -1,5 +1,5 @@
 {
-    "id": "0ecd6c994fb751841546e53e5e7abb9b",
+    "id": "5db748eb9beb80cfbd0c53db20ff3c22",
     "name": "Asset",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "e5d0a331c47559724c646cfec196c3a8",
+            "id": "f449664975a7f58d2134e1a52f6b217a",
             "name": "Get a listing of user-defined domain object collections",
             "url": "https\/\/v1\/",
             "description": "Returns the names of all user-defined domain object collections with counts of domain objects contained.",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0ecd6c994fb751841546e53e5e7abb9b",
+            "collectionId": "5db748eb9beb80cfbd0c53db20ff3c22",
             "rawModeData": ""
         },
         {
-            "id": "a33db625593cf1ad98e5ecc3ddde153d",
+            "id": "4d05fc3d611c30de994867f6af5d54e3",
             "name": "Gets all user-defined domain objects.",
             "url": "https\/\/v1\/{collection}",
             "description": "This is a user-defined domain object collection.\n\nYou can create your own custom domain objects, add properties to them, define relationships, and so on.\n\n",
@@ -81,11 +81,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0ecd6c994fb751841546e53e5e7abb9b",
+            "collectionId": "5db748eb9beb80cfbd0c53db20ff3c22",
             "rawModeData": ""
         },
         {
-            "id": "8f4759a7161ff1dd1a54b81a2ff71f59",
+            "id": "0d8fa71165a799894800d9a4f4dd8ba3",
             "name": "Create one or more user-defined domain objects",
             "url": "https\/\/v1\/{collection}",
             "description": "This is a user-defined domain object collection.\n\nYou can create your own custom domain objects, add properties to them, define relationships, and so on.\n\nThe following characters are not allowed in any attribute names: $ < > : | ( ) , = ! ? &\n\n",
@@ -119,11 +119,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0ecd6c994fb751841546e53e5e7abb9b",
+            "collectionId": "5db748eb9beb80cfbd0c53db20ff3c22",
             "rawModeData": ""
         },
         {
-            "id": "15dd1fc0ceb2672b3ec68f5254bbb218",
+            "id": "54fa0f8b9d1805b81623a94d5c5f40bb",
             "name": "Get entity based on  uri",
             "url": "https\/\/v1\/{collection}\/{id}",
             "description": "This is a user-defined domain object collection.\n\nYou can create your own custom domain objects, add properties to them, define relationships, and so on.\n\n",
@@ -164,11 +164,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0ecd6c994fb751841546e53e5e7abb9b",
+            "collectionId": "5db748eb9beb80cfbd0c53db20ff3c22",
             "rawModeData": ""
         },
         {
-            "id": "8bf910e15a01ed066cadf2dd79243348",
+            "id": "8c92a55cc7fadcb54d6d518d3ca3ba45",
             "name": "Update a user-defined domain object",
             "url": "https\/\/v1\/{collection}\/{id}",
             "description": "This is a user-defined domain object collection.\n\nYou can create your own custom domain objects, add properties to them, define relationships, and so on.\n\nThe following characters are not allowed in any attribute names: $ < > : | ( ) , = ! ? &\n\n",
@@ -209,11 +209,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0ecd6c994fb751841546e53e5e7abb9b",
+            "collectionId": "5db748eb9beb80cfbd0c53db20ff3c22",
             "rawModeData": ""
         },
         {
-            "id": "adf7a0042d91a1aed29d0b1aff50e57a",
+            "id": "339894d8d7c8bc58e9ccd85b6a4cc21d",
             "name": "Patch a user-defined domain object",
             "url": "https\/\/v1\/{collection}\/{id}",
             "description": "This is a user-defined domain object collection.\n\nYou can create your own custom domain objects, add properties to them, define relationships, and so on.\n\nUpdate specific model using http PATCH requests. Request format should follow JSON PATCH format. Supported operations on each attribute are add, remove, replace, move, copy, test. Refer RFC link for more details on request format. https:\/\/tools.ietf.org\/html\/rfc6902",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0ecd6c994fb751841546e53e5e7abb9b",
+            "collectionId": "5db748eb9beb80cfbd0c53db20ff3c22",
             "rawModeData": ""
         },
         {
-            "id": "3d5e4fdd1fd1585fe86de6d7e439fdd2",
+            "id": "8b9131b217dc82b23628047763830364",
             "name": "Delete a user-defined domain object",
             "url": "https\/\/v1\/{collection}\/{id}",
             "description": "This is a user-defined domain object collection.\n\nYou can create your own custom domain objects, add properties to them, define relationships, and so on.\n\n",
@@ -292,11 +292,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0ecd6c994fb751841546e53e5e7abb9b",
+            "collectionId": "5db748eb9beb80cfbd0c53db20ff3c22",
             "rawModeData": ""
         },
         {
-            "id": "9486f5d5411cf06ca835cdeee3c188aa",
+            "id": "4e1432a80f0efae59f65380615c241bc",
             "name": "Get domain object audit records.",
             "url": "https\/\/v1\/system\/audit",
             "description": "For detailed documentation of all available query options please refer to Predix Asset Documentation. ",
@@ -323,11 +323,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0ecd6c994fb751841546e53e5e7abb9b",
+            "collectionId": "5db748eb9beb80cfbd0c53db20ff3c22",
             "rawModeData": ""
         },
         {
-            "id": "233d52be3dc0dd9ccf05a5c867055e2d",
+            "id": "d8a9171586821da407e1ea1d03430fbc",
             "name": "Get property-level audit records.",
             "url": "https\/\/v1\/system\/audit\/changes",
             "description": "For detailed documentation of all available query options please refer to Predix Asset Documentation. ",
@@ -354,11 +354,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0ecd6c994fb751841546e53e5e7abb9b",
+            "collectionId": "5db748eb9beb80cfbd0c53db20ff3c22",
             "rawModeData": ""
         },
         {
-            "id": "a6ea7a1102d2996310654aba430c403d",
+            "id": "f26bd29d6e96b31e3978647b2cfe3ad7",
             "name": "Get a snapshot of an entity at or before a specified datetime (ISO-8601).",
             "url": "https\/\/v1\/system\/audit\/snapshots",
             "description": "For detailed documentation of all available query options please refer to Predix Asset Documentation.",
@@ -385,11 +385,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0ecd6c994fb751841546e53e5e7abb9b",
+            "collectionId": "5db748eb9beb80cfbd0c53db20ff3c22",
             "rawModeData": ""
         },
         {
-            "id": "2905152e81af07a4ad015b4338dd8173",
+            "id": "e3cc779e2fce781da5641ccbd9ae2940",
             "name": "Get tenant-specific configuration settings",
             "url": "https\/\/v1\/system\/configs",
             "description": "This can be used to verify whether the audit feature is enabled.",
@@ -408,11 +408,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0ecd6c994fb751841546e53e5e7abb9b",
+            "collectionId": "5db748eb9beb80cfbd0c53db20ff3c22",
             "rawModeData": ""
         },
         {
-            "id": "18ef18eb83d05493a9f0efd164cedd78",
+            "id": "3bb8d29f88d5635e58aa41d413ba2bae",
             "name": "Update tenant-specific configuration settings",
             "url": "https\/\/v1\/system\/configs",
             "description": "This can be used to enable or disable the audit feature.",
@@ -439,11 +439,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0ecd6c994fb751841546e53e5e7abb9b",
+            "collectionId": "5db748eb9beb80cfbd0c53db20ff3c22",
             "rawModeData": ""
         },
         {
-            "id": "c874a05e12b6a4e205d762bf83fbcff8",
+            "id": "87ca341f546e6a9c0378a2f2c9df2fff",
             "name": "Get the JSON Schema of the specified entity type",
             "url": "https\/\/v1\/system\/schema\/entities\/{type}",
             "description": "Get the json schema of the specified entity type.",
@@ -470,11 +470,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0ecd6c994fb751841546e53e5e7abb9b",
+            "collectionId": "5db748eb9beb80cfbd0c53db20ff3c22",
             "rawModeData": ""
         },
         {
-            "id": "a3e94c5988112c0c7faf92257f7f8986",
+            "id": "47a68265abadcb2bbbad8c339b8136ef",
             "name": "Create or update the JSON Schema of the specified entity type",
             "url": "https\/\/v1\/system\/schema\/entities\/{type}",
             "description": "Create or update the json schema of the specified entity type.",
@@ -508,11 +508,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0ecd6c994fb751841546e53e5e7abb9b",
+            "collectionId": "5db748eb9beb80cfbd0c53db20ff3c22",
             "rawModeData": ""
         },
         {
-            "id": "a3fbc13545fad91d53610997e2a9debc",
+            "id": "0cbc45e04f96cb1c667b50eaf34469cd",
             "name": "Delete the JSON Schema of the specified entity type",
             "url": "https\/\/v1\/system\/schema\/entities\/{type}",
             "description": "Delete the json schema of the specified entity type.",
@@ -539,7 +539,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0ecd6c994fb751841546e53e5e7abb9b",
+            "collectionId": "5db748eb9beb80cfbd0c53db20ff3c22",
             "rawModeData": ""
         }
     ]

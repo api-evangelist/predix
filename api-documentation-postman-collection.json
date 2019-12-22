@@ -1,5 +1,5 @@
 {
-    "id": "bce637a7adb3267f14a8cea99e853819",
+    "id": "443402aa8c4e32565c3840ebd8f9458c",
     "name": "Api Documentation",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "5d1747af8bf7706228eab3048a4b54a1",
+            "id": "e23c43fd59b0b907abc2e7a297b0b740",
             "name": "Get Dags",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags",
             "description": "Get dags.",
@@ -86,11 +86,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "88bc952553418e8c7a3a41eeb53e41ce",
+            "id": "6370fe2453b6d825d37b5e846fed0490",
             "name": "Post Dags",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags",
             "description": "Post dags.",
@@ -117,11 +117,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "5727cbc3005934a4a107a0994ae5d109",
+            "id": "579eb5fb1b1296d0bf0f4f11d6f216c5",
             "name": "Put Dags Pause",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/pause\/{dagName}",
             "description": "Put dags pause.",
@@ -148,11 +148,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "184843fa1f020a7015145782a163b678",
+            "id": "cd15b7b81b6c97b7de0d4d3412625e62",
             "name": "Get Dags Status",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/status\/{dagName}",
             "description": "Get dags status.",
@@ -179,11 +179,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "16da4576507842c6005d6119a69859b3",
+            "id": "adcf8ed25e07fe46f4e25f79a74d18bd",
             "name": "Get Dags Status Runs",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/status\/{dagName}\/runs",
             "description": "Get dags status runs.",
@@ -224,11 +224,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "1e1163a7b5007f8850ebee145dc3524b",
+            "id": "b6555acfab5efe04986d09ec21fd37a7",
             "name": "Get Dags Status Runs Runid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/status\/{dagName}\/runs\/{runId}",
             "description": "Get dags status runs runid.",
@@ -262,11 +262,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "c46f4e309f8bdff15a22ef24025978dc",
+            "id": "c4c33fb2678f23ec06df3a2e44080d79",
             "name": "Get Dags Status Tasks",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/status\/{dagName}\/tasks",
             "description": "Get dags status tasks.",
@@ -307,11 +307,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "328874d372bd82904217738dd0c5b323",
+            "id": "bbfef45420568c0f18e27b9c295498b0",
             "name": "Get Dags Status Tasks Runs Runid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/status\/{dagName}\/tasks\/runs\/{runId}",
             "description": "Get dags status tasks runs runid.",
@@ -345,11 +345,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "9e1992c89ce91b52bbe7a555d9f6345a",
+            "id": "86803bc24eccba598a810ae0d6f5eace",
             "name": "Get Dags Status Tasks Taskid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/status\/{dagName}\/tasks\/{taskId}",
             "description": "Get dags status tasks taskid.",
@@ -383,11 +383,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "f2e9c5cabf4dd5aab71c1cf0ba12ad42",
+            "id": "3b6187331aa3176fb1f7f7ae152f2709",
             "name": "Get Dags Status Tasks Taskid Runs Runid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/status\/{dagName}\/tasks\/{taskId}\/runs\/{runId}",
             "description": "Get dags status tasks taskid runs runid.",
@@ -428,11 +428,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "7ae1a9136f686cb7369d83fb7e41706e",
+            "id": "353eb596df182044c1eff1fcc38649d9",
             "name": "Get Dags Statusall",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/statusall",
             "description": "Get dags statusall.",
@@ -451,11 +451,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "f7d1b335aebedb40431427201b383226",
+            "id": "a390f86c3abcd2f20499079089ca4332",
             "name": "Get Dags Tags",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/tags",
             "description": "Get dags tags.",
@@ -474,11 +474,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "f035cb40b970a2e3e458fdb91971c915",
+            "id": "28bca75ca37580c871cba536fd18aa2d",
             "name": "Post Dags Trigger",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/trigger\/{dagName}\/{dagId}",
             "description": "Post dags trigger.",
@@ -519,11 +519,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "542c1eeaeded36066bed3d228c54d50d",
+            "id": "49b9b7c63007ea2ca8518698fa19f4b8",
             "name": "Get Dags",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/{dagName}",
             "description": "Get dags.",
@@ -550,11 +550,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "45f2f11d7c6125ab336c793d642b0d3d",
+            "id": "9d532ab9957d9c47fea86d933fd68eb4",
             "name": "Post Dags",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/{dagName}",
             "description": "Post dags.",
@@ -581,11 +581,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "4fb6fb4f34adb9578f17548e62bd551d",
+            "id": "2df8c0d4b428c375b5207b009db84194",
             "name": "Delete Dags",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/{dagName}",
             "description": "Delete dags.",
@@ -612,11 +612,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "2a4a42bcd297e68d881bb90c7c11bfc9",
+            "id": "61d6b46fe20f691993cc2cb386a369fe",
             "name": "Post Dags Deploy",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dags\/{dagName}\/deploy",
             "description": "Post dags deploy.",
@@ -643,11 +643,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "f0374e6d67252602016bf93e7b31074b",
+            "id": "131e2eb72bce4b8fa831821ab3eeed50",
             "name": "Get Dependencies",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies",
             "description": "Get dependencies.",
@@ -688,11 +688,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "03d919b35add9546001a6ee9d6a36d9c",
+            "id": "36c62f412c65d3b5042c46c87e83f181",
             "name": "Post Dependencies",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies",
             "description": "Post dependencies.",
@@ -711,11 +711,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "7d33bbff256d80e1db3977c8b53174fe",
+            "id": "f7a752b913b3e8c5d919f57aa544c518",
             "name": "Post Dependencies Deploy",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies\/deploy",
             "description": "Post dependencies deploy.",
@@ -742,11 +742,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "afaccf769385712a8659b459d75aa4e1",
+            "id": "3fe2ad7b97ab524c635f3dde80eaf75a",
             "name": "Post Dependencies Deploy Dependencyid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies\/deploy\/{dependencyId}",
             "description": "Post dependencies deploy dependencyid.",
@@ -773,11 +773,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "704e6cad135e459753ba42f987a96fd2",
+            "id": "3e72c9255d76d9901a4546c0b73659fc",
             "name": "Get Dependencies Tags",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies\/tags",
             "description": "Get dependencies tags.",
@@ -796,11 +796,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "8040318b4467b083f9c39c7c6d724562",
+            "id": "f33795283315975a77764d705a1d4cac",
             "name": "Post Dependencies Undeploy",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies\/undeploy",
             "description": "Post dependencies undeploy.",
@@ -827,11 +827,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "75c6ac6ce0ac3d5fa37f7e34395f7cb5",
+            "id": "a782f23cfe2ce8a126310c2bc9388b0c",
             "name": "Post Dependencies Undeploy Dependencyid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies\/undeploy\/{dependencyId}",
             "description": "Post dependencies undeploy dependencyid.",
@@ -858,11 +858,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "223bd3c1a8c52892a96f2e8da37ab15a",
+            "id": "1b39bbc1cee6ea09495c7c8ea21e0300",
             "name": "Get Dependencies Dependencyid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies\/{dependencyId}",
             "description": "Get dependencies dependencyid.",
@@ -889,11 +889,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "4654db0fe4d46da41dd92e925bb58be5",
+            "id": "a375321d4f438234ab1f25eab72d90a7",
             "name": "Post Dependencies Dependencyid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies\/{dependencyId}",
             "description": "Post dependencies dependencyid.",
@@ -920,11 +920,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "599932d69002c02bfaa32d45c92f2f02",
+            "id": "a171167a12d9f24fb6885a2c6310ba53",
             "name": "Delete Dependencies Dependencyid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/dependencies\/{dependencyId}",
             "description": "Delete dependencies dependencyid.",
@@ -951,11 +951,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "a60d90092e7d349d37dc3ce00bcdadba",
+            "id": "719a9e4ce3389ce318bdff89d6fe8207",
             "name": "Get Flow Templates",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates",
             "description": "Get flow templates.",
@@ -1038,11 +1038,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "c55444cede947bbcccd335e9f34f3b5a",
+            "id": "2ea2ac76278a82b6c9690e0a90151daf",
             "name": "Post Flow Templates",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates",
             "description": "Post flow templates.",
@@ -1061,11 +1061,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "731156c73bff77f953b0f0b558e429e2",
+            "id": "b9bdf419f435987802a3b47227e81eca",
             "name": "Get Flow Templates Tags",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/tags",
             "description": "Get flow templates tags.",
@@ -1084,11 +1084,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "e53e2324b9d433099581411dff7ff09e",
+            "id": "5753eb4ad4cfd8f1a79ac305cf365668",
             "name": "Get Flow Templates Flowtemplateid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}",
             "description": "Get flow templates flowtemplateid.",
@@ -1115,11 +1115,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "122a45af95a790826559317428d406a9",
+            "id": "ff38ddb59493f54621a057d4c323d395",
             "name": "Post Flow Templates Flowtemplateid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}",
             "description": "Post flow templates flowtemplateid.",
@@ -1146,11 +1146,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "7703e477cd23641d40474efd7f813277",
+            "id": "cfee83ac2af53d5eb46ad6b24b421724",
             "name": "Put Flow Templates Flowtemplateid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}",
             "description": "Put flow templates flowtemplateid.",
@@ -1184,11 +1184,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "5bb2e8f815b9e253f13ef06adb35ed14",
+            "id": "e3b98db72f9c19b2479b5924586a4c92",
             "name": "Delete Flow Templates Flowtemplateid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}",
             "description": "Delete flow templates flowtemplateid.",
@@ -1215,11 +1215,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "9bff1c53dac1c93fe5eefef17a9ba75d",
+            "id": "98c7ed1f76f3351308c2ebdbd9bfdfbb",
             "name": "Get Flow Templates Flowtemplateid Download",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/download",
             "description": "Get flow templates flowtemplateid download.",
@@ -1246,11 +1246,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "46c677193baa2f4075ea043888e9083f",
+            "id": "e66fbd4f438dc01f7e5b757e1fd6fcba",
             "name": "Get Flow Templates Flowtemplateid Flows",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows",
             "description": "Get flow templates flowtemplateid flows.",
@@ -1333,11 +1333,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "dd7b399690653438c52fb8feb9fe5b7d",
+            "id": "58dea7813ae12a977b69785bbd42d0bf",
             "name": "Post Flow Templates Flowtemplateid Flows",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows",
             "description": "Post flow templates flowtemplateid flows.",
@@ -1371,11 +1371,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "77021a61b5faed72660e44db5e47cd35",
+            "id": "2556469d6a6ef985888bfc841c5087e6",
             "name": "Get Flow Templates Flowtemplateid Flows Flowid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}",
             "description": "Get flow templates flowtemplateid flows flowid.",
@@ -1409,11 +1409,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "41bc62e273f77b7507d053ba8ab30674",
+            "id": "cc324bfd16571eb5507217bd06a0f69a",
             "name": "Post Flow Templates Flowtemplateid Flows Flowid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}",
             "description": "Post flow templates flowtemplateid flows flowid.",
@@ -1447,11 +1447,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "8f4fd918f8a1f8d70e0b266aa3623916",
+            "id": "90df01aa390fc3efd03c7f0dfb41a96b",
             "name": "Delete Flow Templates Flowtemplateid Flows Flowid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}",
             "description": "Delete flow templates flowtemplateid flows flowid.",
@@ -1478,11 +1478,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "462b633234c9923707814261f89a5011",
+            "id": "b385556194f60b5e9fa4b886552690ba",
             "name": "Get Flow Templates Flowtemplateid Flows Flowid Config",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}\/config",
             "description": "Get flow templates flowtemplateid flows flowid config.",
@@ -1509,11 +1509,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "f6f0bf2356ce641b7c464da506e3b1ef",
+            "id": "21870fe6b3000c023efcefd63acace98",
             "name": "Post Flow Templates Flowtemplateid Flows Flowid Config",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}\/config",
             "description": "Post flow templates flowtemplateid flows flowid config.",
@@ -1540,11 +1540,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "e222452d9edcd54ce029851e440c2d0a",
+            "id": "9363aed9e7066437574055f080c98930",
             "name": "Get Flow Templates Flowtemplateid Flows Flowid Config Filename",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}\/config\/{fileName}",
             "description": "Get flow templates flowtemplateid flows flowid config filename.",
@@ -1578,11 +1578,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "1afc80e925da3e6a89fedce2dff1d3f0",
+            "id": "9fe4a1941bc07f1551a60d3919fd1f11",
             "name": "Delete Flow Templates Flowtemplateid Flows Flowid Config Filename",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}\/config\/{fileName}",
             "description": "Delete flow templates flowtemplateid flows flowid config filename.",
@@ -1616,11 +1616,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "4783183b98c72dd56aa0d26fbbff49a7",
+            "id": "a8da2a74f7868764a7bd79942ea450eb",
             "name": "Post Flow Templates Flowtemplateid Flows Flowid Launch",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}\/launch",
             "description": "Post flow templates flowtemplateid flows flowid launch.",
@@ -1654,11 +1654,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "9d8c4f2ad2a34b35712efaea65ead699",
+            "id": "b42bf8a3361d4f6e9ae36706eb340a98",
             "name": "Post Flow Templates Flowtemplateid Flows Flowid Stop",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}\/stop",
             "description": "Post flow templates flowtemplateid flows flowid stop.",
@@ -1685,11 +1685,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "8df5f618aad3d0af0e0c6890a04ef062",
+            "id": "a31ade4a190e5746ef23a13c167056e2",
             "name": "Get Flow Templates Flowtemplateid Flows Flowid Tags",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}\/tags",
             "description": "Get flow templates flowtemplateid flows flowid tags.",
@@ -1716,11 +1716,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "a0489a2c507dd25b2373642b898a2cae",
+            "id": "4e30db310847a2898bf664f74f903808",
             "name": "Post Flow Templates Flowtemplateid Flows Flowid Tags",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/flows\/{flowId}\/tags",
             "description": "Post flow templates flowtemplateid flows flowid tags.",
@@ -1754,11 +1754,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "ec60d8b1f97cf55b49e6d9f0a9f7721c",
+            "id": "3afbe9a1bee919a75e4b19bc636ef2b2",
             "name": "Get Flow Templates Flowtemplateid List",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/list",
             "description": "Get flow templates flowtemplateid list.",
@@ -1785,11 +1785,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "be2a13ae5202ec518b86cac266c7dbfa",
+            "id": "a8fd1145a48cb2562db7ec8bc1966c20",
             "name": "Get Flow Templates Flowtemplateid Tags",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/tags",
             "description": "Get flow templates flowtemplateid tags.",
@@ -1816,11 +1816,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "e904f8a0134f52ee8863dee0379522c0",
+            "id": "6e859f15a7bcd3edbba35142519cbfaa",
             "name": "Post Flow Templates Flowtemplateid Tags",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flow-templates\/{flowTemplateId}\/tags",
             "description": "Post flow templates flowtemplateid tags.",
@@ -1854,11 +1854,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "4e756b99919f92e82059ee0b9f885259",
+            "id": "09d97657748dae76f6336fd06ada7643",
             "name": "Get Flows",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows",
             "description": "Get flows.",
@@ -1934,11 +1934,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "834aa6e174e7204cb135b4e66e0520f6",
+            "id": "4d0c3a23d210cff66c6b62c95d66e2fe",
             "name": "Post Flows",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows",
             "description": "Post flows.",
@@ -1957,11 +1957,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "bd96d1e88325a400214bf508c1d2fae1",
+            "id": "746ce1a86b2713dc6747baa60691a1b6",
             "name": "Get Flows Tags",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/tags",
             "description": "Get flows tags.",
@@ -1980,11 +1980,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "6de39d267ed6abb860327b252cbcc6eb",
+            "id": "4f5fe09b50fc44e5da2067eed79d20f1",
             "name": "Post Flows Flowid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}",
             "description": "Post flows flowid.",
@@ -2011,11 +2011,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "f72b90c8373d9246102ae74270836b46",
+            "id": "56a0431bc129fd71d83a95c59b504d6e",
             "name": "Delete Flows Flowid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}",
             "description": "Delete flows flowid.",
@@ -2042,11 +2042,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "e67a22b76e8e17a5ff0a0b7b0aa286ac",
+            "id": "3fcbbb4fbc6053e17f4ea367faa464e4",
             "name": "Get Flows Flowid Config",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}\/config",
             "description": "Get flows flowid config.",
@@ -2073,11 +2073,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "4d5f6c73078aa3b703a69e9c007774ce",
+            "id": "770949eb49c461f8dd77e55920481f6b",
             "name": "Post Flows Flowid Config",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}\/config",
             "description": "Post flows flowid config.",
@@ -2104,11 +2104,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "ea9a3152939e084f04c76a02939a5392",
+            "id": "e551be4f15259ee9f3e80f857dd6d125",
             "name": "Get Flows Flowid Config Filename",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}\/config\/{fileName}",
             "description": "Get flows flowid config filename.",
@@ -2142,11 +2142,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "489b0c3d2a5958f8ba96e82a9b579924",
+            "id": "f23d916ca6ebfcc4b411e172132f385b",
             "name": "Delete Flows Flowid Config Filename",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}\/config\/{fileName}",
             "description": "Delete flows flowid config filename.",
@@ -2180,11 +2180,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "25f77496dc05096986eae9b527673601",
+            "id": "054f2be860010438b624257b40de7010",
             "name": "Post Flows Flowid Create Template",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}\/create-template",
             "description": "Post flows flowid create template.",
@@ -2211,11 +2211,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "1a0f45c9142fdeb6cb1f6539f6975d39",
+            "id": "40732f707afee0fa14388f5b8b336070",
             "name": "Get Flows Flowid Download",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}\/download",
             "description": "Get flows flowid download.",
@@ -2242,11 +2242,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "75649bce87b564b4373515fe9989c2a2",
+            "id": "f22e67b77487232ac5f71e7f1efbbbc4",
             "name": "Post Flows Flowid Tags",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowId}\/tags",
             "description": "Post flows flowid tags.",
@@ -2280,11 +2280,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "84714f3290adf1cdd704c74d39edf941",
+            "id": "6cb9bd3c5d20fbd9944894e182a7271b",
             "name": "Get Flows Flowname",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowName}",
             "description": "Get flows flowname.",
@@ -2318,11 +2318,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "5b86545d0f91c707cb1e6569e63be11d",
+            "id": "7bbffd726bcd16509a2168e8d80b9f87",
             "name": "Post Flows Flowname Launch",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowName}\/launch",
             "description": "Post flows flowname launch.",
@@ -2356,11 +2356,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "5fa38b708c8578eb9e4c61daf08c2bdd",
+            "id": "452d6a1639236d08161210dd2d1a1c37",
             "name": "Post Flows Flowname Stop",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/flows\/{flowName}\/stop",
             "description": "Post flows flowname stop.",
@@ -2387,11 +2387,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "8242e956eddf655fc9a80a1fce74b161",
+            "id": "b856401677da100b81acc51697cbc1d7",
             "name": "Get Instances",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances",
             "description": "Get instances.",
@@ -2481,11 +2481,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "8b46aef9b89ec08a690f5318d244f406",
+            "id": "a7086ab45a2e5336e1eec8bd4b7ee017",
             "name": "Get Instances Instanceid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}",
             "description": "Get instances instanceid.",
@@ -2512,11 +2512,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "673eea3222d53ed5d4829b301ea3cb17",
+            "id": "a826b7b2faffa7d5a3de6b169dd267bc",
             "name": "Delete Instances Instanceid",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}",
             "description": "Delete instances instanceid.",
@@ -2543,11 +2543,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "a908bd8125154ad389156e0c3668b456",
+            "id": "47a69ba33906dc0e9eb3947cd7517f77",
             "name": "Get Instances Instanceid Appattempts Attemptid Containers",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/appattempts\/{attemptId}\/containers",
             "description": "Get instances instanceid appattempts attemptid containers.",
@@ -2581,11 +2581,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "ae9de46b3dfb19b5a4dda3d35fd73c07",
+            "id": "2c32fa27f853f8b02c1fd0d27e194ac6",
             "name": "Get Instances Instanceid Config",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/config",
             "description": "Get instances instanceid config.",
@@ -2612,11 +2612,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "4b1a06252fd3ccafc593247a8f05e73f",
+            "id": "5d8f0562026d8acc4d41bdfe9dfb3e97",
             "name": "Get Instances Instanceid Config Filename",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/config\/{fileName}",
             "description": "Get instances instanceid config filename.",
@@ -2650,11 +2650,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "d320dac848d51e3fa56d5a72322e064d",
+            "id": "b7a1b1f12331e3f45e59e775caab94e7",
             "name": "Get Instances Instanceid Containers",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/containers",
             "description": "Get instances instanceid containers.",
@@ -2681,11 +2681,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "b24db235917339c9932e24ecd8e854e7",
+            "id": "2e0030f27660b23597bd6de93fddc85a",
             "name": "Get Instances Instanceid Containers Containerid Logs",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/containers\/{containerId}\/logs",
             "description": "Get instances instanceid containers containerid logs.",
@@ -2719,11 +2719,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "84b3c7c41f451c0fb9acc020c541e335",
+            "id": "bde0f9042c8017b492d112a434ff4126",
             "name": "Get Instances Instanceid Containers Containerid Logs Logname",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/containers\/{containerId}\/logs\/{logName}",
             "description": "Get instances instanceid containers containerid logs logname.",
@@ -2778,11 +2778,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "088394ba5d3366488012920058296e61",
+            "id": "645ad222aeeac75dd0298ffedb836330",
             "name": "Get Instances Instanceid Sparkproxy **",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/sparkproxy\/**",
             "description": "Get instances instanceid sparkproxy **.",
@@ -2809,11 +2809,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "1a0aa1a2860a2e89df76b9f7b479655a",
+            "id": "4e947c6e11e70f3e2dbf3cfa1556981f",
             "name": "Head Instances Instanceid Sparkproxy **",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/sparkproxy\/**",
             "description": "Head instances instanceid sparkproxy **.",
@@ -2840,11 +2840,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "bd15e3797947f2fb93e1f13a5f45dfe3",
+            "id": "48a45e5e170a72384d71de17a798c1db",
             "name": "Post Instances Instanceid Sparkproxy **",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/sparkproxy\/**",
             "description": "Post instances instanceid sparkproxy **.",
@@ -2871,11 +2871,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "ee99092aac5ce4f9f291ca618689c1b2",
+            "id": "ce3dffff9b7c974646944d1f0337745a",
             "name": "Put Instances Instanceid Sparkproxy **",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/sparkproxy\/**",
             "description": "Put instances instanceid sparkproxy **.",
@@ -2902,11 +2902,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "ba5c31407846f8782b8e163991fdbc68",
+            "id": "030762d37f0340e483c97d31b6a54f8f",
             "name": "Delete Instances Instanceid Sparkproxy **",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/sparkproxy\/**",
             "description": "Delete instances instanceid sparkproxy **.",
@@ -2933,11 +2933,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "cbfd3258da0b02e7c9f5466338a82a0c",
+            "id": "9626035c701bb0d4be6049226b3298b7",
             "name": "Options Instances Instanceid Sparkproxy **",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/sparkproxy\/**",
             "description": "Options instances instanceid sparkproxy **.",
@@ -2964,11 +2964,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "cefd624bcb44b9e737cb215481263ac4",
+            "id": "3e255fac2a9b207aa86b18c23f4ae490",
             "name": "Patch Instances Instanceid Sparkproxy **",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/sparkproxy\/**",
             "description": "Patch instances instanceid sparkproxy **.",
@@ -2995,11 +2995,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         },
         {
-            "id": "2912c98f1c7de21e51c80db335d79219",
+            "id": "82cc5684db7c021fef131564181a52d8",
             "name": "Get Instances Instanceid Submit Logs",
             "url": "httpsinsights-api.data-services.predix.io\/api\/v1\/instances\/{instanceId}\/submit-logs",
             "description": "Get instances instanceid submit logs.",
@@ -3040,7 +3040,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bce637a7adb3267f14a8cea99e853819",
+            "collectionId": "443402aa8c4e32565c3840ebd8f9458c",
             "rawModeData": ""
         }
     ]

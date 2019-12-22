@@ -1,5 +1,5 @@
 {
-    "id": "393609d7217a36ad30afc91c7061f97c",
+    "id": "e49b53103a32adf02798d3c7c4c51dc9",
     "name": "Tenant Management",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "81d99aceed1cf1329b2e05115eda72fb",
+            "id": "e855d76e95a6f22f90f43da12767e9e4",
             "name": "Get tenant credentials ",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/client-credentials",
             "description": "Get tenant credentials .",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "78feb3603766dd5e34b8fcdfb0df0868",
+            "id": "32d59083a2b39c78ae88c8dfd6e4c622",
             "name": "Create tenant credentials ",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/client-credentials",
             "description": "Create tenant credentials .",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "a77a6c163411b31587a4e3b27a92bd80",
+            "id": "19e3ccdf0b742d51305c12fdd584ab47",
             "name": "Create tenant credentials ",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/client-credentials",
             "description": "Create tenant credentials .",
@@ -113,11 +113,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "c688acfb835559570cd61c2ec018b10e",
+            "id": "f56b75ffe7ff9799aa64dc975b330522",
             "name": "Delete tenant credentials ",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/client-credentials\/client-ids\/{clientId}",
             "description": "Delete tenant credentials .",
@@ -151,11 +151,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "6b377fed5f7ffe07e937e1def686910e",
+            "id": "97f655bbd1f68faa6d7af94415ae0412",
             "name": "Delete tenant credentials ",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/client-credentials\/client-ids\/{clientId}\/authorized-clients\/{authorizedClientId}",
             "description": "Delete tenant credentials .",
@@ -196,11 +196,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "5e8296c525b2cae7af0992b9bd6e6d95",
+            "id": "836ba6083a3971c4cdc800b65e13a517",
             "name": "Retrieve all the tenants in the given zone",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant",
             "description": "Retrieve all the tenants in the given zone.",
@@ -227,11 +227,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "a5300caffdda09c55a85e49cb71f6996",
+            "id": "810adb80462ef626232d12385f910b52",
             "name": "create a tenant",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant",
             "description": "Create a tenant.",
@@ -265,11 +265,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "feb100bebd2a0607f548d20aac9050dc",
+            "id": "db8e99bd2607b92e3ff06fcb53484687",
             "name": "update a tenant",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant",
             "description": "Update a tenant.",
@@ -303,11 +303,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "2689436b83869ca868258cb5b0d69fcc",
+            "id": "9e5ac163b9fa17d2b6bc1abe359b7921",
             "name": "Lookup Tenant by Subdomain",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/profile",
             "description": "Lookup tenant by subdomain.",
@@ -334,11 +334,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "79f111bc1ba7caabed4999bd88e252c9",
+            "id": "19e9f438535324c2ab09faf7be88c607",
             "name": "Lookup Tenant service by Subdomain",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/profile\/service\/{serviceName}",
             "description": "Lookup tenant service by subdomain.",
@@ -372,11 +372,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "c1510f520f1167ac8bc293f6e4e435fe",
+            "id": "b2daec182249aa597a6a3c29e5885e03",
             "name": "Retrieve a tenant and its list of services",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/{tenantName}",
             "description": "Retrieve a tenant and its list of services.",
@@ -410,11 +410,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "5eacc35c5c204d6e680d0c27ca86cd65",
+            "id": "d43cd90e635f8e10cd24e4061ea86333",
             "name": "Delete a tenant",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/{tenantName}",
             "description": "Delete a tenant.",
@@ -448,11 +448,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "06e60e97f56465fe09866fbddeaecf6b",
+            "id": "456e3a446503aaa6bcd85899426bf1e5",
             "name": "update a PROVISIONED service instance",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/{tenantName}\/service\/{instanceName}",
             "description": "Update a provisioned service instance.",
@@ -500,11 +500,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "2008d180ad894120ce2996ed69dfe5d9",
+            "id": "bac32aeeeb42c574b70f347a8200f9f7",
             "name": "Retrieve service details",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/{tenantName}\/service\/{serviceName}",
             "description": "Retrieve service details.",
@@ -545,11 +545,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "2100722b66fbbf5c8d16af736fb76b94",
+            "id": "7fc7c3023e695758fd9b4caf281711df",
             "name": "Delete service instance",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/{tenantName}\/service\/{serviceName}",
             "description": "Delete service instance.",
@@ -597,11 +597,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "8bf066530da47bf80affb2ac5841c388",
+            "id": "98e475930abb8cc24d6fc6fab0648345",
             "name": "Retrieve service credentials",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/{tenantName}\/service\/{serviceName}\/credentials",
             "description": "Retrieve service credentials.",
@@ -642,11 +642,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "15a852214b4bc98d5a0d5af0533225f1",
+            "id": "d411010086d67a6665020bd510bfd0bc",
             "name": "Retrieve a tenant's status",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v1\/tenant\/{tenantName}\/status",
             "description": "Retrieve a tenant's status.",
@@ -680,11 +680,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "ba8234654f2cecbfd4a64fbace55d816",
+            "id": "70a09e7c2248b3131491d3cba85605ba",
             "name": "Lookup Tenant by Subdomain",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v2\/tenants\/{tenantSubdomain}",
             "description": "Lookup tenant by subdomain.",
@@ -711,11 +711,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "38614590b2dd937c19ce627b9788c135",
+            "id": "9689316e41e636980fe5acb37a89e4ca",
             "name": "Create or Update Tenant by Subdomain",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v2\/tenants\/{tenantSubdomain}",
             "description": "Create or update tenant by subdomain.",
@@ -749,11 +749,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "6daf380ae424ed741ab365ca841dd2db",
+            "id": "8263bb98f6556f62d39758fa7572daf0",
             "name": "Delete Tenant by Subdomain",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v2\/tenants\/{tenantSubdomain}",
             "description": "Delete tenant by subdomain.",
@@ -780,11 +780,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "18b53bcf894f24269c3eb9c974366a28",
+            "id": "5429c434e9615da37a9a55b156c1baf4",
             "name": "Lookup Tenant Service by Subdomain",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v2\/tenants\/{tenantSubdomain}\/service-instances\/{serviceInstanceName}",
             "description": "Lookup tenant service by subdomain.",
@@ -818,11 +818,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "d63de62c4b92d1623da9a6453ead06ff",
+            "id": "9180e5870f3d6c857bd8539c884ac885",
             "name": "Update Tenant Service by Subdomain",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v2\/tenants\/{tenantSubdomain}\/service-instances\/{serviceInstanceName}",
             "description": "Update tenant service by subdomain.",
@@ -863,11 +863,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "fde254f1eddb7436c13c6a0b247aabe5",
+            "id": "1521364c0d99a0cb35ca646eccd53534",
             "name": "Delete Tenant Service by Subdomain",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v2\/tenants\/{tenantSubdomain}\/service-instances\/{serviceInstanceName}",
             "description": "Delete tenant service by subdomain.",
@@ -901,11 +901,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         },
         {
-            "id": "8a025f2e4022375a06fe976a05762e21",
+            "id": "0ec88d55f2434d16dc5fa838c4680cbf",
             "name": "Lookup Tenant status by Subdomain",
             "url": "httpspredix-tms.run.aws-usw02-pr.ice.predix.io\/\/v2\/tenants\/{tenantSubdomain}\/status",
             "description": "Lookup tenant status by subdomain.",
@@ -932,7 +932,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "393609d7217a36ad30afc91c7061f97c",
+            "collectionId": "e49b53103a32adf02798d3c7c4c51dc9",
             "rawModeData": ""
         }
     ]

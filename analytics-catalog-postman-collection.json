@@ -1,5 +1,5 @@
 {
-    "id": "b594fda5caefe72cee1660b1043f2bfb",
+    "id": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
     "name": "Analytics Catalog",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "09187cdae139c0458ca33e21316d4ec6",
+            "id": "d213a31e354e37f8b1f990edeff9cd11",
             "name": "Execute the analytic synchronously.",
             "url": "https\/\/api\/v1\/analytic\/execution",
             "description": "Execute the analytic synchronously with the given execution payload.",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "046b527192c3b9ba715f6e05fd49519a",
+            "id": "b5e46398e447566760479498212cc9cf",
             "name": "Execute the analytic asynchronously using input data.",
             "url": "https\/\/api\/v1\/analytic\/execution\/async",
             "description": "Execute the analytic asynchronously with the given input data payload.",
@@ -96,11 +96,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "faa8dc60444e5f41e969b21933ac75ac",
+            "id": "58f93115e16cb242793edd5486211e47",
             "name": "Cleanup analytic execution result by request id.",
             "url": "https\/\/api\/v1\/analytic\/execution\/async\/{requestId}",
             "description": "Removes the analytic execution result from the cache. It is highly recommended to clean your old result data to have room for future result data.",
@@ -141,11 +141,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "90061f21b25f5b2f4c9b0c2acb321b78",
+            "id": "2125dab8e85e82d40996a644f372eda3",
             "name": "Get the analytic execution result by request id.",
             "url": "https\/\/api\/v1\/analytic\/execution\/async\/{requestId}\/result",
             "description": "Returns the analytic execution result.",
@@ -186,11 +186,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "0d4c433e3e0239660ff34d2d0fc4177a",
+            "id": "78ea6669c4f25d1a6c4bb83823f16dd0",
             "name": "Get the analytic execution status by request id.",
             "url": "https\/\/api\/v1\/analytic\/execution\/async\/{requestId}\/status",
             "description": "Returns the analytic execution status (one of QUEUED, PROCESSING, COMPLETED, or FAILED).",
@@ -231,11 +231,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "fb3017f5c67b5c5622db76764b93a534",
+            "id": "168d460c772c79df284ba84d89fbdf31",
             "name": "Get all analytic catalog entries.",
             "url": "https\/\/api\/v1\/catalog\/analytics",
             "description": "Returns all analytic catalog entries as specified by page and sort criteria.",
@@ -290,11 +290,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "819478f0c41ad5cae174690fe5129678",
+            "id": "e16838682386fe1014126819ab2cb6b5",
             "name": "Create an analytic catalog entry.",
             "url": "https\/\/api\/v1\/catalog\/analytics",
             "description": "Creates the analytic catalog entry with a generated id.",
@@ -321,11 +321,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "e89d670688a830abd9bf7685ef84837c",
+            "id": "61eb13d38d7c91ffd5bfa230c7f8c34a",
             "name": "Get all versions of the analytic catalog entry with the given name.",
             "url": "https\/\/api\/v1\/catalog\/analytics\/versions",
             "description": "Returns all versions of the analytic catalog entry with the given name.",
@@ -352,11 +352,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "e9babad74f2f828b59dfa57e97991ea6",
+            "id": "723df5a0a9260249608b500a3b20cd64",
             "name": "Get an analytic catalog entry by id.",
             "url": "https\/\/api\/v1\/catalog\/analytics\/{id}",
             "description": "Returns the analytic catalog entry with the given id.",
@@ -383,11 +383,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "32650961eb906aa1421c85df7713c170",
+            "id": "7363e7b1294a2f0677b0af5546cb26cf",
             "name": "Update an analytic catalog entry by id.",
             "url": "https\/\/api\/v1\/catalog\/analytics\/{id}",
             "description": "The analytic catalog entry with the given id will be updated.",
@@ -421,11 +421,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "8d055be2094f2dff4b5325e93df6ed14",
+            "id": "0d341acf17f7478d0268ebfa2f52c392",
             "name": "Delete an analytic catalog entry by id.",
             "url": "https\/\/api\/v1\/catalog\/analytics\/{id}",
             "description": "Deletes the analytic catalog entry with the given id.",
@@ -452,11 +452,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "0598410f70bffb27c40e0e738d8ef731",
+            "id": "29c7562074f97e2f53b2a554c9efe3a9",
             "name": "Get the descriptive information of the artifacts corresponding to an analytic catalog entry.",
             "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/artifacts",
             "description": "Returns the description information (type, description, etc.) for all artifacts associated with the given analytic catalog entry id. Note: it does not return the artifact file contents; use the download APIs to obtain an artifact file. An error is returned if the supplied analytic catalog entry id does not exist.",
@@ -483,11 +483,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "1eb355807e4d98351a98484879f73f78",
+            "id": "9230ce562871d76773bf6d9c82543479",
             "name": "Deploy an analytic with an optional deployment configuration by analytic catalog entry id.",
             "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/deployment",
             "description": "This operation FORCE deploys the specified analytic into the Cloud Foundry environment with an optional deployment configuration, responds with the request id (generated for the request), and the current request status.  The force deploy usually takes longer than the standard timeout, so the calling process should use the returned request id to monitor the request status and to retrieve the deployment results.",
@@ -521,11 +521,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "1bbcdd62e5c70431ee6821a10ebecc37",
+            "id": "23c7b5e35416ed72d73033336652d5f7",
             "name": "Get the analytic deployment status by request id.",
             "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/deployment\/{requestId}",
             "description": "Returns the analytic deployment status (one of 'queued,' 'processing,' or 'completed').",
@@ -559,11 +559,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "ade43cf4c6ec313876e5fd1c77641df9",
+            "id": "ceb39edd6aceaeceae03ab5f2d3fed25",
             "name": "Execute an analytic by analytic catalog entry id.",
             "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/execution",
             "description": "This operation executes the specified analytic and responds with the result produced by analytic.",
@@ -604,11 +604,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "6cd020fc0f8ad1428c1130f2a70a0f5b",
+            "id": "72fc70bab3e097fe7e4ef73a4d5e037c",
             "name": "Get the analytic recent logs",
             "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/logs",
             "description": "Return the recent analytic logs",
@@ -635,11 +635,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "8051112de9712e968b1e1bc273bf0f9c",
+            "id": "bfb0f2aafa22fd7ac6d16ed697bd9a8b",
             "name": "Validate an analytic by analytic catalog entry id.",
             "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/validation",
             "description": "This operation FORCE deploys the specified analytic into the Cloud Foundry environment, runs the analytic and responds with the validation request id (generated for the request), and the current request status.  The force deploy usually takes longer than the standard timeout, so the calling process should use the returned validation request id to monitor the request status and to retrieve the validation results.",
@@ -680,11 +680,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "4443a379d52f7b500908b39e45c8aaa8",
+            "id": "b3502e777ff83f7c4e035974eace25aa",
             "name": "Undeploy test analytics.",
             "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/validation",
             "description": "This operation un-deploys the analytic app from the Cloud Foundry environment only if the analytic has been validated for testing purposes. This api will not un-deploy production analytics.",
@@ -711,11 +711,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "2b1746639621eb2bf9d41a0fe4c61cad",
+            "id": "06f9140e4703e1884adfe2f8d431860e",
             "name": "Get the analytic validation status by validation request id.",
             "url": "https\/\/api\/v1\/catalog\/analytics\/{id}\/validation\/{validationRequestId}",
             "description": "Returns the analytic validation status (one of 'queued,' 'processing,' or 'completed' and the result from running the analytic (when status is 'completed').",
@@ -749,11 +749,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "465e139d5837505d3d80bdc75cae1cc2",
+            "id": "737362316c0c8da9b9550d9039dcfadd",
             "name": "Delete all versions of the named analytic.",
             "url": "https\/\/api\/v1\/catalog\/analytics\/{name}\/versions",
             "description": "Given the name of an analytic, this API deletes all its versions.",
@@ -780,11 +780,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "de71a5d122b521af8b15beb6b7f2918a",
+            "id": "0840be0dcc7eb2b2d749c01c354540a8",
             "name": "Upload an artifact and attach it to an analytic catalog entry.",
             "url": "https\/\/api\/v1\/catalog\/artifacts",
             "description": "Upload a single artifact file in a multipart MIME structure and attach it to an analytic catalog entry. The multipart MIME structure must have the catalog entry id tagged as 'catalogEntryId',  the file contents tagged as 'file',  the artifact type tagged as 'type', and  a description (under 1024 characters) tagged as 'description'. Artifact types can be any string.  Artifacts with the type 'executable' must contain the executable for the analytic.   An analytic can only have 1 artifact labelled ",
@@ -832,11 +832,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "074da8565e73d39f46a25b4be24b5812",
+            "id": "dc36b4eb18c41620683229f9d4c54508",
             "name": "Update an artifact by id.",
             "url": "https\/\/api\/v1\/catalog\/artifacts\/{id}",
             "description": "Update an artifact in the catalog with the contents of the supplied multipart MIME structure. The multipart MIME structure may have any of the following: new file contents tagged as 'file',  a new artifact type tagged as 'type', and  a new description (under 1024 characters) tagged as 'description'. Artifact types can be any string.  Artifacts with the type 'executable' must contain the executable for the analytic.   An analytic can only have 1 artifact labelled as 'executable' (See the document",
@@ -884,11 +884,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "ed46fb4878881c0f13b41a51bfc8b20c",
+            "id": "cc6d106cd7cdd70298de386cc254d742",
             "name": "Delete an artifact by id.",
             "url": "https\/\/api\/v1\/catalog\/artifacts\/{id}",
             "description": "Deletes the artifact by artifact id.",
@@ -915,11 +915,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "0278b3b91a3df04085fc1e63ed77b5b3",
+            "id": "b006479fefe2ed19965bb9afa7313e84",
             "name": "Download an artifact file by id.",
             "url": "https\/\/api\/v1\/catalog\/artifacts\/{id}\/file",
             "description": "The file is downloaded as an octet-stream.",
@@ -946,11 +946,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "e420d971b9b2b5b82146ec8f9798c4cb",
+            "id": "9c266371fe18bb9c2d425f3edd64b7c7",
             "name": "Retrieve the full taxonomy.",
             "url": "https\/\/api\/v1\/catalog\/taxonomy",
             "description": "This operation retrieves the full taxonomy structure from the catalog.",
@@ -969,11 +969,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         },
         {
-            "id": "94c956ca817624796ed94b5c25eadb84",
+            "id": "2e7fec508274eb9c765d35f33c891a34",
             "name": "Load a taxonomy.",
             "url": "https\/\/api\/v1\/catalog\/taxonomy",
             "description": "This operation loads the supplied taxonomy structure into catalog. If a taxonomy already exists in the catalog, new paths in the supplied structure will be added. It will not delete existing paths. ",
@@ -1000,7 +1000,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b594fda5caefe72cee1660b1043f2bfb",
+            "collectionId": "b9e9be2fe6d610090eb9ca20eb7b8fc8",
             "rawModeData": ""
         }
     ]

@@ -1,5 +1,5 @@
 {
-    "id": "470d9dd302583aebcb24a4429aaf61f9",
+    "id": "619f9073e40b7ebca0236a0706168eb0",
     "name": "Dynamic Mapping",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "0a7d30905209b6530990b150a9628779",
+            "id": "3737c39dd24fd61dbe94256e40067a64",
             "name": "List all asset collections for a customer",
             "url": "https\/\/v1\/collections",
             "description": "Returns an array containing the names of all asset collections for the\nspecified customer.\n",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "470d9dd302583aebcb24a4429aaf61f9",
+            "collectionId": "619f9073e40b7ebca0236a0706168eb0",
             "rawModeData": ""
         },
         {
-            "id": "c80124a84ec717183c35be34d12ae551",
+            "id": "5b7944194a9b8ac9d825ca8140688c00",
             "name": "Return all asset ids for a collection",
             "url": "https\/\/v1\/collections\/{collectionName}",
             "description": "Returns the collection name and a list of ids of the assets that belong to\nthe collection.\n",
@@ -52,11 +52,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "470d9dd302583aebcb24a4429aaf61f9",
+            "collectionId": "619f9073e40b7ebca0236a0706168eb0",
             "rawModeData": ""
         },
         {
-            "id": "e238a6129091767615b414ccd53ebaba",
+            "id": "d9e9dd3ea40383c73b30f50228acb8a3",
             "name": "Delete a collection",
             "url": "https\/\/v1\/collections\/{collectionName}",
             "description": "Delete the asset collection specified by the collection name. Any associated asset and asset location data\nare also deleted\n",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "470d9dd302583aebcb24a4429aaf61f9",
+            "collectionId": "619f9073e40b7ebca0236a0706168eb0",
             "rawModeData": ""
         },
         {
-            "id": "62ec04d89b62b51e1bb02750c53d43e1",
+            "id": "517e0adce4d4bd08e1617b83059b9f26",
             "name": "Returns collection assets in specified bounding box",
             "url": "https\/\/v1\/collections\/{collectionName}\/spatial-query\/bbox-interacts",
             "description": "Returns all assets in the specified collection whose latest location exist within the specified bounding box.\nThe bounding box is defined by two coordinates in the EPSG:4326 (WGS84) (for further details see\nhttp:\/\/epsg.io\/4326):\n* left (longitude), bottom (latitude)\n* right (longitude), top (latitude)\nThe results can be filtered by including key and value pairs to match in location meta data.\n",
@@ -98,11 +98,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "470d9dd302583aebcb24a4429aaf61f9",
+            "collectionId": "619f9073e40b7ebca0236a0706168eb0",
             "rawModeData": ""
         },
         {
-            "id": "555291da049bffbb10bca54258b0c8d5",
+            "id": "700db07b2f8731e1363b121a46315182",
             "name": "Returns clustered assets in a specified bounding box",
             "url": "https\/\/v1\/collections\/{collectionName}\/cluster",
             "description": "Returns clusters of assets in the specified collection whose latest location exists within the specified\nbounding box. The clusters can also optionally be filtered by a single key-value pair.\n",
@@ -121,11 +121,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "470d9dd302583aebcb24a4429aaf61f9",
+            "collectionId": "619f9073e40b7ebca0236a0706168eb0",
             "rawModeData": ""
         },
         {
-            "id": "8ef0fe927f2ebc3f5e7a57c1554e3f89",
+            "id": "85b6b7c0cbf57c6b386db9e4d6db6349",
             "name": "Add an asset location into a collection.",
             "url": "https\/\/v1\/collections\/{collectionName}\/assets\/{assetId}",
             "description": "Insert a location entry into the named collection for the given asset identifier and timestamp. In addition to\nadding the new asset location, the request also controls the retention of the location history that is\nstored for the given asset in the given collection.\n\n  - If the mandatory property retain_history is set to false then all existing location history for the\n  given asset is removed before the new location is added.\n\n  - If the retain_history property is set to true and the optional pr",
@@ -152,11 +152,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "470d9dd302583aebcb24a4429aaf61f9",
+            "collectionId": "619f9073e40b7ebca0236a0706168eb0",
             "rawModeData": ""
         },
         {
-            "id": "17a3a4c10b20972583d8c2c329c751fa",
+            "id": "822422b7114c76a28a3188e57a29bceb",
             "name": "Delete an asset and its location data",
             "url": "https\/\/v1\/collections\/{collectionName}\/assets\/{assetId}",
             "description": "Delete the asset specified by the collection name. Any location data associated with the asset are also deleted.\n",
@@ -175,11 +175,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "470d9dd302583aebcb24a4429aaf61f9",
+            "collectionId": "619f9073e40b7ebca0236a0706168eb0",
             "rawModeData": ""
         },
         {
-            "id": "f4847bca707ba5246450ad4b32be2fc8",
+            "id": "aef1d964aa00e16e8cd725ded3e0ccc9",
             "name": "Return the latest location data for an asset",
             "url": "https\/\/v1\/collections\/{collectionName}\/assets\/{assetId}",
             "description": "Returns the latest location entry for the given asset. The timestamp and location data for the\ngiven entry is included in the response.\n",
@@ -198,11 +198,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "470d9dd302583aebcb24a4429aaf61f9",
+            "collectionId": "619f9073e40b7ebca0236a0706168eb0",
             "rawModeData": ""
         },
         {
-            "id": "b4b17b98db77879fe2667a6ab66c06b0",
+            "id": "aec6f7f93d54e0b4e1e00f563b567875",
             "name": "Return locations for an asset by query condition for given customer id and collection name.",
             "url": "https\/\/v1\/collections\/{collectionName}\/assets\/{assetId}\/query",
             "description": "Returns the locations for an asset by three types of query for a given customer id and collection name.\nThe returned locations are in descending order of time.\nThree types of query:\n1. type=latest: The latest n locations will be returned.\n2. type=timeperiod: Locations within a time period will be returned.\n3. type=bbox: Locations within a time period and a spatial bounding box will be returned.\n",
@@ -229,7 +229,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "470d9dd302583aebcb24a4429aaf61f9",
+            "collectionId": "619f9073e40b7ebca0236a0706168eb0",
             "rawModeData": ""
         }
     ]
